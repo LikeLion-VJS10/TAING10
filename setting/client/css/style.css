@@ -1,0 +1,60 @@
+@import url(./reset.css);
+
+body {
+}
+
+.live_channel {
+  width: 1920px;
+  padding: 20px 70px;
+  background-color: black;
+  color: #fff;
+}
+
+.title_wrap {
+  margin-bottom: 12px;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.swiper-slide {
+  width: 250px;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.label_wrap {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
+
+.ranking {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.label_info {
+}
+
+.title {
+  color: #c4c4c4;
+}
+
+.sub_title {
+  color: #a6a6a6;
+}
+
+.viewer {
+  color: #6b6b6b;
+}

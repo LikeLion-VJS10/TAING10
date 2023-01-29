@@ -1,29 +1,104 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="https://kit.fontawesome.com/04c1ea1f1c.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/04c1ea1f1c.js" crossorigin="anonymous"></script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Noto+Sans+KR&display=swap" rel="stylesheet">
-  
-  <script src="./js/main.js" type="module"></script>
-  <title>Document</title>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Noto+Sans+KR&display=swap" rel="stylesheet" />
 
-<body>
-  <header></header>
-  
-  <section id="main">
-    <article></article>
-  </section>
-  <footer></footer>
-</body>
+    <script src="./js/main.js" type="module"></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header></header>
+
+    <section id="main" class="live_channel">
+      <article>
+        <h2 class="title_wrap">인기 LIVE 채널</h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href=""><img src="./images/img_frame.png" alt="JTBC" /></a>
+              <div class="label_wrap">
+                <span class="ranking"><i>1</i></span>
+                <div class="label_info">
+                  <p class="title">JTBC</p>
+                  <p class="sub_title">JTBC 뉴스룸</p>
+                  <p class="viewer">27.9%</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href=""><img src="./images/img_frame-1.png" alt="tvN" /></a>
+              <div class="label_wrap">
+                <span class="ranking"><i>2</i></span>
+                <div class="label_info">
+                  <p class="title">tvN</p>
+                  <p class="sub_title">줄 서는 식당 43회</p>
+                  <p class="viewer">26.3%</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href=""><img src="./images/img_frame-2.png" alt="YTN" /></a>
+              <div class="label_wrap">
+                <span class="ranking"><i>3</i></span>
+                <div class="label_info">
+                  <p class="title">YTN</p>
+                  <p class="sub_title">뉴스가 있는 저녁</p>
+                  <p class="viewer">9%</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href=""><img src="./images/img_frame-3.png" alt="JTBC2" /></a>
+              <div class="label_wrap">
+                <span class="ranking"><i>4</i></span>
+                <div class="label_info">
+                  <p class="title">JTBC2</p>
+                  <p class="sub_title">재벌집 막내아들 5화</p>
+                  <p class="viewer">6.2%</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href=""><img src="./images/img_frame-4.png" alt="연합뉴스 TV" /></a>
+              <div class="label_wrap">
+                <span class="ranking"><i>5</i></span>
+                <div class="label_info">
+                  <p class="title">연합뉴스 TV</p>
+                  <p class="sub_title">뉴스프라임</p>
+                  <p class="viewer">4.6%</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href=""><img src="./images/img_frame-5.png" alt="투니버스" /></a>
+              <div class="label_wrap">
+                <span class="ranking"><i>6</i></span>
+                <div class="label_info">
+                  <p class="title">투니버스</p>
+                  <p class="sub_title">명탐정 코난</p>
+                  <p class="viewer">2%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer></footer>
+  </body>
 </html>
