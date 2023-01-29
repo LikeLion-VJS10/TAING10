@@ -1,0 +1,69 @@
+body{
+    font-family: pretendard;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    color: white;
+}
+
+.hero{
+    position: relative;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: #898989;
+    width: 70px;
+    height: 70px;
+    z-index: 1000;
+}
+
+.contents{
+    position: absolute;
+    width: 100%;
+    height: 278px;
+    bottom: 0;
+    /* background-color: red; */
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+    position: absolute;
+    width: 84px;
+    height: 12px;
+    bottom: 50%;
+    left: 10%;
+}
+
+.swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    background-color: white;
+}
