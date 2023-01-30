@@ -1,3 +1,31 @@
+.popular-programs-list {
+  display: flex;
+}
+
+.popular-programs-list {
+  list-style: none;
+}
+
+.popular-programs-thumbnail img {
+  width: 240px;
+  height: 345px;
+  border-radius: 4px;
+}
+
+.popular-programs-caption {
+  color: #c4c4c4;
+}
+.popular-programs-caption::before {
+  content: "1";
+  font-weight: bold;
+  font-size: 70px;
+  color: black;
+  display: inline-block;
+  font-style: italic;
+}
+.popular-programs-link {
+  text-decoration: none;
+}
 @import url(./reset.css);
 
 body {
@@ -57,4 +85,13 @@ body {
 
 .viewer {
   color: #6b6b6b;
+}
+
+.img_frame li {
+  background: darkorange;
+  width: 285px;
+  height: 570px;
+  border-radius: 4px;
+  list-style: none;
+  overflow: hidden;
 }
