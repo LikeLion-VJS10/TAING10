@@ -1,38 +1,30 @@
-
-
-
-.only_tving {
-  background: blue;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0 0 36px;
-  gap: 12px;
-  position: relative;
+.popular-programs-list{
+    display: flex;
 }
 
-.title_wrap {
-  padding: 0 70px;
+.popular-programs-list{
+ list-style: none;   
 }
 
-.img_frame {
-  background: pink;
-  width: 1920px;
-
-  flex: none;
-  order: 1;
-  align-self: stretch;
+.popular-programs-thumbnail img{
+width: 240px;
+height: 345px;
+border-radius: 4px;
 }
 
-.swiper_list_wrap {
-  background: lime;
-  display: flex;
-  flex-direction: row;
-  padding: 0px;
-  gap: 16px;
-
-  position: absolute;
-  left: 70px;
+.popular-programs-caption{
+    color:#C4C4C4 ;  
+}
+.popular-programs-caption::before{
+    content: "1";
+    font-weight: bold;
+    font-size: 70px;
+    color: black;
+    display: inline-block;
+    font-style: italic;
+}
+.popular-programs-link{
+    text-decoration: none;
 }
 
 .img_frame li {
