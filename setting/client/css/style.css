@@ -26,3 +26,12 @@ border-radius: 4px;
 .popular-programs-link{
     text-decoration: none;
 }
+
+.img_frame li {
+  background: darkorange;
+  width: 285px;
+  height: 570px;
+  border-radius: 4px;
+  list-style: none;
+  overflow: hidden;
+}
