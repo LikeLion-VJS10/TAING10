@@ -1,15 +1,12 @@
-
 .taing-must {
   background: black;
 }
-
 
 .taing-must__container {
   position: relative;
   padding: 10px;
   left: 50px;
 }
-
 
 .taing-must__title {
   font-size: 1.7rem;
@@ -27,7 +24,6 @@
 .taing-must__container {
   display: flex;
   flex-direction: column;
-  
 }
 
 .taing-must__list {
@@ -37,7 +33,6 @@
 }
 
 .taing-must__list li {
-  
 }
 
 .taing-must__list figure {
@@ -45,11 +40,9 @@
   width: 100%;
 }
 
-
 .taing-must__list a {
   text-decoration-line: none;
 }
-
 
 .taing-must__list img {
   width: 100%;
@@ -70,4 +63,83 @@
   color: var(--white);
   position: absolute;
   right: 100px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.contents-list {
+  padding: 0 70px 36px;
+  background-color: var(--black);
+}
+
+.swiper {
+  overflow: visible;
+}
+
+.swiper-wrapper {
+}
+
+.swiper-slide {
+  width: 100%;
+}
+
+.badge::before {
+  position: absolute;
+  content: url(/client/assets/svg/live/vod.svg);
+  margin: 5px 0 0 5px;
+}
+
+figcaption {
+  white-space: nowrap;
+  line-height: 1.5;
+}
+
+figcaption .img-title {
+  font-size: 1.2rem;
+  margin: 8px 0 4px;
+  color: var(--gray-200);
+}
+
+.round,
+.sub-title {
+  font-size: 1rem;
+  color: var(--gray-300);
+}
+
+.viewer {
+  color: var(--gray-500);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  width: 3.75rem;
+  height: 3.75rem;
+  box-shadow: 0 0 5px #555;
+  border-radius: 50px;
+  opacity: 0.5;
+  color: var(--gray-400);
+  background-color: var(--black);
+}
+
+.swiper-button-next::after {
+  position: absolute;
+  right: 16px;
+}
+
+.swiper-button-prev::after {
+  position: absolute;
+  left: 16px;
+}
+
+.swiper-button-next {
+  right: -50px;
+}
+.swiper-button-prev {
+  left: -50px;
 }
