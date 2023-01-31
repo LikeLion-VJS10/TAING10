@@ -1,0 +1,73 @@
+
+.taing-must {
+  background: black;
+}
+
+
+.taing-must__container {
+  position: relative;
+  padding: 10px;
+  left: 50px;
+}
+
+
+.taing-must__title {
+  font-size: 1.7rem;
+  font-style: bold;
+  padding: 0 0 12px;
+  color: white;
+  height: auto;
+  margin: 0;
+}
+
+.taing-must {
+  width: 100%;
+}
+
+.taing-must__container {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.taing-must__list {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.taing-must__list li {
+  
+}
+
+.taing-must__list figure {
+  border-radius: 4px;
+  width: 100%;
+}
+
+
+.taing-must__list a {
+  text-decoration-line: none;
+}
+
+
+.taing-must__list img {
+  width: 100%;
+}
+
+.taing-must__list li figcaption {
+  color: var(--white);
+  margin-top: 12px;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.swiper-button-prev {
+  color: var(--white);
+}
+
+.swiper-button-next {
+  color: var(--white);
+  position: absolute;
+  right: 100px;
+}
