@@ -1,0 +1,16 @@
+<svg width="118" height="18" viewBox="0 0 118 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Device=Desktop">
+<g id="Icon / pagination">
+<g id="Group 1">
+<rect id="Rectangle 2251" x="2" y="1" width="5" height="16" fill="white"/>
+<rect id="Rectangle 2252" x="11" y="1" width="5" height="16" fill="white"/>
+</g>
+</g>
+<g id="Frame 18">
+<circle id="swiper_pagination_bullet" cx="40" cy="9" r="6" fill="#898989"/>
+<circle id="swiper_pagination_bullet_2" cx="64" cy="9" r="6" fill="white"/>
+<circle id="swiper_pagination_bullet_3" cx="88" cy="9" r="6" fill="#898989"/>
+<circle id="swiper_pagination_bullet_4" cx="112" cy="9" r="6" fill="#898989"/>
+</g>
+</g>
+</svg>
