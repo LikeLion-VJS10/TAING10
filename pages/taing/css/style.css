@@ -36,8 +36,10 @@
   gap: 12px;
 }
 
-.taing-must__list li {
-  
+.taing-must__list li:hover {
+  transform: translateY(-12px);
+  transition: all 0.5s;
+
 }
 
 .taing-must__list figure {
@@ -45,11 +47,9 @@
   width: 100%;
 }
 
-
 .taing-must__list a {
   text-decoration-line: none;
 }
-
 
 .taing-must__list img {
   width: 100%;
