@@ -155,20 +155,42 @@ body {
 
 /* 온보딩 오리지널섹션 시작 */
 .onboardingOriginal {
-  background-color: blueviolet;
-}
-
-/* 
-.onboardingOriginal .contents__list {
-  display: flex;
-} */
-/* .onboardingHero,
-.onboardingOriginal {
+  /* display:block 안해도 되나? */
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: space-around;
-} */
+  /* justify-content: space-between; */
+  width: 100vw;
+  height: 919px;
+  /* background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0)); */
+  position: relative;
+}
+
+.onboardingOriginal .info {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 392px;
+  height: 176px;
+  /* background-color: blue; */
+  /* 자식요소의 좌측상단을 부모요소의 중앙에 */
+  /* top: 50%;
+  left: 50%; */
+  /* 자식요소의 50%만큼 마이너스 축으로 이동시키기 */
+  /* transform: translate(-50%, -50%); */
+  /* background-color: pink; */
+  text-align: center;
+  position: absolute;
+  top: 180px;
+}
+.contents__list {
+  display: flex;
+  flex-flow: row, nowrap;
+  position: absolute;
+  bottom: 0px;
+  /* background-color: blue; */
+}
 
 /* 텍스트 사이즈 */
 .info__mainText {
