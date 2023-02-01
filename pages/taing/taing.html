@@ -4,24 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/04c1ea1f1c.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      as="style"
-      crossorigin
-      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/04c1ea1f1c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../../client/css/theme.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -83,111 +69,94 @@
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
-      </section>
-      
+      </section> -->
+
       <script>
-        const swiper = new Swiper(".mySwiper", {
+        const swiper = new Swiper('.mySwiper', {
           slidesPerView: 6,
           loop: true,
           navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
           },
           keyboard: {
-          enabled: true,
-          onlyInViewport: false,
+            enabled: true,
+            onlyInViewport: false
           },
           autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
+            delay: 2500,
+            disableOnInteraction: false
           }
-        });
+        })
       </script>
-    
+
+      <!-- Quick VOD 영역 -->
       <section class="contents-list">
         <div class="swiper inner">
           <h2 class="title">Quick VOD</h2>
           <ul class="swiper-wrapper">
-            <li class="swiper-slide badge">
+            <li class="swiper-slide Quick-badge">
               <figure>
                 <a href="/">
-                  <img
-                    src="../../client/assets/img/desktop/live/img_frame-8.png"
-                    alt="JTBC"
-                  />
+                  <img src="../../client/assets/img/desktop/live/img_frame-8.png" alt="JTBC" />
                 </a>
                 <figcaption>
-                  <p class="img-title">JTBC 뉴스룸</p>
+                  <p class="slide-title">JTBC 뉴스룸</p>
                   <p class="round">0화</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="swiper-slide badge">
+            <li class="swiper-slide Quick-badge">
               <figure>
                 <a href="/">
-                  <img
-                    src="../../client/assets/img/desktop/live/img_frame-9.png"
-                    alt="휴먼다큐"
-                  />
+                  <img src="../../client/assets/img/desktop/live/img_frame-9.png" alt="휴먼다큐" />
                 </a>
                 <figcaption>
-                  <p class="img-title">휴먼다큐 &lt;나는 살기로 했다&gt;</p>
+                  <p class="slide-title">휴먼다큐 &lt;나는 살기로 했다&gt;</p>
                   <p class="round">10화</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="swiper-slide badge">
+            <li class="swiper-slide Quick-badge">
               <figure>
                 <a href="/">
-                  <img
-                    src="../../client/assets/img/desktop/live/img_frame-10.png"
-                    alt="건강면세점"
-                  />
+                  <img src="../../client/assets/img/desktop/live/img_frame-10.png" alt="건강면세점" />
                 </a>
                 <figcaption>
-                  <p class="img-title">건강면세점</p>
+                  <p class="slide-title">건강면세점</p>
                   <p class="round">130화</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="swiper-slide badge">
+            <li class="swiper-slide Quick-badge">
               <figure>
                 <a href="/">
-                  <img
-                    src="../../client/assets/img/desktop/live/img_frame-11.png"
-                    alt="차이나는 클라스"
-                  />
+                  <img src="../../client/assets/img/desktop/live/img_frame-11.png" alt="차이나는 클라스" />
                 </a>
                 <figcaption>
-                  <p class="img-title">차이나는 클라스</p>
+                  <p class="slide-title">차이나는 클라스</p>
                   <p class="round">254화</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="swiper-slide badge">
+            <li class="swiper-slide Quick-badge">
               <figure>
                 <a href="/">
-                  <img
-                    src="../../client/assets/img/desktop/live/img_frame-12.png"
-                    alt="알맹이"
-                  />
+                  <img src="../../client/assets/img/desktop/live/img_frame-12.png" alt="알맹이" />
                 </a>
                 <figcaption>
-                  <p class="img-title">알맹이</p>
+                  <p class="slide-title">알맹이</p>
                   <p class="round">208화</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="swiper-slide badge">
+            <li class="swiper-slide Quick-badge">
               <figure>
                 <a href="/">
-                  <img
-                    src="../../client/assets/img/desktop/live/img_frame-13.png"
-                    alt="엄마의 봄날"
-                  />
+                  <img src="../../client/assets/img/desktop/live/img_frame-13.png" alt="엄마의 봄날" />
                 </a>
                 <figcaption>
-                  <p class="img-title">엄마의 봄날</p>
+                  <p class="slide-title">엄마의 봄날</p>
                   <p class="round">380화</p>
                 </figcaption>
               </figure>
@@ -198,99 +167,226 @@
         </div>
       </section>
 
+      <!-- 인기 LIVE채널 영역 -->
       <section class="contents-list">
         <div class="swiper inner">
           <h2 class="title">인기 LIVE 채널</h2>
           <ul class="swiper-wrapper">
-            <li class="swiper-slide">
+            <li class="swiper-slide Live-progress-bar short-bar">
               <figure>
                 <a href="/">
-                  <img
-                    src="../../client/assets/img/desktop/live/img_frame-22.png"
-                    alt="JTBC"
-                  />
+                  <img src="../../client/assets/img/desktop/live/img_frame-22.png" alt="JTBC" />
                 </a>
-                <figcaption>
-                  <p class="img-title">JTBC</p>
-                  <p class="sub-title">JTBC 뉴스룸</p>
-                  <p class="viewer">27.9%</p>
+                <figcaption class="information">
+                  <svg width="48" height="60" viewBox="0 0 48 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="ranking" clip-path="url(#clip0_592_8053)">
+                      <path
+                        id="1"
+                        d="M3.85303 56.8895L35.0004 57.2972L36.3709 49.0808L26.6417 48.9534L33.8054 6.00676L26.1761 5.90688C22.5408 7.9352 18.7523 9.20034 13.4115 10.0992L12.3635 16.3824L21.7427 16.5052L16.3526 48.8187L5.22358 48.673L3.85303 56.8895Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_592_8053">
+                        <rect width="48" height="60" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <div class="slide-info">
+                    <p class="slide-title">JTBC</p>
+                    <p class="sub-title">JTBC 뉴스룸</p>
+                    <p class="viewer">27.9%</p>
+                  </div>
                 </figcaption>
               </figure>
             </li>
-            <li class="swiper-slide">
+            <li class="swiper-slide Live-progress-bar long-bar">
               <figure>
                 <a href="/">
-                  <img
-                    src="../../client/assets/img/desktop/live/img_frame-23.png"
-                    alt="휴먼다큐"
-                  />
+                  <img src="../../client/assets/img/desktop/live/img_frame-23.png" alt="tvN" />
                 </a>
-                <figcaption>
-                  <p class="img-title">tvN</p>
-                  <p class="sub-title">줄 서는 식당 43회</p>
-                  <p class="viewer">26.3%</p>
+                <figcaption class="information">
+                  <svg width="48" height="60" viewBox="0 0 48 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="ranking" clip-path="url(#clip0_592_8433)">
+                      <path
+                        id="2"
+                        d="M1.05327 56.8528L35.7703 57.3073L37.1984 48.7456L25.9994 48.599C23.5496 48.5669 20.0623 48.8673 17.4265 49.1095C28.3959 40.1192 37.8937 30.2792 39.4485 20.9579C41.0379 11.4296 35.4835 5.19836 25.7543 5.071C18.6849 4.97846 13.5462 7.60986 7.94583 12.5879L12.694 18.1858C15.8375 15.3207 19.2503 12.9435 23.1 12.9939C28.0695 13.0589 30.2695 16.2708 29.4173 21.3802C28.1043 29.2514 18.2441 38.7407 2.02071 51.053L1.05327 56.8528Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_592_8433">
+                        <rect width="48" height="60" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <div class="slide-info">
+                    <p class="slide-title">tvN</p>
+                    <p class="sub-title">줄 서는 식당 43회</p>
+                    <p class="viewer">26.3%</p>
+                  </div>
                 </figcaption>
               </figure>
             </li>
-            <li class="swiper-slide">
+            <li class="swiper-slide Live-progress-bar middle-bar">
               <figure>
                 <a href="/">
-                  <img
-                    src="../../client/assets/img/desktop/live/img_frame-24.png"
-                    alt="건강면세점"
-                  />
+                  <img src="../../client/assets/img/desktop/live/img_frame-24.png" alt="YTN" />
                 </a>
-                <figcaption>
-                  <p class="img-title">YTN</p>
-                  <p class="sub-title">뉴스가 있는 저녁</p>
-                  <p class="viewer">9%</p>
+                <figcaption class="information">
+                  <svg width="48" height="60" viewBox="0 0 48 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="ranking" clip-path="url(#clip0_594_8435)">
+                      <path
+                        id="3"
+                        d="M17.0606 58.0311C26.9998 58.1613 36.2274 52.8847 37.7938 43.4944C38.9224 36.7279 35.1454 32.4575 29.5423 30.7234L29.5999 30.3782C35.4749 28.3792 39.2342 24.3458 40.144 18.8911C41.6067 10.1223 35.6235 5.2002 25.6143 5.06917C19.5949 4.99037 14.2222 7.34192 9.10913 11.0808L13.3106 17.4327C16.8626 14.6422 20.1602 12.9554 23.8699 13.004C28.2795 13.0617 30.3962 15.5113 29.7282 19.516C28.9681 24.073 25.3586 27.2088 15.8394 27.0842L14.6186 34.4031C25.8876 34.5506 28.3791 37.6971 27.5383 42.7374C26.7782 47.2945 22.7708 49.8715 17.4513 49.8018C12.7617 49.7404 9.44358 47.3443 6.85908 44.335L0.888402 50.6922C3.83706 54.8826 8.87135 57.9239 17.0606 58.0311Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_594_8435">
+                        <rect width="48" height="60" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <div class="slide-info">
+                    <p class="slide-title">YTN</p>
+                    <p class="sub-title">뉴스가 있는 저녁</p>
+                    <p class="viewer">9%</p>
+                  </div>
                 </figcaption>
               </figure>
             </li>
-            <li class="swiper-slide">
+            <li class="swiper-slide Live-progress-bar long-bar">
               <figure>
                 <a href="/">
-                  <img
-                    src="../../client/assets/img/desktop/live/img_frame-25.png"
-                    alt="차이나는 클라스"
-                  />
+                  <img src="../../client/assets/img/desktop/live/img_frame-25.png" alt="JTBC2" />
                 </a>
-                <figcaption>
-                  <p class="img-title">JTBC2</p>
-                  <p class="sub-title">재벌집 막내아들 5화</p>
-                  <p class="viewer">6.2%</p>
+                <figcaption class="information">
+                  <svg width="48" height="60" viewBox="0 0 48 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="ranking" clip-path="url(#clip0_594_8437)">
+                      <path
+                        id="4"
+                        d="M21.6315 57.1222L31.2207 57.2478L39.7434 6.15369L27.3545 5.99151L2.94641 36.6722L1.78318 43.6458L39.5799 44.1406L40.8814 36.3384L13.0938 35.9746L23.1922 23.3746C25.1228 20.632 26.9949 17.8195 28.7855 15.075L29.0654 15.0787C28.4187 18.1149 27.3671 22.7373 26.8718 25.7063L21.6315 57.1222Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_594_8437">
+                        <rect width="48" height="60" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <div class="slide-info">
+                    <p class="slide-title">JTBC2</p>
+                    <p class="sub-title">재벌집 막내아들 5화</p>
+                    <p class="viewer">6.2%</p>
+                  </div>
                 </figcaption>
               </figure>
             </li>
-            <li class="swiper-slide">
+            <li class="swiper-slide Live-progress-bar middle-bar">
               <figure>
                 <a href="/">
-                  <img
-                    src="../../client/assets/img/desktop/live/img_frame-26.png"
-                    alt="알맹이"
-                  />
+                  <img src="../../client/assets/img/desktop/live/img_frame-26.png" alt="연합뉴스 TV" />
                 </a>
-                <figcaption>
-                  <p class="img-title">연합뉴스 TV</p>
-                  <p class="sub-title">뉴스프라임</p>
-                  <p class="viewer">4.6%</p>
+                <figcaption class="information">
+                  <svg width="48" height="60" viewBox="0 0 48 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="ranking" clip-path="url(#clip0_594_8439)">
+                      <path
+                        id="5"
+                        d="M17.2706 58.0339C26.7898 58.1585 36.4932 51.7118 38.382 40.3883C40.2478 29.2028 33.8092 24.0672 25.1299 23.9536C22.7501 23.9224 20.8497 24.3819 18.6701 25.2529L21.4582 14.4255L40.2866 14.672L41.7032 6.17934L13.9856 5.8165L8.38107 30.5848L12.6339 33.6851C15.9661 31.7912 17.7727 31.0537 20.8524 31.094C26.032 31.1618 28.9788 34.5219 27.9884 40.4598C26.9748 46.5359 22.7008 49.8706 17.2413 49.7991C12.4817 49.7368 9.1636 47.3407 6.76605 44.4722L0.865367 50.8303C4.15159 54.6791 9.08133 57.9267 17.2706 58.0339Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_594_8439">
+                        <rect width="48" height="60" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <div class="slide-info">
+                    <p class="slide-title">연합뉴스 TV</p>
+                    <p class="sub-title">뉴스프라임</p>
+                    <p class="viewer">4.6%</p>
+                  </div>
                 </figcaption>
               </figure>
             </li>
-            <li class="swiper-slide">
+            <li class="swiper-slide Live-progress-bar short-bar">
               <figure>
                 <a href="/">
-                  <img
-                    src="../../client/assets/img/desktop/live/img_frame-27.png"
-                    alt="엄마의 봄날"
-                  />
+                  <img src="../../client/assets/img/desktop/live/img_frame-27.png" alt="투니버스" />
                 </a>
-                <figcaption>
-                  <p class="img-title">투니버스</p>
-                  <p class="sub-title">명탐정코난 150화</p>
-                  <p class="viewer">2.5%</p>
+                <figcaption class="information">
+                  <svg width="48" height="60" viewBox="0 0 48 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="ranking" clip-path="url(#clip0_594_8441)">
+                      <path
+                        id="6"
+                        d="M20.0004 58.0696C28.8196 58.1851 37.4031 51.7237 39.1537 41.2287C40.985 30.2504 35.5963 25.1285 26.917 25.0149C23.4173 24.9691 18.2192 27.1153 14.856 30.8771L14.1242 37.7872C17.4165 33.6093 20.9596 32.1334 23.8294 32.1709C28.239 32.2287 30.7181 35.029 29.7045 41.1051C28.668 47.3192 24.9885 50.4541 21.1388 50.4037C16.0292 50.3368 12.9273 45.3832 15.1386 32.1264C17.5111 17.9029 23.2754 13.2038 29.5749 13.2862C32.5146 13.3247 35.4579 15.024 36.8738 17.0492L43.4053 11.1146C40.7969 7.8282 36.6034 5.21302 30.3039 5.13056C19.8048 4.99312 8.85664 13.015 5.68941 32.0027C2.68343 50.0237 10.2012 57.9414 20.0004 58.0696Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_594_8441">
+                        <rect width="48" height="60" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <div class="slide-info">
+                    <p class="slide-title">투니버스</p>
+                    <p class="sub-title">명탐정코난 150화</p>
+                    <p class="viewer">2.5%</p>
+                  </div>
                 </figcaption>
               </figure>
+            </li>
+          </ul>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+
+      <!-- TAING SPORTS 경기 생중계 영역 -->
+      <section class="contents-list">
+        <a href="/">
+          <img src="/client/assets/img/desktop/live/img_frame-28.png" alt="TAING SPORTS 경기 생중계 UFC, 월드복싱 슈퍼매치, 분데스리가, AFC 챔피언스리그" />
+        </a>
+      </section>
+
+      <!-- 이벤트 영역 -->
+      <section class="contents-list">
+        <div class="swiper inner">
+          <h2 class="title">이벤트</h2>
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="/">
+                <img src="../../client/assets/img/desktop/live/img_frame-29.png" alt="극장판 신비아파트 차원도깨비와 7개의 세계 극장 개봉 기념! 예몌권 증정 이벤트" />
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="/">
+                <img src="../../client/assets/img/desktop/live/img_frame-30.png" alt="재벌집 막내아들 시청하고 1일 재벌 체험하세요!" />
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="/">
+                <img src="../../client/assets/img/desktop/live/img_frame-31.png" alt="환승연애 시즌2의 진한 여운을 잇는! 과몰입 도파민 충전 이벤트" />
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="/">
+                <img src="../../client/assets/img/desktop/live/img_frame-32.png" alt="슈룹 지금 시청하고 공식 우산굿즈 받아가세요" />
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="/">
+                <img src="../../client/assets/img/desktop/live/img_frame-33.png" alt="대한민국 대표 디저트 메이커를 찾습니다!" />
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="/">
+                <img src="../../client/assets/img/desktop/live/img_frame-34.png" alt="소설원작 렛미인 지금 감상하고, 원작도서 세트 받자!" />
+              </a>
             </li>
           </ul>
           <div class="swiper-button-next"></div>

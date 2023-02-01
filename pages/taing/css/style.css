@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .taing-must {
   background: black;
 }
@@ -11,7 +15,7 @@
 .taing-must__title {
   font-size: 1.7rem;
   font-style: bold;
-  padding: 0 0 12px;
+  padding: 0 0 0.75rem;
   color: white;
   height: auto;
   margin: 0;
@@ -50,7 +54,7 @@
 
 .taing-must__list li figcaption {
   color: var(--white);
-  margin-top: 12px;
+  margin-top: 0.75rem;
   font-size: 1.2rem;
   width: 100%;
 }
@@ -66,14 +70,14 @@
 }
 
 .title {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 700;
-  margin-bottom: 12px;
-  color: #fff;
+  margin-bottom: 0.75rem;
+  color: var(--white);
 }
 
 .contents-list {
-  padding: 0 70px 36px;
+  padding: 0 4.4rem 2.25rem;
   background-color: var(--black);
 }
 
@@ -85,23 +89,54 @@
 }
 
 .swiper-slide {
+}
+
+.swiper-slide:hover {
+  transform: translateY(-10px);
+  transition: all 0.5s;
+}
+
+.Quick-badge::before {
+  position: absolute;
+  content: url(/client/assets/svg/live/vod.svg);
+  margin: 0.31rem 0 0 0.31rem;
+}
+
+figure {
   width: 100%;
 }
 
-.badge::before {
+.Live-progress-bar::after {
   position: absolute;
-  content: url(/client/assets/svg/live/vod.svg);
-  margin: 5px 0 0 5px;
+  bottom: 85px;
+}
+
+.long-bar::after {
+  content: url(/client/assets/svg/live/progress_bar.svg);
+}
+
+.middle-bar::after {
+  content: url(/client/assets/svg/taing-progress-bar/middle-bar.svg);
+}
+
+.short-bar::after {
+  content: url(/client/assets/svg/taing-progress-bar/short-bar.svg);
 }
 
 figcaption {
-  white-space: nowrap;
   line-height: 1.5;
 }
 
-figcaption .img-title {
+.information {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+}
+
+.slide-title {
   font-size: 1.2rem;
-  margin: 8px 0 4px;
+  margin-top: 0.5rem;
   color: var(--gray-200);
 }
 
@@ -120,7 +155,6 @@ figcaption .img-title {
   position: absolute;
   width: 3.75rem;
   height: 3.75rem;
-  box-shadow: 0 0 5px #555;
   border-radius: 50px;
   opacity: 0.5;
   color: var(--gray-400);
