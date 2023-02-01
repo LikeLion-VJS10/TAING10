@@ -22,17 +22,122 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="../../client/css/theme.css" />
+    <link rel="stylesheet" href="./css/theme.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-    <script src="../../client/js/main.js" type="module"></script>
+    <script src="./js/main.js" type="module"></script>
 
     <title>Document</title>
   </head>
-
+  <!-- 이 아래로부터 마크업작업 시작합니다. -->
   <body>
-    <header>헤더</header>
-    <main>메인</main>
+    <header class="appHeader">
+      <h1 class="logo">
+        <!-- aria-label 이미지를 사용해 시작적 표현을 할 경우 대체 텍스트 역할. alt랑 다른게 뭐지. 정확히 어케 동작하는지 멀겠음. 이건 탑재되어있는거임. -->
+        <a href="./onboarding.html" class="logo__link" aria-label="TAING">
+          <img src="../../client/assets/svg/header/logo.svg" />
+        </a>
+      </h1>
+      <nav class="appNavigation menu">
+        <!-- a11yHidden 정확한 용법이 머였더라...스크린리더에는 읽히고 화면상에서는 아예 감추는것? css에서 따로 줘야됨.직접만든 로컬함수-->
+        <h2 class="a11yHidden">메인 메뉴</h2>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <!-- 프리티어 작동 안되니깐 불편...? -->
+            <a href="/" class="menu__link"
+              ><img src="../../client/assets/svg/header/live.svg" />실시간</a
+            >
+          </li>
+          <li class="menu__item">
+            <a href="/" class="menu__link">TV프로그램</a>
+          </li>
+          <li class="menu__item">
+            <a href="/" class="menu__link">영화</a>
+          </li>
+          <li class="menu__item">
+            <a href="/" class="menu__link"
+              ><img
+                src="../../client/assets/svg/header/praramount.svg"
+                alt="파라마운트 픽쳐스"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- 이 아이템들 a 해야하는지 btn 해야하는지 헷갈리는데 일단 a로 함 -->
+      <ul class="memberOnly munu__list">
+        <li class="menu__item">
+          <a href="/" class="menu__link"
+            ><img
+              src="../../client/assets/svg/header/search.svg"
+              alt="검색 및 실시간 인기검색어"
+          /></a>
+        </li>
+        <li class="menu__item">
+          <a ref="/" class="menu__link"
+            ><img
+              src="../../client/assets/svg/header/profile.svg"
+              alt="로그아웃 하기"
+          /></a>
+        </li>
+      </ul>
+    </header>
+    <!-- 온보딩페이지의 히어로로 표기 -->
+    <div class="onboarding hero">
+      <div class="info">
+        <h2 class="info__mainText">
+          티빙 오리지널 콘텐츠, 방송, 영화, 해외시리즈까지! 재미를
+          플레이해보세요.
+        </h2>
+        <p class="info__subText">
+          간편하게 가입하고, 원하실 때 해지할 수 있어요.
+        </p>
+        <!-- 버튼처럼 생겼지만 이동하니까 <a> -->
+        <a ref="/" class="info__login"
+          ><img src="../../client/assets/svg/landing/simbol.svg" />
+          <p>새로워진 티빙을 만나보세요!</p>
+        </a>
+      </div>
+    </div>
+    <section class="onboarding original">
+      <div class="info">
+        <h2 class="info__mainText">티빙에만 있는 재미</h2>
+        <p class="info__subText">오리지널 콘텐츠를 만나보세요!</p>
+        <p class="info__smallText">차별화된 웰메이드 오리지널 콘텐츠</p>
+      </div>
+      <!-- 이거 왜 아티클이지?? -->
+      <div class="contents">
+        <ul class="contents__list">
+          <li class="contents__item">
+            <img
+              src="../../client/assets/img/desktop/landing/러브캐처 1.png"
+              alt="청춘남녀들이 열대의 섬을 배경으로 모여있다"
+            />
+          </li>
+          <li class="contents__item">
+            <img
+              src="../../client/assets/img/desktop/landing/보물찾기 1.png"
+              alt="수상하게 생긴 구조물을 중심으로 각양각색의 사람들이 모여있다. 긴장감이 맴도는 분위기."
+            />
+          </li>
+          <li class="contents__item">
+            <img
+              src="../../client/assets/img/desktop/landing/몸값 1.png"
+              alt="콘크리트 잔해가 여기저기 떨어진 밀폐된 공간 안에 남루한 차림의 세 사람이 모여있다. 긴장감이 맴도는 분위기."
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <h2>내가 찾던 재미</h2>
+        <p>보고 싶은 콘텐츠를 발견하세요!</p>
+        <p>
+          최신, 인기 TV프로그램, 영화, 해외시리즈, 파라마운트+ 오리지널 및 독점
+        </p>
+      </div>
+    </section>
   </body>
 </html>
