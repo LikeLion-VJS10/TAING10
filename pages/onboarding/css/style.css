@@ -1,25 +1,210 @@
+/* 컬러 변수가 제대로 동작하지 않는 문제 해결 (@import로 가져와줘야함) */
+@import url(../../../client/css/theme.css);
+@import url(./theme_suyeong.css);
+@import url(./a11yHidden.css);
+
+/* 폰트사이즈, 컬러, 배경컬러 설정 */
+html {
+  font-size: 16px;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+body,
+body::before,
+body::after,
+body *,
+body *::before,
+body *::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* 132/16(평균 구하기: shift, alt, m) */
+
+/* 클래스 선택자인거 같은데 왜 들어가는건지 멀겠음 */
+/* [class] {
+  margin: 0;
+} */
+
 body {
-  background-color: blueviolet;
+  background: no-repeat url(../../../client/assets/img/desktop/landing/backgorund.png);
+  background-size: cover;
+}
+/* 헤더 시작 */
+.appHeader {
+  position: relative;
+  display: flex;
+  /* flex-flow 속성은 flex-direction과 flex-wrap을 합쳐놓은 약식 속성 */
+  flex-flow: row nowrap;
+  /* 수직 방향에서 중앙정렬 */
+  align-items: center;
+  justify-content: space-between;
+  /* 높이는 고정 */
+  height: 100px;
+  /* 너비는 뷰포트에 따라 변화되게 */
+  width: 100vw;
+  padding: 29px;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
-.logo__link {
+.appNavMenu .menu__list {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  right: 320px;
+  width: 506px;
+  /* background-color: yellow; */
+}
+
+.appHeader .logo {
+  position: relative;
+  right: -41px;
+}
+
+/* **실시간 버튼 해결해야됨!** */
+.menu__item__liveBtn {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background-color: blue;
+}
+
+.memberOnly .menu__list {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: blue; */
+  left: -41px;
+  width: 120px;
+}
+
+.appHeader .profile {
+  position: relative;
+  left: 70px;
+}
+/* 헤더 끝 */
+
+/* 온보딩 메인페이지 시작 */
+.onboardingMain {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+}
+/* 온보딩 메인페이지 끝 */
+
+/* 온보딩 히어로섹션 시작 */
+.onboardingHero {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 980px;
+  /* background-color: yellow; */
+  position: relative;
 }
 
-
-
-/* 비율, 배율 찾아보기 */
-/* rem, em / 연결 확인함*/
-html {font-size : 16px}
-
+.onboardingHero .info {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 562px;
+  height: 416px;
+  position: absolute;
+  /* 자식요소의 좌측상단을 부모요소의 중앙에 */
+  top: 50%;
+  left: 50%;
+  /* 자식요소의 50%만큼 마이너스 축으로 이동시키기 */
+  transform: translate(-50%, -50%);
+  /* background-color: pink; */
+  text-align: center;
+}
 
 .info__login {
-width: 100;
-height: 100;
-color: yellow;
-background:  ;
+  /* 아 인라인블록은 안에 내용이 있을때만 반영되어서 display:block으로 해주는거군 */
+  display: block;
+  background-color: var(--brand-red-2);
+  border-radius: var(--radius-m);
+  width: 506px;
+  height: 80px;
+  font-size: var(--label-xl);
 }
 
+.info__login img {
+  position: relative;
+  right: 47px;
+}
+/* 이거 고쳐야됨 */
+.info__login p {
+  display: inline;
+  text-align: center;
+  vertical-align: text-bottom;
+  background-color: blue;
+}
+/* 온보딩 히어로섹션 끝 */
 
+/* 온보딩 오리지널섹션 시작 */
+.onboardingOriginal {
+  background-color: blueviolet;
+}
+/* 
+.onboardingOriginal .contents__list {
+  display: flex;
+} */
+/* .onboardingHero,
+.onboardingOriginal {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+} */
+
+/* 텍스트 사이즈 */
+.info__mainText {
+  font-size: var(--heading-xxxl);
+  font-weight: bold;
+  line-height: 150%;
+}
+
+.info__subText {
+  font-size: var(--label-xl);
+  font-weight: semibold;
+  color: var(--gray-200);
+}
+
+.info__smallText {
+  font-size: var(--paragraph-l);
+  font-weight: regular;
+  color: var(--gray-200);
+}
+
+/* 
+모바일 디바이스(Mobile Device 320px기준)
+@media (min-width: 320px) and (max-width: 767px) {
+  .appHeader {
+    background: blue;
+  }
+}
+
+태블릿 디바이스(Medium Size 768px기준)
+@media (min-width: 768px) and (max-width: 1919px) {
+  .appHeader {
+    background: tomato;
+  }
+}
+
+데스크탑 디바이스(Desktop Size 1920px기준)
+@media (min-width: 1920px) {
+  .appHeader {
+    background-color: var(--black);
+  } */
