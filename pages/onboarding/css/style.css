@@ -32,7 +32,7 @@ a {
 
 body {
   background: no-repeat url(../../../client/assets/img/desktop/landing/backgorund.png);
-  background-size: cover;
+  background-size: 100vw;
 }
 /* 헤더 시작 */
 .appHeader {
@@ -157,6 +157,7 @@ body {
 .onboardingOriginal {
   background-color: blueviolet;
 }
+
 /* 
 .onboardingOriginal .contents__list {
   display: flex;
