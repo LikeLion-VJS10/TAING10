@@ -1,3 +1,21 @@
+html {
+  font-size: calc(6px + 0.5vw);
+}
+
+h2 {
+  font-size: 1.7rem;
+  padding: 15px 0 12px;
+}
+
+figcaption {
+  color: var(--gray-100);
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 /** 공통 영역 Css **/
 .overflow__hidden {
   overflow: hidden;
@@ -10,15 +28,11 @@
 
 .taing-must__container {
   position: relative;
-  padding: 10px;
   left: 50px;
 }
 
 .taing-must__title {
-  font-size: 1.7rem;
   font-style: bold;
-  padding: 0 0 12px;
-  color: white;
   height: auto;
   margin: 0;
 }
@@ -56,13 +70,6 @@
   width: 100%;
 }
 
-.taing-must__list li figcaption {
-  color: var(--white);
-  margin-top: 12px;
-  font-size: 1.2rem;
-  width: 100%;
-}
-
 /** 실시간 인기 프로그램 css **/
 .taing-live-rank {
   background: black;
@@ -70,14 +77,11 @@
 
 .taing-live-rank__container {
   position: relative;
-  padding: 10px;
   left: 50px;
 }
 
 .taing-live-rank__title {
-  font-size: 1.7rem;
   font-style: bold;
-  padding: 0 0 12px;
   color: white;
   height: auto;
   margin: 0;
@@ -116,13 +120,6 @@
   width: 100%;
 }
 
-.taing-live-rank__list li figcaption {
-  color: var(--white);
-  margin-top: 12px;
-  font-size: 1.2rem;
-  width: 100%;
-}
-
 /** 오직 티빙에만 있어요 css **/
 .taing-only-tving {
   background: black;
@@ -130,14 +127,11 @@
 
 .taing-only-tving__container {
   position: relative;
-  padding: 10px;
   left: 50px;
 }
 
 .taing-only-tving__title {
-  font-size: 1.7rem;
   font-style: bold;
-  padding: 0 0 12px;
   color: white;
   height: auto;
   margin: 0;
@@ -173,13 +167,6 @@
 }
 
 .taing-only-tving__list img {
-  width: 100%;
-}
-
-.taing-only-tving__list li figcaption {
-  color: var(--white);
-  margin-top: 12px;
-  font-size: 1.2rem;
   width: 100%;
 }
 
