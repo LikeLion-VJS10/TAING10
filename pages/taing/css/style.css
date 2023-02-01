@@ -1,15 +1,18 @@
+/** 공통 영역 Css **/
+.overflow__hidden {
+  overflow: hidden;
+}
 
+/** 티빙에서 꼭 봐야하는 콘텐츠 영역 css **/
 .taing-must {
   background: black;
 }
-
 
 .taing-must__container {
   position: relative;
   padding: 10px;
   left: 50px;
 }
-
 
 .taing-must__title {
   font-size: 1.7rem;
@@ -27,7 +30,6 @@
 .taing-must__container {
   display: flex;
   flex-direction: column;
-  
 }
 
 .taing-must__list {
@@ -39,7 +41,6 @@
 .taing-must__list li:hover {
   transform: translateY(-12px);
   transition: all 0.5s;
-
 }
 
 .taing-must__list figure {
@@ -62,6 +63,127 @@
   width: 100%;
 }
 
+/** 실시간 인기 프로그램 css **/
+.taing-live-rank {
+  background: black;
+}
+
+.taing-live-rank__container {
+  position: relative;
+  padding: 10px;
+  left: 50px;
+}
+
+.taing-live-rank__title {
+  font-size: 1.7rem;
+  font-style: bold;
+  padding: 0 0 12px;
+  color: white;
+  height: auto;
+  margin: 0;
+}
+
+.taing-live-rank {
+  width: 100%;
+}
+
+.taing-live-rank__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.taing-live-rank__list {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.taing-live-rank__list li:hover {
+  transform: translateY(-12px);
+  transition: all 0.5s;
+}
+
+.taing-live-rank__list figure {
+  border-radius: 4px;
+  width: 100%;
+}
+
+.taing-live-rank__list a {
+  text-decoration-line: none;
+}
+
+.taing-live-rank__list img {
+  width: 100%;
+}
+
+.taing-live-rank__list li figcaption {
+  color: var(--white);
+  margin-top: 12px;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+/** 오직 티빙에만 있어요 css **/
+.taing-only-tving {
+  background: black;
+}
+
+.taing-only-tving__container {
+  position: relative;
+  padding: 10px;
+  left: 50px;
+}
+
+.taing-only-tving__title {
+  font-size: 1.7rem;
+  font-style: bold;
+  padding: 0 0 12px;
+  color: white;
+  height: auto;
+  margin: 0;
+}
+
+.taing-only-tving {
+  width: 100%;
+}
+
+.taing-only-tving__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.taing-only-tving__list {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.taing-only-tving__list li:hover {
+  transform: translateY(-12px);
+  transition: all 0.5s;
+}
+
+.taing-only-tving__list figure {
+  border-radius: 4px;
+  width: 100%;
+}
+
+.taing-only-tving__list a {
+  text-decoration-line: none;
+}
+
+.taing-only-tving__list img {
+  width: 100%;
+}
+
+.taing-only-tving__list li figcaption {
+  color: var(--white);
+  margin-top: 12px;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+/** 공통 버튼 부분 **/
 .swiper-button-prev {
   color: var(--white);
 }
