@@ -1,44 +1,74 @@
 @import url(./theme.css);
 
-body{
+/** 공통사항 **/
+
+body {
   background-color: var(--black);
   color: var(--white);
-  font-family: Pretendard ;
+  font-family: Pretendard;
   font-size: 16px;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
-a:hover, a:active{
+a:hover,
+a:active {
   text-decoration: none;
 }
 
-.clickable{
+html {
+  font-size: calc(6px + 0.5vw);
+}
+
+h2 {
+  font-size: 1.7rem;
+  padding: 15px 0 12px;
+}
+
+figcaption {
+  color: var(--gray-100);
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+
+/** ---------뽑아스는거------------ **/
+
+.overflow__hidden {
+  overflow: hidden;
+}
+
+.clickable {
   z-index: 10;
 }
 
+/** ---------------------------- **/
+
 /* ------------ hero start -------------- */
 
-.hero--wrapper .swiper{
+.hero--wrapper .swiper {
   position: relative;
   width: 100%;
 }
 
-.pannel{
+.pannel {
   position: absolute;
   top: 50%;
   width: 100%;
   height: 30%;
 }
-.controler{
+.controler {
   position: absolute;
   top: 0;
   display: flex;
   width: 100%;
 }
-.contents{
+.contents {
   box-sizing: border-box;
   position: absolute;
   bottom: 0;
@@ -48,7 +78,7 @@ a:hover, a:active{
   /* z-index: 9; */
   padding: 0 4rem;
 }
-.detail--button{
+.detail--button {
   width: 10rem;
   height: 4rem;
   line-height: 4rem;
@@ -57,15 +87,15 @@ a:hover, a:active{
   color: var(--white);
   border-radius: 10px;
 }
-.detail--button>a{
+.detail--button > a {
   display: block;
 }
 
-.contents .swiper-pagination{
+.contents .swiper-pagination {
   position: relative;
   top: 8px;
 }
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   background-color: var(--white);
 }
 
@@ -95,41 +125,17 @@ a:hover, a:active{
   object-fit: cover;
 }
 
-.hero--wrapper .swiper-button-next::after, .swiper-button-prev::after{
+.hero--wrapper .swiper-button-next::after,
+.swiper-button-prev::after {
   color: var(--gray-400);
 }
 
 /* --------------- hero End --------------- */
-html {
-  font-size: calc(6px + 0.5vw);
-}
-
-h2 {
-  font-size: 1.7rem;
-  padding: 15px 0 12px;
-}
-
-figcaption {
-  color: var(--gray-100);
-  font-size: 1.2rem;
-  margin-top: 0.8rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-/** 공통 영역 Css **/
-.overflow__hidden {
-  overflow: hidden;
-}
 
 /** 티빙에서 꼭 봐야하는 콘텐츠 영역 css **/
-body {
-  overflow-x: hidden;
-}
 
 .taing-must {
-  background: black;
+  background: var(--black);
 }
 
 .taing-must__container {
@@ -278,7 +284,7 @@ body {
   width: 100%;
 }
 
-/** 공통 버튼 부분 **/
+/** 진섭 버튼 부분 **/
 .swiper-button-prev {
   color: var(--white);
 }
@@ -288,6 +294,7 @@ body {
   position: absolute;
   right: 100px;
 }
+/** ----------------------- **/
 
 .title {
   font-size: calc(20px + 0.5vw);
@@ -339,10 +346,6 @@ body {
 
 .short-bar::after {
   content: url(/client/assets/svg/taing-progress-bar/short-bar.svg);
-}
-
-figcaption {
-  line-height: 1.4;
 }
 
 .information {
