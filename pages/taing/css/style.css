@@ -16,6 +16,31 @@ a:active {
   text-decoration: none;
 }
 
+html {
+  font-size: calc(6px + 0.5vw);
+}
+
+h2 {
+  font-size: 1.7rem;
+  padding: 15px 0 12px;
+}
+
+figcaption {
+  color: var(--gray-100);
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+
+/** ---------뽑아쓰는거------------ **/
+
+.overflow__hidden {
+  overflow: hidden;
+}
+
 .clickable {
   z-index: 10;
 }
