@@ -1,4 +1,23 @@
-/** 공통 영역 Css **/
+@import url(./theme.css);
+
+/** 공통사항 **/
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: Pretendard;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
 html {
   font-size: calc(6px + 0.5vw);
 }
@@ -15,13 +34,106 @@ figcaption {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  line-height: 1.4;
 }
+
+/** ---------뽑아스는거------------ **/
 
 .overflow__hidden {
   overflow: hidden;
 }
 
+.clickable {
+  z-index: 10;
+}
+
+/** ---------------------------- **/
+
+/* ------------ hero start -------------- */
+
+.hero--wrapper .swiper {
+  position: relative;
+  width: 100%;
+}
+
+.pannel {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 30%;
+}
+.controler {
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 100%;
+}
+.contents {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* z-index: 9; */
+  padding: 0 4rem;
+}
+.detail--button {
+  width: 10rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  border: 1px solid var(--gray-300);
+  color: var(--white);
+  border-radius: 10px;
+}
+.detail--button > a {
+  display: block;
+}
+
+.contents .swiper-pagination {
+  position: relative;
+  top: 8px;
+}
+.swiper-pagination-bullet {
+  background-color: var(--white);
+}
+
+.hero--wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.hero--wrapper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero--wrapper .swiper-button-next::after,
+.swiper-button-prev::after {
+  color: var(--gray-400);
+}
+
+/* --------------- hero End --------------- */
+
 /** 티빙에서 꼭 봐야하는 콘텐츠 영역 css **/
+
 .taing-must {
   background: var(--black);
 }
@@ -33,6 +145,8 @@ figcaption {
 
 .taing-must__title {
   font-style: bold;
+  padding: 0 0 0.75rem;
+  color: white;
   height: auto;
   margin: 0;
 }
@@ -170,7 +284,7 @@ figcaption {
   width: 100%;
 }
 
-/** 공통 버튼 부분 **/
+/** 진섭 버튼 부분 **/
 .swiper-button-prev {
   color: var(--white);
 }
@@ -180,54 +294,81 @@ figcaption {
   position: absolute;
   right: 100px;
 }
+/** ----------------------- **/
 
 .title {
-  font-size: 28px;
+  font-size: calc(20px + 0.5vw);
   font-weight: 700;
-  margin-bottom: 12px;
-  color: #fff;
+  margin-bottom: 0.75rem;
+  color: var(--white);
 }
 
-.contents-list {
-  padding: 0 70px 36px;
+.contents__list {
   background-color: var(--black);
+}
+
+.contents__list img {
+  width: 100%;
+}
+
+.contents__inner {
+  position: relative;
+  padding: 0 4.4rem 2.25rem;
 }
 
 .swiper {
   overflow: visible;
 }
 
-.swiper-wrapper {
+.swiper-slide:hover {
+  transform: translateY(-10px);
+  transition: all 0.5s;
 }
 
-.swiper-slide {
-  width: 100%;
-}
-
-.badge::before {
+.Quick-badge::before {
   position: absolute;
   content: url(/client/assets/svg/live/vod.svg);
-  margin: 5px 0 0 5px;
+  margin: 0.31rem 0 0 0.31rem;
 }
 
-figcaption {
-  white-space: nowrap;
-  line-height: 1.5;
+.Live-progress-bar::after {
+  position: absolute;
+  bottom: 5.81rem;
 }
 
-figcaption .img-title {
-  font-size: 1.2rem;
-  margin: 8px 0 4px;
+.long-bar::after {
+  content: url(/client/assets/svg/live/progress_bar.svg);
+}
+
+.middle-bar::after {
+  content: url(/client/assets/svg/taing-progress-bar/middle-bar.svg);
+}
+
+.short-bar::after {
+  content: url(/client/assets/svg/taing-progress-bar/short-bar.svg);
+}
+
+.information {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+}
+
+.slide-title {
+  font-size: calc(12px + 0.5vw);
+  margin-top: 0.5rem;
   color: var(--gray-200);
 }
 
 .round,
 .sub-title {
-  font-size: 1rem;
+  font-size: calc(10px + 0.5vw);
   color: var(--gray-300);
 }
 
 .viewer {
+  font-size: calc(10px + 0.5vw);
   color: var(--gray-500);
 }
 
@@ -236,7 +377,6 @@ figcaption .img-title {
   position: absolute;
   width: 3.75rem;
   height: 3.75rem;
-  box-shadow: 0 0 5px #555;
   border-radius: 50px;
   opacity: 0.5;
   color: var(--gray-400);
@@ -254,8 +394,10 @@ figcaption .img-title {
 }
 
 .swiper-button-next {
-  right: -50px;
+  top: 140px;
+  right: 0;
 }
 .swiper-button-prev {
-  left: -50px;
+  top: 140px;
+  left: 0;
 }
