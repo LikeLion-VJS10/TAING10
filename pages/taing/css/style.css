@@ -115,17 +115,17 @@ figcaption {
   align-items: center;
 }
 
-.hero--wrapper .swiper-slide img {
+/* .hero--wrapper .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
-.hero--wrapper .swiper-button-next::after,
+/* .hero--wrapper .swiper-button-next::after,
 .swiper-button-prev::after {
   color: var(--gray-400);
-}
+} */
 
 /* --------------- hero End --------------- */
 html {
