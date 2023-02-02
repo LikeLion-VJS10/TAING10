@@ -69,13 +69,6 @@ body {
   right: 100px;
 }
 
-.title {
-  font-size: calc(20px + 0.5vw);
-  font-weight: 700;
-  margin-bottom: 0.75rem;
-  color: var(--white);
-}
-
 .contents__list {
   background-color: var(--black);
 }
@@ -93,7 +86,15 @@ body {
   overflow: visible;
 }
 
-.swiper-slide:hover {
+.title {
+  font-size: calc(20px + 0.5vw);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--white);
+}
+
+.swiper-slide:hover,
+.sports-area:hover {
   transform: translateY(-10px);
   transition: all 0.5s;
 }
@@ -149,6 +150,10 @@ figcaption {
   color: var(--gray-500);
 }
 
+.sports-area {
+  padding-bottom: 2.25rem;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   position: absolute;
@@ -171,10 +176,8 @@ figcaption {
 }
 
 .swiper-button-next {
-  top: 140px;
   right: 0;
 }
 .swiper-button-prev {
-  top: 140px;
   left: 0;
 }

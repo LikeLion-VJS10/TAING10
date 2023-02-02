@@ -4,7 +4,10 @@ export const swiper = new Swiper('.swiper', {
   slidesPerGroup: 5, // 슬라이드 그룹 수
   spaceBetween: 16, // 슬라이드 사이 간격
   loopFillGroupWithBlank: true, // 보여질 슬라이드 수가 적을 경우 공백대체
-  // slidesOffsetBefore: 150, // 슬라이드 처음 시작부분 여백
+
+  keyboard: {
+    enabled: true // 키보드 제어 활성
+  },
 
   navigation: {
     nextEl: '.swiper-button-next', // 다음 버튼 클래스명
