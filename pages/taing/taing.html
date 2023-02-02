@@ -4,10 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/04c1ea1f1c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/04c1ea1f1c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="../../client/assets/img/tving-favicon.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="../../client/css/theme.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -19,11 +34,61 @@
 
   <body>
     <header>헤더</header>
+    <!-- hero -->
+    <section class="hero--wrapper">
+      <div class="swiper hero">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="/">
+              <img src="../../client/assets/img/desktop/main/banner_img.png" alt="재벌집 막내아들">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="/">
+              <img src="../../client/assets/img/desktop/main/banner_img.png" alt="재벌집 막내아들">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="/">
+              <img src="../../client/assets/img/desktop/main/banner_img.png" alt="재벌집 막내아들">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="/">
+              <img src="../../client/assets/img/desktop/main/banner_img.png" alt="재벌집 막내아들">
+            </a>
+          </div>
+        </div>
+      
+        <div class="pannel">
+          <div class="controler clickable">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="contents">
+            <div class="contents--left clickable">
+              <div class="contents--left--description">
+                <p>인생 2회차를 사는 판타지 드라마.</p>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="contents--right clickable">
+              <div class="detail--button">
+                <a href="#">
+                  자세히 보기
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <main>
-      <!--^ 첫번째  -->
-      <section class="taing-must">
+      <!--^ 티빙에서 꼭 봐야하는 콘텐츠 markup  -->
+      <section class="taing-must overflow__hidden">
         <div class="taing-must__container swiper mySwiper">
           <h2 class="taing-must__title ">티빙에서 꼭 봐야하는 콘텐츠</h2>
+          <div class="swiper-button-prev"></div>
           <ul class="taing-must__list swiper-wrapper">
             <li class="swiper-slide">
               <figure><a href="./"><img src="../../client/assets/img/desktop/live/img_frame.png" alt="보물찾기" /></a>
@@ -66,13 +131,144 @@
             </figure></a>
             </li>
           </ul>
-          <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
       </section>
 
+      <!--^ 실시간 인기 프로그램 markup -->
+      <section class="taing-live-rank overflow__hidden">
+        <div class="taing-live-rank__container swiper mySwiper2">
+          <h2 class="taing-live-rank__title ">실시간 인기 프로그램</h2>
+          <div class="swiper-button-prev"></div>
+          <ul class="taing-live-rank__list swiper-wrapper">
+            <li class="swiper-slide">
+              <figure><a href="./"><img src="../../client/assets/img/desktop/live/img_frame-14.png" alt="러브캐처 인 발리" />
+                <figcaption>재벌집 막내아들</figcaption>
+              </figure></a>
+            </li>
+            <li class="swiper-slide">
+              <figure><a href="./"><img src="../../client/assets/img/desktop/live/img_frame-15.png" alt="술꾼도시여자들2" />
+                <figcaption>술꾼도시여자들2</figcaption>
+              </figure></a>
+            </li>
+            <li class="swiper-slide">
+              <figure><a href=""><img src="../../client/assets/img/desktop/live/img_frame-16.png"  alt="환혼: 빛과 그림자" />
+                <figcaption>환혼: 빛과 그림자</figcaption>
+              </figure></a>
+            </li>
+            <li class="swiper-slide">
+              <figure><a href=""><img src="../../client/assets/img/desktop/live/img_frame-17.png" alt="캐나다 체크인" />
+                <figcaption>캐나다 체크인</figcaption>
+              </figure></a>
+            </li>
+            <li class="swiper-slide">
+              <figure><a href=""><img src="../../client/assets/img/desktop/live/img_frame-18.png" alt="놀라운 토요일" />
+                <figcaption>놀라운 토요일</figcaption>
+              </figure></a>
+            </li>
+            <li class="swiper-slide">
+              <figure><a href=""><img src="../../client/assets/img/desktop/live/img_frame-19.png" alt="SHOW ME THE MONEY 11" />
+                <figcaption>SHOW ME THE MONEY 11</figcaption>
+              </figure></a>
+            </li>
+            <li class="swiper-slide">
+              <figure><a href=""><img src="../../client/assets/img/desktop/live/img_frame-20.png" alt="러브캐쳐 인 발리" />
+              <figcaption>러브캐쳐 인 발리</figcaption>
+            </figure></a>
+            </li>
+            <li class="swiper-slide">
+              <figure><a href="./"><img src="../../client/assets/img/desktop/live/img_frame-21.png" alt="알쓸신잡" />
+                <figcaption>알쓸신잡</figcaption>
+              </figure></a>
+            </li>
+          </ul>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+
+      <!--^ 오직 티빙에만 있어요 markup -->
+      <section class="taing-only-tving overflow__hidden">
+        <div class="taing-only-tving__container swiper mySwiper3">
+          <h2 class="taing-only-tving__title ">오직 티빙에만 있어요</h2>
+          <div class="swiper-button-prev"></div>
+          <ul class="taing-only-tving__list swiper-wrapper">
+            <li class="swiper-slide">
+              <figure><a href="./"><img src="../../client/assets/img/desktop/live/전체관람가.png" alt="전체관람가: 숏버스터" />
+              </figure></a>
+            </li>
+            <li class="swiper-slide">
+              <figure><a href="./"><img src="../../client/assets/img/desktop/live/러브캐처 인 발리.png" alt="러브캐쳐 인 발리" />
+              </figure></a>
+            </li>
+            <li class="swiper-slide">
+              <figure><a href=""><img src="../../client/assets/img/desktop/live/환승연애2.png"  alt="환승연애2" />
+              </figure></a>
+            </li>
+            <li class="swiper-slide">
+              <figure><a href=""><img src="../../client/assets/img/desktop/live/몸값.png" alt="몸값" />
+              </figure></a>
+            </li>
+            <li class="swiper-slide">
+              <figure><a href=""><img src="../../client/assets/img/desktop/live/술꾼도시여자들.png" alt="술꾼도시여자들" />
+              </figure></a>
+            </li>
+            <li class="swiper-slide">
+              <figure><a href=""><img src="../../client/assets/img/desktop/live/괴이.png" alt="괴이" />
+              </figure></a>
+            </li>
+            <li class="swiper-slide">
+              <figure><a href=""><img src="../../client/assets/img/desktop/live/푸드 크로니클.png" alt="푸드크로니클스" />
+            </figure></a>
+            </li>
+          </ul>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+
+      <!-- ^ 티빙에서 꼭 봐야하는 콘텐츠 영역 Swiper -->
       <script>
-        const swiper = new Swiper('.mySwiper', {
+        const swiper = new Swiper(".mySwiper", {
+          slidesPerView: 7,
+          loop: true,
+          navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+          },
+          keyboard: {
+          enabled: true,
+          onlyInViewport: false,
+          },
+          autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+          }
+        });
+      </script>
+
+      <!-- ^ 실시간 인기 프로그램 Swiper -->
+      <script>
+        const swiper2 = new Swiper(".mySwiper2", {
+          slidesPerView: 7,
+          loop: true,
+          navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+          },
+          keyboard: {
+          enabled: true,
+          onlyInViewport: false,
+          },
+          autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+          reverseDirection: true,
+          }
+        });
+      </script>
+
+      <!-- ^ 오직 티빙에만 있어요 Swiper -->
+      <script>
+        const swiper3 = new Swiper(".mySwiper3", {
           slidesPerView: 6,
           loop: true,
           navigation: {
@@ -84,8 +280,8 @@
             onlyInViewport: false
           },
           autoplay: {
-            delay: 2500,
-            disableOnInteraction: false
+          delay: 3500,
+          disableOnInteraction: false,
           }
         })
       </script>
