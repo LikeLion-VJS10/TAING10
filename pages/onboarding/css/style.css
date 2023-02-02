@@ -1,31 +1,8 @@
 /* 컬러 변수가 제대로 동작하지 않는 문제 해결 (@import로 가져와줘야함) */
 @import url(../../../client/css/theme.css);
-@import url(./theme_suyeong.css);
-@import url(./a11yHidden.css);
+@import url(../../../client/css/a11yHidden.css);
 
 /* 폰트사이즈, 컬러, 배경컬러 설정 */
-html {
-  font-size: 16px;
-  background-color: var(--black);
-  color: var(--white);
-}
-
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  font-family: pretendard;
-  background-color: var(--black);
-  margin: 0;
-  padding: 0;
-  background: no-repeat url(../../../client/assets/img/desktop/landing/backgorund.png);
-  background-size: 100vw;
-  font-size: 16px;
-}
-
 body,
 body::before,
 body::after,
@@ -35,16 +12,24 @@ body *::after {
   box-sizing: border-box;
 }
 
+html {
+  /* font-size: 16px; */
+  background-color: var(--black);
+  color: var(--white);
+}
+
+body {
+  font-family: pretendard;
+  margin: 0;
+  padding: 0;
+  background: no-repeat url(../../../client/assets/img/desktop/landing/backgorund.png);
+  background-size: 100%;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
-/* 132/16(평균 구하기: shift, alt, m) */
-
-/* 클래스 선택자인거 같은데 왜 들어가는건지 멀겠음 */
-/* [class] {
-  margin: 0;
-} */
 
 /* 헤더 시작 */
 .appHeader {
@@ -121,7 +106,6 @@ a {
   display: block;
   width: 100vw;
   height: 980px;
-  /* background-color: yellow; */
   position: relative;
 }
 
@@ -247,7 +231,7 @@ a {
 .swiper {
   width: 100%;
   height: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .swiper-wrapper {
@@ -255,10 +239,6 @@ a {
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -279,9 +259,8 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: var(--radius-m);
 }
-
 .onboardingWantSee--swiper {
   margin-top: 34px;
 }
@@ -294,24 +273,21 @@ a {
 }
 .content--link {
   text-decoration: none;
-  color: white;
-  font-size: 28.43px;
+  font-size: var(--label-xl);
   font-weight: 600;
-  /* align-items: center; */
 }
 .content--des {
-  font-size: 50px;
+  font-size: var(--heading-xxxl);
   font-weight: 700;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  color: white;
 }
 .content--img {
   width: 320px;
   height: 80px;
 }
 .content--btn {
-  border-radius: 5px;
+  border-radius: var(--radius-m);
   background-color: #ff153c;
   width: 506px;
   height: 80px;
@@ -320,7 +296,7 @@ a {
   text-align: center;
 }
 .link--des {
-  font-size: 28px;
+  font-size: var(--label-xl);
   font-weight: 600;
 }
 
@@ -329,7 +305,7 @@ footer {
 }
 .nav {
   margin: auto;
-  font-size: 21px;
+  font-size: var(--paragraph-l);
   font-weight: 400;
   margin-bottom: 10px;
 }
@@ -337,5 +313,5 @@ footer {
   margin-left: 10px;
 }
 .footer-info {
-  font-size: 21px;
+  font-size: var(--paragraph-l);
 }
