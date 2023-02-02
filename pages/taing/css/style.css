@@ -1,44 +1,45 @@
 @import url(./theme.css);
 
-body{
-    background-color: var(--black);
-    color: var(--white);
-    font-family: Pretendard ;
-    font-size: 16px;
+body {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: Pretendard;
+  font-size: 16px;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
-a:hover, a:active{
-    text-decoration: none;
+a:hover,
+a:active {
+  text-decoration: none;
 }
 
-.clickable{
-    z-index: 10;
+.clickable {
+  z-index: 10;
 }
 
 /* ------------ hero start -------------- */
 
-.hero--wrapper .swiper{
+.hero--wrapper .swiper {
   position: relative;
   width: 100%;
 }
 
-.pannel{
+.pannel {
   position: absolute;
   top: 50%;
   width: 100%;
   height: 30%;
 }
-.controler{
+.controler {
   position: absolute;
   top: 0;
   display: flex;
   width: 100%;
 }
-.contents{
+.contents {
   box-sizing: border-box;
   position: absolute;
   bottom: 0;
@@ -48,7 +49,7 @@ a:hover, a:active{
   /* z-index: 9; */
   padding: 0 4rem;
 }
-.detail--button{
+.detail--button {
   width: 10rem;
   height: 4rem;
   line-height: 4rem;
@@ -57,15 +58,15 @@ a:hover, a:active{
   color: var(--white);
   border-radius: 10px;
 }
-.detail--button>a{
+.detail--button > a {
   display: block;
 }
 
-.contents .swiper-pagination{
+.contents .swiper-pagination {
   position: relative;
   top: 8px;
 }
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   background-color: var(--white);
 }
 
@@ -95,7 +96,8 @@ a:hover, a:active{
   object-fit: cover;
 }
 
-.hero--wrapper .swiper-button-next::after, .swiper-button-prev::after{
+.hero--wrapper .swiper-button-next::after,
+.swiper-button-prev::after {
   color: var(--gray-400);
 }
 
