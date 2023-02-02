@@ -331,6 +331,10 @@ body {
   transition: all 0.5s;
 }
 
+.items li {
+  margin-right: 16px;
+}
+
 .Quick-badge::before {
   position: absolute;
   content: url(/client/assets/svg/live/vod.svg);
@@ -362,19 +366,19 @@ body {
 }
 
 .name {
-  font-size: calc(12px + 0.5vw);
+  /* font-size: calc(12px + 0.5vw); */
   margin-top: 0.5rem;
   color: var(--gray-200);
 }
 
 .round,
 .sub-title {
-  font-size: calc(10px + 0.5vw);
+  /* font-size: calc(10px + 0.5vw); */
   color: var(--gray-300);
 }
 
 .viewer {
-  font-size: calc(10px + 0.5vw);
+  /* font-size: calc(10px + 0.5vw); */
   color: var(--gray-500);
 }
 
