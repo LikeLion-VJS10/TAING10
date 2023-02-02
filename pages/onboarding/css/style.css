@@ -10,6 +10,22 @@ html {
   color: var(--white);
 }
 
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: pretendard;
+  background-color: var(--black);
+  margin: 0;
+  padding: 0;
+  background: no-repeat url(../../../client/assets/img/desktop/landing/backgorund.png);
+  background-size: 100vw;
+  font-size: 16px;
+}
+
 body,
 body::before,
 body::after,
@@ -30,10 +46,6 @@ a {
   margin: 0;
 } */
 
-body {
-  background: no-repeat url(../../../client/assets/img/desktop/landing/backgorund.png);
-  background-size: 100vw;
-}
 /* 헤더 시작 */
 .appHeader {
   position: relative;
@@ -231,3 +243,99 @@ body {
   .appHeader {
     background-color: var(--black);
   } */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.onboardingWantSee--swiper {
+  margin-top: 34px;
+}
+.onboardingStartNow {
+  margin-top: 10%;
+}
+.onboardingStartNow--content {
+  text-align: center;
+  align-items: center;
+}
+.content--link {
+  text-decoration: none;
+  color: white;
+  font-size: 28.43px;
+  font-weight: 600;
+  /* align-items: center; */
+}
+.content--des {
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+.content--img {
+  width: 320px;
+  height: 80px;
+}
+.content--btn {
+  border-radius: 5px;
+  background-color: #ff153c;
+  width: 506px;
+  height: 80px;
+  margin-top: 30px;
+  margin: auto;
+  text-align: center;
+}
+.link--des {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+footer {
+  margin-top: 30px;
+}
+.nav {
+  margin: auto;
+  font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.nav-list {
+  margin-left: 10px;
+}
+.footer-info {
+  font-size: 21px;
+}
