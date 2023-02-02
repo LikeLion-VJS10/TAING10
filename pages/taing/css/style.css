@@ -1,3 +1,4 @@
+/** 공통 영역 Css **/
 html {
   font-size: calc(6px + 0.5vw);
 }
@@ -16,14 +17,13 @@ figcaption {
   white-space: nowrap;
 }
 
-/** 공통 영역 Css **/
 .overflow__hidden {
   overflow: hidden;
 }
 
 /** 티빙에서 꼭 봐야하는 콘텐츠 영역 css **/
 .taing-must {
-  background: black;
+  background: var(--black);
 }
 
 .taing-must__container {
