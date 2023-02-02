@@ -23,18 +23,19 @@ html {
 }
 
 h2 {
-  font-size: 1.7rem;
-  padding: 15px 0 12px;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0 0 12px;
 }
 
 figcaption {
   color: var(--gray-100);
-  font-size: 1.2rem;
-  margin-top: 0.8rem;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  line-height: 1.4;
+  line-height: 150%;
 }
 
 /** ---------뽑아쓰는거------------ **/
@@ -132,38 +133,30 @@ figcaption {
 
 /* --------------- hero End --------------- */
 
+/** 진섭 공통 부분 **/
+
 /** 티빙에서 꼭 봐야하는 콘텐츠 영역 css **/
-
-.taing-must {
-  background: var(--black);
-}
-
 .taing-must__container {
-  position: relative;
-  left: 50px;
+  padding: 0 0 32px 50px;
 }
 
 .taing-must__title {
-  font-style: bold;
+  display: block;
   padding: 0 0 0.75rem;
   color: white;
-  height: auto;
-  margin: 0;
-}
-
-.taing-must {
-  width: 100%;
 }
 
 .taing-must__container {
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 .taing-must__list {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  gap: 12px;
+  justify-content: flex-start; */
+  gap: 0.8rem;
 }
 
 .taing-must__list li:hover {
@@ -185,24 +178,15 @@ figcaption {
 }
 
 /** 실시간 인기 프로그램 css **/
-.taing-live-rank {
-  background: black;
-}
 
 .taing-live-rank__container {
-  position: relative;
-  left: 50px;
+  padding: 0 0 36px 50px;
 }
 
 .taing-live-rank__title {
-  font-style: bold;
+  display: block;
+  padding: 0 0 0.75rem;
   color: white;
-  height: auto;
-  margin: 0;
-}
-
-.taing-live-rank {
-  width: 100%;
 }
 
 .taing-live-rank__container {
@@ -211,9 +195,9 @@ figcaption {
 }
 
 .taing-live-rank__list {
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
+  /* display: flex; */
+  /* flex-direction: row; */
+  gap: 0.8rem;
 }
 
 .taing-live-rank__list li:hover {
@@ -235,24 +219,13 @@ figcaption {
 }
 
 /** 오직 티빙에만 있어요 css **/
-.taing-only-tving {
-  background: black;
-}
-
 .taing-only-tving__container {
-  position: relative;
-  left: 50px;
+  padding: 0 0 36px 50px;
 }
 
 .taing-only-tving__title {
-  font-style: bold;
+  padding: 0 0 0.75rem;
   color: white;
-  height: auto;
-  margin: 0;
-}
-
-.taing-only-tving {
-  width: 100%;
 }
 
 .taing-only-tving__container {
@@ -261,9 +234,9 @@ figcaption {
 }
 
 .taing-only-tving__list {
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
+  /* display: flex; */
+  /* flex-direction: row; */
+  gap: 0.8rem;
 }
 
 .taing-only-tving__list li:hover {
@@ -283,17 +256,15 @@ figcaption {
 .taing-only-tving__list img {
   width: 100%;
 }
-
 /** 진섭 버튼 부분 **/
 .swiper-button-prev {
-  color: var(--white);
+  color: white;
 }
 
 .swiper-button-next {
-  color: var(--white);
-  position: absolute;
-  right: 100px;
+  color: white;
 }
+
 /** ----------------------- **/
 
 .title {
@@ -372,7 +343,7 @@ figcaption {
   color: var(--gray-500);
 }
 
-.swiper-button-next,
+/* .swiper-button-next,
 .swiper-button-prev {
   position: absolute;
   width: 3.75rem;
@@ -381,9 +352,9 @@ figcaption {
   opacity: 0.5;
   color: var(--gray-400);
   background-color: var(--black);
-}
+} */
 
-.swiper-button-next::after {
+/* .swiper-button-next::after {
   position: absolute;
   right: 16px;
 }
@@ -400,4 +371,4 @@ figcaption {
 .swiper-button-prev {
   top: 140px;
   left: 0;
-}
+} */
