@@ -1,5 +1,8 @@
 module.exports = {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> onboarding/yuseon
   printWidth: 250,
   tabWidth: 2,
   singleQuote: true,
@@ -10,6 +13,7 @@ module.exports = {
   arrowParens: 'avoid',
   endOfLine: 'auto'
 }
+<<<<<<< HEAD
 =======
     "printWidth": 250,
     "tabWidth": 2,
@@ -22,3 +26,5 @@ module.exports = {
     "endOfLine": "auto"
   };
 >>>>>>> origin/taing/jaewoo
+=======
+>>>>>>> onboarding/yuseon
