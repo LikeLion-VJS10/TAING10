@@ -33,19 +33,8 @@ const hero = new Swiper('.hero', {
   autoplay: {
     delay: 2500,
     disableOnInteraction: false
+  },
+  hashNavigation: {
+    watchState: true
   }
-})
-
-const event = new Swiper('.event', {
-  // cssMode: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  },
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false
-  },
-  spaceBetween: 30,
-  freeMode: true
 })

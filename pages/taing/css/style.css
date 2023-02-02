@@ -3,8 +3,6 @@
 body {
   background-color: var(--black);
   color: var(--white);
-  font-family: Pretendard;
-  font-size: 16px;
 }
 
 a {
@@ -48,9 +46,11 @@ figcaption {
 
 /* ------------ hero start -------------- */
 
-.hero--wrapper .swiper {
-  position: relative;
+.hero--wrapper {
   width: 100%;
+  height: 80%;
+  position: relative;
+  margin: 0 auto;
 }
 
 .pannel {
@@ -68,13 +68,41 @@ figcaption {
 .contents {
   box-sizing: border-box;
   position: absolute;
-  bottom: 0;
+  bottom: 15%;
   width: 100%;
   display: flex;
   justify-content: space-between;
   /* z-index: 9; */
   padding: 0 4rem;
 }
+.contents--left--description{
+  font-size: 1.5rem;
+}
+.content--control{
+  display: flex;
+  position: relative;
+  margin: 10px auto;
+  gap: 10px;
+}
+.content--control .swiper-pagination{
+  position: relative;
+}
+
+.content--control .swiper-pagination-bullets.swiper-pagination-horizontal{
+  width: auto;
+  bottom: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--white);
+}
+.swiper-stop-button button{
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 0;
+}
+
 .detail--button {
   width: 10rem;
   height: 4rem;
@@ -88,20 +116,12 @@ figcaption {
   display: block;
 }
 
-.contents .swiper-pagination {
-  position: relative;
-  top: 8px;
-}
-.swiper-pagination-bullet {
-  background-color: var(--white);
-}
-
 .hero--wrapper .swiper-slide {
   text-align: center;
-  font-size: 18px;
 
   /* Center slide text vertically */
-  display: -webkit-box;
+
+  /* display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -112,15 +132,15 @@ figcaption {
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
-  align-items: center;
+  align-items: center; */
 }
 
-/* .hero--wrapper .swiper-slide img {
+.hero--wrapper .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-} */
+}
 
 /* .hero--wrapper .swiper-button-next::after,
 .swiper-button-prev::after {
@@ -128,40 +148,15 @@ figcaption {
 } */
 
 /* --------------- hero End --------------- */
-html {
-  font-size: calc(6px + 0.5vw);
-}
-
-h2 {
-  font-size: 1.7rem;
-  padding: 15px 0 12px;
-}
-
-figcaption {
-  color: var(--gray-100);
-  font-size: 1.2rem;
-  margin-top: 0.8rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-/** 공통 영역 Css **/
-.overflow__hidden {
-  overflow: hidden;
-}
 
 /** 티빙에서 꼭 봐야하는 콘텐츠 영역 css **/
-body {
-  overflow-x: hidden;
-}
 
 .taing-must {
   background: black;
 }
 
 .taing-must__container {
-  position: relative;
+  /* position: relative; */
   left: 50px;
 }
 
@@ -314,7 +309,6 @@ body {
 .swiper-button-next {
   color: var(--white);
   position: absolute;
-  right: 100px;
 }
 
 .contents__list img {
