@@ -54,6 +54,7 @@ a {
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
+  /* padding: 20px; */
   right: 320px;
   width: 506px;
   /* background-color: yellow; */
@@ -66,12 +67,22 @@ a {
 
 /* **실시간 버튼 해결해야됨!** */
 .menu__item__liveBtn {
-  display: flex;
-  flex-flow: row nowrap;
+  display: display;
+  /* flex-flow: row nowrap;
   align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  background-color: blue;
+  justify-content: space-between; */
+  /* text-align: center; */
+  /* background-color: blue; */
+}
+
+.menu__link__liveBtn::before {
+  content: url(../../../client/assets/svg/header/live.svg);
+  /* background: url(../../../client/assets/svg/header/live.svg); */
+}
+
+/* 라인 하이트 넣어봤는데 해결이 안됨...ㅠㅠ */
+.menu__item__liveBtn {
+  line-height: 50%;
 }
 
 .memberOnly .menu__list {
@@ -145,7 +156,8 @@ a {
   display: inline;
   text-align: center;
   vertical-align: text-bottom;
-  background-color: blue;
+  /* background-color: blue; */
+  line-height: 220%;
 }
 /* 온보딩 히어로섹션 끝 */
 
@@ -156,7 +168,7 @@ a {
   flex-flow: column nowrap;
   align-items: center;
   /* justify-content: space-between; */
-  width: 100vw;
+  /* width: 100vw; */
   height: 919px;
   /* background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0)); */
   position: relative;
