@@ -1,4 +1,4 @@
-import { swiper } from './taing-swiper.js'
+import { swiperSlide } from './taing-swiper.js'
 
 // const swiper = new Swiper(".mySwiper", {
 //     navigation: {

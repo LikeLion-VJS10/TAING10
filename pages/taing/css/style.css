@@ -23,6 +23,7 @@ html {
 h2 {
   font-size: 1.7rem;
   padding: 15px 0 12px;
+  font-weight: 700;
 }
 
 figcaption {
@@ -288,7 +289,7 @@ body {
 }
 
 .taing-only-tving__list li:hover {
-  transform: translateY(-12px);
+  transform: translateY(-10px);
   transition: all 0.5s;
 }
 
@@ -316,32 +317,16 @@ body {
   right: 100px;
 }
 
-.contents__list {
-  background-color: var(--black);
-}
-
 .contents__list img {
   width: 100%;
 }
 
 .contents__inner {
-  position: relative;
-  padding: 0 4.4rem 2.25rem;
+  padding: 0 70px 36px;
 }
 
-.swiper {
-  overflow: visible;
-}
-
-.title {
-  font-size: calc(20px + 0.5vw);
-  font-weight: 700;
-  margin-bottom: 0.75rem;
-  color: var(--white);
-}
-
-.swiper-slide:hover,
-.sports-area:hover {
+.items li:hover,
+.sports-img:hover {
   transform: translateY(-10px);
   transition: all 0.5s;
 }
@@ -349,12 +334,13 @@ body {
 .Quick-badge::before {
   position: absolute;
   content: url(/client/assets/svg/live/vod.svg);
-  margin: 0.31rem 0 0 0.31rem;
+  margin: 5px 0 0 5px;
 }
 
-.Live-progress-bar::after {
+/* @@@ */
+/* .Live-progress-bar::after {
   position: absolute;
-  bottom: 5.81rem;
+  bottom: 92px;
 }
 
 .long-bar::after {
@@ -367,20 +353,15 @@ body {
 
 .short-bar::after {
   content: url(/client/assets/svg/taing-progress-bar/short-bar.svg);
-}
-
-figcaption {
-  line-height: 1.4;
-}
+} */
 
 .information {
-  position: relative;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row;
   gap: 10px;
 }
 
-.slide-title {
+.name {
   font-size: calc(12px + 0.5vw);
   margin-top: 0.5rem;
   color: var(--gray-200);
@@ -397,11 +378,7 @@ figcaption {
   color: var(--gray-500);
 }
 
-.sports-area {
-  padding-bottom: 2.25rem;
-}
-
-.swiper-button-next,
+/* .swiper-button-next,
 .swiper-button-prev {
   position: absolute;
   width: 3.75rem;
@@ -427,4 +404,4 @@ figcaption {
 }
 .swiper-button-prev {
   left: 0;
-}
+} */
