@@ -1,5 +1,3 @@
-@import url(./theme.css);
-
 body {
   background-color: var(--black);
   color: var(--white);
@@ -18,6 +16,7 @@ a:active {
 
 html {
   font-size: calc(6px + 0.5vw);
+  box-sizing: border-box;
 }
 
 h2 {
@@ -303,6 +302,15 @@ figcaption {
   padding: 0 70px 36px;
 }
 
+.contents__inner:hover .right-arrow::after,
+.contents__inner:hover .left-arrow::after {
+  color: var(--white);
+}
+
+.items {
+  position: relative;
+}
+
 .items li {
   padding-right: 16px;
   box-sizing: border-box;
@@ -318,33 +326,50 @@ figcaption {
   transform: translateY(-10px);
 }
 
-.Quick-badge::before {
+.badge-name {
   position: absolute;
-  content: url(/client/assets/svg/live/vod.svg);
-  width: 10rem;
+  top: 0;
+  width: 6rem;
   height: 1.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 5px 0 0 5px;
+  border-radius: 4px;
+  background-color: #c73e4e;
+  font-size: 1rem;
 }
 
-/* LIVE bar 다시 수정 */
-/* .Live-progress-bar::after {
+.Live-info {
+  position: relative;
+}
+
+.Live-progress-bar {
   position: absolute;
-  bottom: 92px;
+  bottom: 0;
+  transform: translateY(-50%);
+  width: 10.625rem;
+  height: 0.25rem;
+  background: url(/client/assets/svg/live/progress_bar.svg) no-repeat;
 }
-.long-bar::after {
-  content: url(/client/assets/svg/live/progress_bar.svg);
+
+.Live-info .middle-bar {
+  width: 5.625rem;
 }
-.middle-bar::after {
-  content: url(/client/assets/svg/taing-progress-bar/middle-bar.svg);
+
+.Live-info .short-bar {
+  width: 3.125rem;
 }
-.short-bar::after {
-  content: url(/client/assets/svg/taing-progress-bar/short-bar.svg);
-} */
 
 .information {
   display: flex;
   flex-flow: row nowrap;
+  margin-top: 0.5rem;
   gap: 1.25rem;
+}
+
+.slide-info {
+  overflow: hidden;
 }
 
 .rank {
@@ -355,7 +380,6 @@ figcaption {
 }
 
 .name {
-  display: inline;
   color: var(--gray-200);
 }
 
@@ -365,7 +389,27 @@ figcaption {
   color: var(--gray-300);
 }
 
+.name,
+.sub-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .viewer {
   font-size: 1rem;
   color: var(--gray-500);
+}
+
+.right-arrow,
+.left-arrow {
+  width: 3.125rem;
+  height: 100%;
+  transform: translateY(-50%);
+}
+
+.right-arrow::after,
+.left-arrow::after {
+  font-size: 2.5rem;
+  color: var(--gray-400);
 }
