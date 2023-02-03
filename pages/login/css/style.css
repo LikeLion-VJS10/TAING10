@@ -37,6 +37,7 @@ a:active {
   font-weight: bold;
   width: 100%;
   text-align: center;
+  margin: 5rem auto;
 }
 .input-wrapper, .login-btn{
   all: unset;
@@ -115,11 +116,19 @@ a:active {
 }
 .register{
   width: 100%;
-  display: flex;
-  justify-content: space-evenly;
+  text-align: center;
 }
-.register span{
+.register a{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.register p{
+  font-size: var(--heading-m);
   display: inline-block;
-  border: 1px solid lime;
-  margin: 10px auto;
+  color: var(--gray-500);
+}
+.register-bold{
+  font-weight: bold;
+  color: var(--gray-300);
 }
