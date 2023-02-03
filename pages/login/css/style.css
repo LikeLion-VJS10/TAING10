@@ -92,9 +92,15 @@ a:active {
   align-items : center;
 }
 .find-wrapper{
+  box-sizing: border-box;
   width: 100%;
   display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+  padding: 0 40px;
+  color: var(--gray-300);
 }
+
 .login-btn{
   box-sizing: border-box;
   width: 100%;
