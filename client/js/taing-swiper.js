@@ -14,7 +14,7 @@ export const swiperSlide = new Swiper('.contents__inner', {
   }
 })
 
-const hero = new Swiper('.hero', {
+export const hero = new Swiper('.hero', {
   // cssMode: true,
   slidesPerView: 1,
   spaceBetween: 30,
