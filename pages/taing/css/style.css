@@ -311,11 +311,6 @@ figcaption {
   position: relative;
 }
 
-.items li {
-  padding-right: 16px;
-  box-sizing: border-box;
-}
-
 .items li,
 .sports-img {
   transition: 0.3s;
