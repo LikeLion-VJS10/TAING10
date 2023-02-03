@@ -7,9 +7,10 @@ export const swiperSlide = new Swiper('.contents__inner', {
 
   keyboard: {
     enabled: true
-  },
+  }
+})
 
-//^ 티빙에서 꼭 봐야하는 콘텐츠 영역 Swiper
+// ^ 티빙에서 꼭 봐야하는 콘텐츠 영역 Swiper
 export const swiper = new Swiper('.mySwiper', {
   slidesPerView: 8,
   slidesPerGroup: 8,
