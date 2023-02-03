@@ -1,0 +1,8 @@
+@import url(../../../client/css/theme.css);
+
+body{
+    background-color: var(--black);
+    color: var(--white);
+    font-family: pretendard;
+}
+
