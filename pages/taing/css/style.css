@@ -208,6 +208,25 @@ figcaption {
 .taing-live-rank__list figure {
   border-radius: 4px;
   width: 100%;
+  position: relative;
+}
+
+.taing-live-rank figcaption {
+  padding-top: 8px;
+  position: absolute;
+  width: 100%;
+  top: 90%;
+  left: -5%;
+}
+
+.taing-live-rank-ordered {
+  font-size: 4.375rem;
+  font-weight: 700;
+  font-style: italic;
+  transform: translateY(-0.937rem);
+  z-index: 100;
+  margin-right: 3px;
+  text-shadow: 1px 1px black;
 }
 
 .taing-live-rank__list a {
