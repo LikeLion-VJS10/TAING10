@@ -34,56 +34,61 @@
 
   <body>
     <header>헤더</header>
-    <!-- hero -->
-    <section class="hero--wrapper">
-      <div class="swiper hero">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <a href="/">
-              <img src="../../client/assets/img/desktop/main/banner_img.png" alt="재벌집 막내아들">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="/">
-              <img src="../../client/assets/img/desktop/main/banner_img.png" alt="재벌집 막내아들">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="/">
-              <img src="../../client/assets/img/desktop/main/banner_img.png" alt="재벌집 막내아들">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="/">
-              <img src="../../client/assets/img/desktop/main/banner_img.png" alt="재벌집 막내아들">
-            </a>
-          </div>
-        </div>
-      
-        <div class="pannel">
-          <div class="controler clickable">
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
-          <div class="contents">
-            <div class="contents--left clickable">
-              <div class="contents--left--description">
-                <p>인생 2회차를 사는 판타지 드라마.</p>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-            <div class="contents--right clickable">
-              <div class="detail--button">
-                <a href="#">
-                  자세히 보기
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
     <main>
+      <!-- ****** 안승지 작업 영역 ******  -->
+      <!-- hero -->
+      <section class="hero--wrapper">
+        <div class="swiper hero">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="/">
+                <img src="../../client/assets/img/desktop/main/banner_img.png" alt="재벌집 막내아들">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="/">
+                <img src="../../client/assets/img/desktop/main/banner_img.png" alt="재벌집 막내아들">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="/">
+                <img src="../../client/assets/img/desktop/main/banner_img.png" alt="재벌집 막내아들">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="/">
+                <img src="../../client/assets/img/desktop/main/banner_img.png" alt="재벌집 막내아들">
+              </a>
+            </div>
+          </div>
+        
+          <div class="pannel">
+            <div class="controler clickable">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div class="contents">
+              <div class="contents--left clickable">
+                <div class="contents--left--description">
+                  <p>인생 2회차를 사는 판타지 드라마.</p>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="contents--right clickable">
+                <div class="detail--button">
+                  <a href="#">
+                    자세히 보기
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ****** 김진섭 작업 영역 ****** -->
       <!--^ 티빙에서 꼭 봐야하는 콘텐츠 markup  -->
       <section class="taing-must overflow__hidden">
         <div class="taing-must__container swiper mySwiper">
@@ -317,65 +322,9 @@
         </div>
       </section>
 
-      <!-- ^ 티빙에서 꼭 봐야하는 콘텐츠 영역 Swiper -->
-      <script>
-        const swiper = new Swiper(".mySwiper", {
-          slidesPerView: 8,
-          navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-          },
-          keyboard: {
-          enabled: true,
-          onlyInViewport: false,
-          },
-          // autoplay: {
-          // delay: 2500,
-          // disableOnInteraction: false,
-          // }
-        });
-      </script>
 
-      <!-- ^ 실시간 인기 프로그램 Swiper -->
-      <script>
-        const swiper2 = new Swiper(".mySwiper2", {
-          slidesPerView: 8,
-          navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-          },
-          keyboard: {
-          enabled: true,
-          onlyInViewport: false,
-          },
-          // autoplay: {
-          // delay: 3000,
-          // disableOnInteraction: false,
-          // reverseDirection: true,
-          // }
-        });
-      </script>
-
-      <!-- ^ 오직 티빙에만 있어요 Swiper -->
-      <script>
-        const swiper3 = new Swiper(".mySwiper3", {
-          slidesPerView: 7,
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
-          },
-          keyboard: {
-            enabled: true,
-            onlyInViewport: false
-          },
-          // autoplay: {
-          // delay: 3500,
-          // disableOnInteraction: false,
-          // }
-        })
-      </script>
-
-      <!-- Quick VOD 영역 -->
+      <!-- ****** 장재우 작업 영역 ****** -->
+      <!--^ Quick VOD 영역 -->
       <section class="contents__list">
         <div class="swiper contents__inner">
           <h2 class="title">Quick VOD</h2>
@@ -452,7 +401,7 @@
         </div>
       </section>
 
-      <!-- 인기 LIVE채널 영역 -->
+      <!--^ 인기 LIVE채널 영역 -->
       <section class="contents__list">
         <div class="swiper contents__inner">
           <h2 class="title">인기 LIVE 채널</h2>
@@ -631,14 +580,14 @@
         </div>
       </section>
 
-      <!-- TAING SPORTS 경기 생중계 영역 -->
+      <!--^ TAING SPORTS 경기 생중계 영역 -->
       <section class="contents__list">
         <a href="/">
           <img src="/client/assets/img/desktop/live/img_frame-28.png" alt="TAING SPORTS 경기 생중계 UFC, 월드복싱 슈퍼매치, 분데스리가, AFC 챔피언스리그" />
         </a>
       </section>
 
-      <!-- 이벤트 영역 -->
+      <!--^ 이벤트 영역 -->
       <section class="contents__list">
         <div class="swiper contents__inner">
           <h2 class="title">이벤트</h2>
@@ -679,5 +628,6 @@
         </div>
       </section>
     </main>
+    
   </body>
 </html>
