@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/theme.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./js/main.js" type="module"></script>
+    <script src="../../client/js/main.js" type="module"></script>
     <script src="../../client/js/onboarding-swiper.js" type="module"></script>
     <title>Onboarding</title>
   </head>
@@ -52,42 +52,43 @@
         </button>
       </div>
     </header>
-    <div class="onboardingMain">
-      <section class="onboardingHero">
-        <div class="info">
-          <h2 class="info__mainText">
-            티빙 오리지널 콘텐츠,<br />
-            방송, 영화, 해외시리즈까지! <br />
-            재미를 플레이해보세요.
-          </h2>
-          <p class="info__subText">간편하게 가입하고, 원하실 때 해지할 수 있어요.</p>
-          <a ref="/" class="info__login"
-            ><img src="../../client/assets/svg/landing/simbol.svg" />
-            <p>새로워진 티빙을 만나보세요!</p>
-          </a>
+    <section class="onboardingHero">
+      <div class="info">
+        <h2 class="info__mainText">
+          티빙 오리지널 콘텐츠,<br />
+          방송, 영화, 해외시리즈까지! <br />
+          재미를 플레이해보세요.
+        </h2>
+        <div class="info__subText">간편하게 가입하고, 원하실 때 해지할 수 있어요.</div>
+        <div class="content--btn">
+          <img src="../../client/assets/svg/landing/simbol.svg" alt="티빙로고" />
+          <div>
+            <a class="content--link" href="/"> <span class="link--des">새로워진 티빙을 만나보세요!</span></a>
+          </div>
         </div>
-      </section>
-      <section class="onboardingOriginal">
-        <div class="info">
-          <h2 class="info__mainText">티빙에만 있는 재미</h2>
-          <p class="info__subText">오리지널 콘텐츠를 만나보세요!</p>
-          <p class="info__smallText">차별화된 웰메이드 오리지널 콘텐츠</p>
-        </div>
-        <div class="contents">
-          <ul class="contents__list">
-            <li class="contents__item">
-              <img src="../../client/assets/img/desktop/landing/러브캐처 1.png" alt="청춘남녀들이 열대의 섬을 배경으로 모여있다." />
-            </li>
-            <li class="contents__item">
-              <img src="../../client/assets/img/desktop/landing/보물찾기 1.png" alt="수상하게 생긴 구조물을 중심으로 각양각색의 사람들이 모여있다. 긴장감이 맴도는 분위기이다." />
-            </li>
-            <li class="contents__item">
-              <img src="../../client/assets/img/desktop/landing/몸값 1.png" alt="콘크리트 잔해가 여기저기 떨어진 밀폐된 공간 안에 남루한 차림의 세 사람이 모여있다. 긴장감이 맴도는 분위기이다." />
-            </li>
-          </ul>
-        </div>
-      </section>
-    </div>
+      </div>
+    </section>
+    <section class="onboardingOriginal">
+      <div class="info">
+        <h2 class="info__mainText">티빙에만 있는 재미</h2>
+        <p class="info__subText">오리지널 콘텐츠를 만나보세요!</p>
+        <p class="info__smallText">차별화된 웰메이드 오리지널 콘텐츠</p>
+      </div>
+      <div class="contents">
+        <ul class="contents__list">
+          <li class="contents__item">
+            <img src="../../client/assets/img/desktop/landing/러브캐처 1.png" alt="청춘남녀들이 열대의 섬을 배경으로 모여있다." />
+          </li>
+          <li class="contents__item">
+            <img src="../../client/assets/img/desktop/landing/보물찾기 1.png" alt="수상하게 생긴 구조물을 중심으로 각양각색의 사람들이 모여있다. 긴장감이 맴도는 분위기이다." />
+          </li>
+          <li class="contents__item">
+            <img src="../../client/assets/img/desktop/landing/몸값 1.png" alt="콘크리트 잔해가 여기저기 떨어진 밀폐된 공간 안에 남루한 차림의 세 사람이 모여있다. 긴장감이 맴도는 분위기이다." />
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <!-- 유선님 파트 -->
     <section class="onboardingWantSee">
       <div class="info">
@@ -123,7 +124,9 @@
 
         <div class="content--btn">
           <img src="../../client/assets/svg/landing/simbol.svg" alt="티빙로고" />
-          <a class="content--link" href="/"> <span class="link--des">새로워진 티빙을 만나보세요!</span></a>
+          <div>
+            <a class="content--link" href="/"> <span class="link--des">새로워진 티빙을 만나보세요!</span></a>
+          </div>
         </div>
       </div>
     </section>
@@ -131,12 +134,12 @@
     <footer>
       <div class="appFooter">
         <ul class="appFooter--list">
-          <li class="list--des">고객센터</li>
-          <li class="list--des">이용약관</li>
-          <li class="list--des">개인정보처리방침</li>
-          <li class="list--des">청소년 보호정책</li>
-          <li class="list--des">법적고지</li>
-          <li class="list--des">이벤트</li>
+          <li class="list--desc">고객센터</li>
+          <li class="list--desc">이용약관</li>
+          <li class="list--desc">개인정보처리방침</li>
+          <li class="list--desc">청소년 보호정책</li>
+          <li class="list--desc">법적고지</li>
+          <li class="list--desc">이벤트</li>
         </ul>
       </div>
       <div class="footer-info">
