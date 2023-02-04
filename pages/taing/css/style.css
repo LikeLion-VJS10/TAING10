@@ -1,3 +1,7 @@
+@import url(./theme.css);
+
+/** 공통사항 **/
+
 body {
   background-color: var(--black);
   color: var(--white);
@@ -16,7 +20,6 @@ a:active {
 
 html {
   font-size: calc(6px + 0.5vw);
-  box-sizing: border-box;
 }
 
 h2 {
@@ -32,7 +35,7 @@ figcaption {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  line-height: 1.4;
+  line-height: 150%;
 }
 
 /** ---------뽑아쓰는거------------ **/
@@ -44,6 +47,8 @@ figcaption {
 .clickable {
   z-index: 10;
 }
+
+/** ---------------------------- **/
 
 /* ------------ hero start -------------- */
 
@@ -254,7 +259,7 @@ figcaption {
 }
 
 .taing-only-tving__list li:hover {
-  transform: translateY(-10px);
+  transform: translateY(-12px);
   transition: all 0.5s;
 }
 
@@ -297,112 +302,92 @@ figcaption {
 }
 
 .contents__inner {
-  padding: 0 70px 36px;
-}
-
-.contents__inner:hover .right-arrow::after,
-.contents__inner:hover .left-arrow::after {
-  color: var(--white);
-}
-
-.items {
   position: relative;
+  padding: 0 4.4rem 2.25rem;
 }
 
-.items li,
-.sports-img {
-  transition: 0.3s;
+.swiper {
+  overflow: visible;
 }
 
-.items li:hover,
-.sports-img:hover {
+.swiper-slide:hover {
   transform: translateY(-10px);
+  transition: all 0.5s;
 }
 
-.badge-name {
+.Quick-badge::before {
   position: absolute;
-  top: 0;
-  width: 6rem;
-  height: 1.875rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 5px 0 0 5px;
-  border-radius: 4px;
-  background-color: #c73e4e;
-  font-size: 1rem;
+  content: url(/client/assets/svg/live/vod.svg);
+  margin: 0.31rem 0 0 0.31rem;
 }
 
-.Live-info {
-  position: relative;
-}
-
-.Live-progress-bar {
+.Live-progress-bar::after {
   position: absolute;
-  bottom: 0;
-  transform: translateY(-50%);
-  width: 10.625rem;
-  height: 0.25rem;
-  background: url(/client/assets/svg/live/progress_bar.svg) no-repeat;
+  bottom: 5.81rem;
 }
 
-.Live-info .middle-bar {
-  width: 5.625rem;
+.long-bar::after {
+  content: url(/client/assets/svg/live/progress_bar.svg);
 }
 
-.Live-info .short-bar {
-  width: 3.125rem;
+.middle-bar::after {
+  content: url(/client/assets/svg/taing-progress-bar/middle-bar.svg);
+}
+
+.short-bar::after {
+  content: url(/client/assets/svg/taing-progress-bar/short-bar.svg);
 }
 
 .information {
+  position: relative;
   display: flex;
   flex-flow: row nowrap;
+  gap: 10px;
+}
+
+.slide-title {
+  font-size: calc(12px + 0.5vw);
   margin-top: 0.5rem;
-  gap: 1.25rem;
-}
-
-.slide-info {
-  overflow: hidden;
-}
-
-.rank {
-  font-size: 4.375rem;
-  font-weight: 700;
-  font-style: italic;
-  transform: translateY(-0.937rem);
-}
-
-.name {
   color: var(--gray-200);
 }
 
 .round,
-.sub-name {
-  font-size: 1rem;
+.sub-title {
+  font-size: calc(10px + 0.5vw);
   color: var(--gray-300);
 }
 
-.name,
-.sub-name {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 .viewer {
-  font-size: 1rem;
+  font-size: calc(10px + 0.5vw);
   color: var(--gray-500);
 }
 
-.right-arrow,
-.left-arrow {
-  width: 3.125rem;
-  height: 100%;
-  transform: translateY(-50%);
+/* .swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50px;
+  opacity: 0.5;
+  color: var(--gray-400);
+  background-color: var(--black);
+} */
+
+/* .swiper-button-next::after {
+  position: absolute;
+  right: 16px;
 }
 
-.right-arrow::after,
-.left-arrow::after {
-  font-size: 2.5rem;
-  color: var(--gray-400);
+.swiper-button-prev::after {
+  position: absolute;
+  left: 16px;
 }
+
+.swiper-button-next {
+  top: 140px;
+  right: 0;
+}
+.swiper-button-prev {
+  top: 140px;
+  left: 0;
+} */
