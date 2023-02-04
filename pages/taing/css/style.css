@@ -25,7 +25,7 @@ h2 {
   padding: 0 0 12px;
 }
 
-figcaption {
+/* figcaption {
   color: var(--gray-100);
   font-size: 1.3rem;
   margin-top: 0.5rem;
@@ -33,7 +33,7 @@ figcaption {
   text-overflow: ellipsis;
   white-space: nowrap;
   line-height: 1.4;
-}
+} */
 
 /** ---------뽑아쓰는거------------ **/
 
@@ -288,25 +288,12 @@ figcaption {
   color: var(--white);
 }
 
-.contents__list {
-  background-color: var(--black);
-}
-
 .contents__list img {
   width: 100%;
 }
 
 .contents__inner {
   padding: 0 70px 36px;
-}
-
-.contents__inner:hover .right-arrow::after,
-.contents__inner:hover .left-arrow::after {
-  color: var(--white);
-}
-
-.items {
-  position: relative;
 }
 
 .items li,
@@ -329,7 +316,7 @@ figcaption {
   justify-content: center;
   margin: 5px 0 0 5px;
   border-radius: 4px;
-  background-color: #c73e4e;
+  background-color: var(--brand-red-3);
   font-size: 1rem;
 }
 
@@ -339,10 +326,10 @@ figcaption {
 
 .Live-progress-bar {
   position: absolute;
-  bottom: 0;
-  transform: translateY(-50%);
   width: 10.625rem;
   height: 0.25rem;
+  bottom: 0;
+  transform: translateY(-50%);
   background: url(/client/assets/svg/live/progress_bar.svg) no-repeat;
 }
 
@@ -354,15 +341,20 @@ figcaption {
   width: 3.125rem;
 }
 
-.information {
-  display: flex;
-  flex-flow: row nowrap;
+.items figcaption {
+  font-size: 1.3rem;
   margin-top: 0.5rem;
-  gap: 1.25rem;
+  line-height: 1.4;
 }
 
 .slide-info {
   overflow: hidden;
+}
+
+.information {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1.25rem;
 }
 
 .rank {
@@ -394,15 +386,12 @@ figcaption {
   color: var(--gray-500);
 }
 
-.right-arrow,
-.left-arrow {
-  width: 3.125rem;
-  height: 100%;
-  transform: translateY(-50%);
+.swiper-button-lock {
+  display: flex;
 }
 
-.right-arrow::after,
-.left-arrow::after {
-  font-size: 2.5rem;
-  color: var(--gray-400);
+.contents__inner .swiper-button-next,
+.contents__inner .swiper-button-prev {
+  cursor: pointer;
+  pointer-events: all;
 }
