@@ -12,52 +12,44 @@
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/main.js" type="module"></script>
-    <!-- GSAP 추가 -->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-
     <script src="../../client/js/onboarding-swiper.js" type="module"></script>
-    <title>Document</title>
+    <title>Onboarding</title>
   </head>
   <body>
-    <header class="appHeader">
-      <h1 class="logo">
-        <!-- aria-label 이미지를 사용해 시작적 표현을 할 경우 대체 텍스트 역할. alt랑 다른게 뭐지. 정확히 어케 동작하는지 멀겠음. 이건 탑재되어있는거임. -->
-        <a href="./onboarding.html" class="logo__link" aria-label="TAING">
-          <img src="../../client/assets/svg/header/logo.svg" />
-        </a>
-      </h1>
-      <nav class="appNavMenu">
-        <!-- a11yHidden 정확한 용법이 머였더라...스크린리더에는 읽히고 화면상에서는 아예 감추는것? css에서 따로 줘야됨.직접만든 로컬함수-->
-        <h2 class="a11yHidden">메인 메뉴</h2>
-        <ul class="menu__list">
-          <li class="menu__item menu__item__liveBtn">
-            <!-- 프리티어 작동 안되니깐 불편...? -->
-            <a href="/" class="menu__link__liveBtn">
-              <!-- <img src="../../client/assets/svg/header/live.svg" /> -->
-              실시간</a
-            >
-          </li>
-          <li class="menu__item">
-            <a href="/" class="menu__link">TV프로그램</a>
-          </li>
-          <li class="menu__item">
-            <a href="/" class="menu__link">영화</a>
-          </li>
-          <li class="menu__item">
-            <a href="/" class="menu__link"><img src="../../client/assets/svg/header/praramount.svg" alt="파라마운트 픽쳐스" /></a>
-          </li>
-        </ul>
-      </nav>
-      <!-- 이 아이템들 a 해야하는지 btn 해야하는지 헷갈리는데 일단 a로 함 -->
-      <div class="memberOnly">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a href="/" class="menu__link"><img src="../../client/assets/svg/header/search.svg" alt="검색 및 실시간 인기검색어" /></a>
-          </li>
-          <li class="menu__item">
-            <a ref="/" class="menu__link"><img src="../../client/assets/svg/header/profile.svg" alt="로그아웃 하기" /></a>
-          </li>
-        </ul>
+    <header class="webHeader">
+      <div class="webHeader__logaNavContainer">
+        <h1 class="webHeader__logo">
+          <a href="./onboarding.html" class="webHeader__logo__link">
+            <img class="webHeader__logo__img" src="../../client/assets/svg/header/logo.svg" alt="taing logo" />
+          </a>
+        </h1>
+        <nav class="webHeader__NavMenu">
+          <ul class="NavMenu__list">
+            <li class="NavMenu__list__item NavMenu__list__liveItem">
+              <img class="NavMenu__list__liveItem__img" src="../../client/assets/svg/header/live.svg" alt="live image" />
+              <a href="/" class="list__link list__liveItem"> 실시간</a>
+            </li>
+            <li class="NavMenu__list__item">
+              <a href="/" class="list__link">TV프로그램</a>
+            </li>
+            <li class="NavMenu__list__item">
+              <a href="/" class="list__link">영화</a>
+            </li>
+            <li class="NavMenu__list__item">
+              <a href="/" class="list__link">
+                <img class="NavMenu__list__item__img" src="../../client/assets/svg/header/praramount.svg" alt="파라마운트 픽쳐스" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="member-container">
+        <button class="member-container__btn">
+          <img class="member-container__img" src="../../client/assets/svg/header/search.svg" alt="티비프로그램, 영화제목, 출연진 검색창 버튼" />
+        </button>
+        <button class="member-container__btn">
+          <img class="member-container__img" src="../../client/assets/svg/header/profile.svg" alt="나의 메뉴 버튼" />
+        </button>
       </div>
     </header>
     <div class="onboardingMain">
