@@ -7,6 +7,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/04c1ea1f1c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
+    <link rel="shortcut icon" href="../../client/assets/img/tving-favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <!-- <link rel="stylesheet" href="../../client/css/theme.css" /> -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -21,16 +22,85 @@
   <body>
     <div class="login-wrapper">
       <form method="post" action="" id="login-form">
-        <h2 class="login-title" >비밀번호 찾기</h2>
+        <h2 class="login-title" >티빙 회원가입</h2>
         
         <div class="login-inner">
           <div class="login-text">
-            <p>아이디 확인 후 등록된 이메일 주소로 비밀번호 재설정을 위한 인증 메일이  발송됩니다. 이메일을 확인하여 12시간 이내에 비밀번호 재설정을 완료해주세요.</p>
+            <p>아이디와 이메일로 간편하게 티빙을 시작하세요!</p>
           </div>
-          <div class="input-wrapper">
-            <input type="text" name="userId" placeholder="아이디">
+          
+          <div class="register-input-wrapper">
+            <div class="input-wrapper">
+              <input type="text" name="userId" placeholder="아이디">
+            </div>
+            <span class="gray-500">영문 또는 영문, 숫자 조합 6~12자리</span>
           </div>
-          <input class="login-btn" type="submit" value="확인">
+          
+          <div class="register-input-wrapper">
+            <div class="input-wrapper">
+              <input type="text" name="userId" placeholder="비밀번호">
+            </div>
+            <span class="gray-500">영문, 숫자, 특수문자(~!@#$%^&*) 조합 8~15자리</span>
+            <div class="input-wrapper">
+              <input type="text" name="userId" placeholder="비밀번호 확인">
+            </div>
+          </div>
+
+          <div class="register-input-wrapper">
+            <div class="input-wrapper">
+              <input type="text" name="userId" placeholder="이메일">
+            </div>
+
+            <div class="auto-login-wrapper">
+
+              <label class="auto-login" for="agree-all">
+                  <input type="checkbox" id="agree-all">
+                  <span class="checked"><i class="fa-solid fa-check fa-xs"></i></span>
+                  <span class="auto-login-text gray-300" >모두 동의합니다.</span>
+              </label>
+              
+              <div class="agree-inner-wrap">
+
+                <label class="auto-login" for="above-14">
+                  <input type="checkbox" id="above-14">
+                  <span class="checked"><i class="fa-solid fa-check fa-xs"></i></span>
+                  <span class="auto-login-text gray-300" >만 14세 이상입니다.</span>
+                </label>
+
+                <label class="auto-login" for="service">
+                  <input type="checkbox" id="service">
+                  <span class="checked"><i class="fa-solid fa-check fa-xs"></i></span>
+                  <span class="auto-login-text gray-300" >[필수] 서비스 이용약관 동의</span>
+                </label>
+
+                <label class="auto-login" for="personal-info">
+                  <input type="checkbox" id="personal-info">
+                  <span class="checked"><i class="fa-solid fa-check fa-xs"></i></span>
+                  <span class="auto-login-text gray-300" >[필수] 개인정보 수집 및 서비스 활용 동의</span>
+                </label>
+
+                <label class="auto-login" for="info-providing">
+                  <input type="checkbox" id="info-providing">
+                  <span class="checked"><i class="fa-solid fa-check fa-xs"></i></span>
+                  <span class="auto-login-text gray-300" >[필수] 채널 홈페이지 개인정보 제 3자 제공동의</span>
+                </label>
+
+                <label class="auto-login" for="personal-info-providing">
+                  <input type="checkbox" id="personal-info-providing">
+                  <span class="checked"><i class="fa-solid fa-check fa-xs"></i></span>
+                  <span class="auto-login-text gray-300" >[선택] 개인정보 제 3자 제공동의</span>
+                </label>
+
+                <label class="auto-login" for="info-agreement">
+                  <input type="checkbox" id="info-agreement">
+                  <span class="checked"><i class="fa-solid fa-check fa-xs"></i></span>
+                  <span class="auto-login-text gray-300" >[선택] 개인정보 수집 및 서비스 활용 동의</span>
+                </label>
+
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </form>
