@@ -296,6 +296,11 @@ h2 {
   padding: 0 70px 36px;
 }
 
+.items li {
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+
 .items li,
 .sports-img {
   transition: 0.3s;
@@ -392,6 +397,10 @@ h2 {
 
 .contents__inner .swiper-button-next,
 .contents__inner .swiper-button-prev {
+  position: absolute;
+  top: 0;
+  width: 3.125rem;
+  height: 100%;
   cursor: pointer;
   pointer-events: all;
 }

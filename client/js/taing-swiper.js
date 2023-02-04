@@ -1,7 +1,6 @@
 export const swiperSlide = new Swiper('.contents__inner', {
   slidesPerView: 5,
   slidesPerGroup: 5,
-  spaceBetween: 16,
 
   keyboard: {
     enabled: true
