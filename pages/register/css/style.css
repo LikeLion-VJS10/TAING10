@@ -118,7 +118,7 @@ button{
 }
 .auto-login-text{
   margin-left: 1.5rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: var(----label-l);
   display : flex;
   align-items : center;
@@ -211,12 +211,24 @@ button{
   margin: 1rem 0;
 }
 .agree-inner-wrap{
-  margin-left: 1rem;
+  margin-left: 1.5rem;
+  margin-top: .5rem;
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: .8rem;
 }
 
 .agree-inner-wrap .checked{
-  /* background: none; */
+  background: none;
+  color: var(--gray-500);
+}
+
+.agree-inner-wrap input[type="checkbox"]:checked + .checked{
+  background: none;
+  color: var(--brand-red-1);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
