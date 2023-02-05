@@ -121,6 +121,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  margin-top: 160px;
 }
 
 .info__login {
@@ -180,7 +181,9 @@ a {
   bottom: 0px;
   /* background-color: blue; */
 }
-
+.onboardingWantSee .info {
+  margin-top: 160px;
+}
 /* 텍스트 사이즈 */
 
 .info__subText {
@@ -200,12 +203,11 @@ a {
   text-align: center;
 }
 .info {
-  margin-top: 160px;
   margin-bottom: 160px;
 }
 .info__mainText {
   margin-bottom: 20px;
-  font-size: var(--heading-xxxl);
+  font-size: var(--heading-xxl);
   font-weight: bold;
   line-height: 150%;
 }
@@ -295,12 +297,17 @@ a {
 footer {
   margin: 30px 68px 0 68px;
   font-size: var(--paragraph-l);
-
+  line-height: 150%;
   color: var(--gray-500);
+  /* margin-bottom: 100px; */
+}
+.footer-info a {
+  text-decoration: underline;
 }
 .appFooter--list {
   display: flex;
   color: var(--gray-200);
+  margin-top: 100px;
   margin-bottom: 24px;
   gap: 36px;
 }
