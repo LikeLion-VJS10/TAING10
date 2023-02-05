@@ -179,9 +179,13 @@ figcaption {
   gap: 0.8rem;
 }
 
-.taing-must__list li:hover {
-  transform: translateY(-12px);
+.taing-must__list li{
   transition: all 0.5s;
+}
+
+.taing-must__list li:hover {
+  transition: all 0.5s;
+  transform: translateY(-10px);
 }
 
 .taing-must__list figure {
@@ -220,9 +224,13 @@ figcaption {
   gap: 0.8rem;
 }
 
-.taing-live-rank__list li:hover {
-  transform: translateY(-12px);
+.taing-live-rank__list li {
   transition: all 0.5s;
+}
+
+.taing-live-rank__list li:hover {
+  transition: all 0.5s;
+  transform: translateY(-10px);
 }
 
 .taing-live-rank__list figure {
@@ -278,8 +286,12 @@ figcaption {
   gap: 0.8rem;
 }
 
+.taing-only-tving__list li {
+  transition: all 0.5s;
+}
+
 .taing-only-tving__list li:hover {
-  transform: translateY(-12px);
+  transform: translateY(-10px);
   transition: all 0.5s;
 }
 
