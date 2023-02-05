@@ -38,6 +38,8 @@ export const tiger = async (options = {}) =>{
 
 
 
+
+
 tiger.get = async (url,options) => {
   return tiger({
     url,

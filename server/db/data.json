@@ -3,9 +3,9 @@
     {
       "id": 1,
       "rank":1,
-      "program-name": "product-rksk",
-      "src": "[대구 반할만떡] 유부호만두",
-      "alt": "유부로 속을 든든히 채운 군만두"
+      "name": "product-rksk",
+      "description": "유부로 속을 든든히 채운 군만두",
+      "image": "[대구 반할만떡] 유부호만두"
     }]
 
 }
