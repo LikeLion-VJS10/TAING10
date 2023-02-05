@@ -105,6 +105,3 @@ button:hover{
     transition: all 0.5s;
     transform: translateY(-10px);
 }
-
-
-/* 완료누르면 돌아가는거 if 나 리무브이벤트리스터 펑션  */
