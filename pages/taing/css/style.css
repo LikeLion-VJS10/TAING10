@@ -200,7 +200,7 @@ figcaption {
 /** 실시간 인기 프로그램 css **/
 
 .taing-live-rank__container {
-  padding: 0 0 36px 50px;
+  padding: 0 0 70px 50px;
 }
 
 .taing-live-rank__title {
@@ -232,7 +232,7 @@ figcaption {
 }
 
 .taing-live-rank figcaption {
-  padding-top: 8px;
+  padding-top: 15px;
   position: absolute;
   width: 100%;
   top: 90%;
@@ -320,10 +320,6 @@ figcaption {
 .contents__inner {
   position: relative;
   padding: 0 4.4rem 2.25rem;
-}
-
-.swiper {
-  overflow: visible;
 }
 
 .swiper-slide:hover {
