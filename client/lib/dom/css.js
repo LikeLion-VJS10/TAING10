@@ -45,7 +45,6 @@ export function toggleClass(node,className){
 
 
 
-
 function getCss(node,prop){
   if(typeof node === 'string'){
     node = getNode(node);

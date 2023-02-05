@@ -1,33 +1,22 @@
-// export * from '../../client/lib/dom/index.js';
-// export * from '../../client/lib/error/index.js';
-// export * from '../../client/lib/math/index.js';
-// export * from '../../client/lib/utils/index.js';
-
-
-//필요한 돔 요소 정의
 const mainTxt = document.querySelector('.profile-title__main');
 const subTxt = document.querySelector('.profile-title__sub');
-const editBtn = document.querySelector(".profile-edit__button");
-const editPencil = document.querySelector(".fa-lock");
+const editBtn = document.querySelector('.profile-edit__button');
+const editImg = Array.from(document.querySelectorAll('.profile-img-list i'));
+console.log(editImg);
 
-console.log(document.querySelector(".fa-lock"))
-//사용자가 편집하기 버튼을 클릭했을때 실행되는 함수
 function onEdit() {
-  console.log("test");
-  editBtn.style.cssText="color:black; background-color: white; "
+  editBtn.style.cssText="color:black; background-color: white; ";
   editBtn.textContent = "완료";
-  mainTxt.textContent = "프로필 편집"
-  subTxt.textContent = "편집할 프로필을 선택해주세요."
-  //자물쇠가 연필이미지로 바뀜(폰트어썸) click
-  // editPencil.className = ".fa-pencil"
+  mainTxt.textContent = "프로필 편집";
+  subTxt.textContent = "편집할 프로필을 선택해주세요.";
+  editImg.forEach(
+    function(currentElement, index){
+      currentElement.classList.toggle('fa-lock');
+      currentElement.classList.toggle('fa-pencil');
+    }
+  )
 }
 
-//문서객체.addEventListener(이벤트 이름, 함수)
-//에딧버튼 클릭시 콜백함수onEdit 호출
 editBtn.addEventListener('click', ()=>{
   onEdit();
 });
-
-
-    //챌1-버튼에 마우스 호버시 버튼 포커스 효과 mouseover
-    //챌2-프로필 이미지에 마우스 호버시 위로 살짝 올라가는 애니메이션 mouseover
