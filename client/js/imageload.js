@@ -1,6 +1,5 @@
 /* global gsap */
 
-
 import {
   attr,
   tiger,
@@ -11,35 +10,33 @@ import {
   renderSpinner,
   renderUserCard,
   renderEmptyCard,
+  renderLiveRankProgram,
 } from './lib/index.js';
 
-// rendingUserList 함수 만들기
-// ajax (tiger) get user List
-
-// 유저 카드 생성
-// 생성된 카드로 랜더링
-
-//  1. userList.js로 갑니다.
-//  2. renderUserCard 함수를 만들기
-//  3. 만들어진 함수 안에 createUserCard를 던지고,
-//  4. renderUserCard함수를 사용했을 때  랜더링이 잘 될 수 있도록.
 
 
 //! 실시간 인기 프로그램 만들기
 
-const liveRankProgram = $('.taing-live-rank__list');
+const liveRankProgram = $('.taing-live-rank__list overflow__hidden');
 
-async function redingProgramInfo() {
-
-  renderSpinner(liveRankProgram)
+async function rendingProgram() {
 
   try{
     await delayP(1000)
 
-    $('.')
+    let response = await tiger.get( 'http://localhost:3000/taing-content' );
 
+    let userData = response.data;
+
+    userData.forEach((data)=> {
+      renderLiveRankProgram(liveRankProgram,data)
+    })
+
+  }catch(err){
+    alert('제공할 정보가 없자나')
   }
 
+  rendingProgram();
 
 }
 
