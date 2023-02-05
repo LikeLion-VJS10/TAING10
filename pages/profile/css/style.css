@@ -51,6 +51,7 @@ button{
 }
 .profile-img__wrap{
     position: relative;
+    animation-duration: 0.8s;
 }
 .profile-img__wrap--shadow{
     background: rgba(0, 0, 0, .3);
@@ -90,3 +91,20 @@ button{
     /* width 추가(텍스트가 줄어들어도 너비가 일정하도록 */
     width: 13rem;
 }
+
+button:hover{
+    border: 1px solid var(--gray-200);
+    color: var(--white);
+}
+
+.profile-img__wrap {
+    transition: all 0.5s;
+}
+
+.profile-img__wrap:hover{
+    transition: all 0.5s;
+    transform: translateY(-10px);
+}
+
+
+/* 완료누르면 돌아가는거 if 나 리무브이벤트리스터 펑션  */
