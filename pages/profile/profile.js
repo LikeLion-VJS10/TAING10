@@ -19,7 +19,7 @@ function onEdit() {
   mainTxt.textContent = "프로필 편집"
   subTxt.textContent = "편집할 프로필을 선택해주세요."
   //자물쇠가 연필이미지로 바뀜(폰트어썸) click
-  editPencil.className = ".fa-pencil"
+  // editPencil.className = ".fa-pencil"
 }
 
 //문서객체.addEventListener(이벤트 이름, 함수)
