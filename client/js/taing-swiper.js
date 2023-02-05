@@ -35,8 +35,32 @@ export const swiper2 = new Swiper('.mySwiper2', {
     prevEl: '.swiper-button-prev'
   },
   keyboard: {
-    enabled: true,
-    onlyInViewport: false
+    enabled: true
+  }
+})
+
+export const hero = new Swiper('.hero', {
+  // cssMode: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  keyboard: {
+    enabled: true
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false
+  },
+  hashNavigation: {
+    watchState: true
   }
   // autoplay: {
   // delay: 3000,
@@ -54,8 +78,7 @@ export const swiper3 = new Swiper('.mySwiper3', {
     prevEl: '.swiper-button-prev'
   },
   keyboard: {
-    enabled: true,
-    onlyInViewport: false
+    enabled: true
   }
   // autoplay: {
   // delay: 3500,

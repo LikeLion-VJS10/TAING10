@@ -1,8 +1,10 @@
+@import url(./theme.css);
+
+/** 공통사항 **/
+
 body {
   background-color: var(--black);
   color: var(--white);
-  font-family: Pretendard;
-  font-size: 16px;
 }
 
 a {
@@ -16,7 +18,6 @@ a:active {
 
 html {
   font-size: calc(6px + 0.5vw);
-  box-sizing: border-box;
 }
 
 h2 {
@@ -32,8 +33,8 @@ h2 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  line-height: 1.4;
-} */
+  line-height: 150%;
+}
 
 /** ---------뽑아쓰는거------------ **/
 
@@ -45,11 +46,15 @@ h2 {
   z-index: 10;
 }
 
+/** ---------------------------- **/
+
 /* ------------ hero start -------------- */
 
-.hero--wrapper .swiper {
-  position: relative;
+.hero--wrapper {
   width: 100%;
+  height: 80%;
+  position: relative;
+  margin: 0 auto;
 }
 
 .pannel {
@@ -58,22 +63,56 @@ h2 {
   width: 100%;
   height: 30%;
 }
+
 .controler {
   position: absolute;
   top: 0;
   display: flex;
   width: 100%;
 }
+
 .contents {
   box-sizing: border-box;
   position: absolute;
-  bottom: 0;
+  bottom: 15%;
   width: 100%;
   display: flex;
   justify-content: space-between;
   /* z-index: 9; */
   padding: 0 4rem;
 }
+
+.contents--left--description{
+  font-size: 1.5rem;
+}
+
+.content--control{
+  display: flex;
+  position: relative;
+  margin: 10px auto;
+  gap: 10px;
+}
+
+.content--control .swiper-pagination{
+  position: relative;
+}
+
+.content--control .swiper-pagination-bullets.swiper-pagination-horizontal{
+  width: auto;
+  bottom: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--white);
+}
+
+.swiper-stop-button button{
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 0;
+}
+
 .detail--button {
   width: 10rem;
   height: 4rem;
@@ -83,24 +122,17 @@ h2 {
   color: var(--white);
   border-radius: 10px;
 }
+
 .detail--button > a {
   display: block;
 }
 
-.contents .swiper-pagination {
-  position: relative;
-  top: 8px;
-}
-.swiper-pagination-bullet {
-  background-color: var(--white);
-}
-
 .hero--wrapper .swiper-slide {
   text-align: center;
-  font-size: 18px;
 
   /* Center slide text vertically */
-  display: -webkit-box;
+
+  /* display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -111,7 +143,7 @@ h2 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .hero--wrapper .swiper-slide img {
@@ -121,10 +153,10 @@ h2 {
   object-fit: cover;
 }
 
-.hero--wrapper .swiper-button-next::after,
+/* .hero--wrapper .swiper-button-next::after,
 .swiper-button-prev::after {
   color: var(--gray-400);
-}
+} */
 
 /* --------------- hero End --------------- */
 
@@ -254,7 +286,7 @@ h2 {
 }
 
 .taing-only-tving__list li:hover {
-  transform: translateY(-10px);
+  transform: translateY(-12px);
   transition: all 0.5s;
 }
 
@@ -357,6 +389,7 @@ h2 {
 }
 
 .information {
+  position: relative;
   display: flex;
   flex-flow: row nowrap;
   gap: 1.25rem;

@@ -1,0 +1,90 @@
+@import url(../../../client/css/theme.css);
+@import url(../../../client/css/a11yHidden.css);
+
+body{
+    background-color: var(--black);
+    color: var(--white);
+    font-family: pretendard;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+button{
+    background: inherit;
+    border:none;
+    box-shadow:none;
+    border-radius:0;
+    padding:0;
+    overflow:visible;
+    cursor:pointer;
+}
+
+.profile-wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-title{
+    width: 100%;
+    text-align: center;
+    line-height: var(--heading-xxxl);
+}
+.profile-title h2{
+    font-size: var(--heading-xxxl);
+    font-weight: bold;
+}
+.profile-title h3{
+    font-size: var(--label-xl);
+    color: var(--gray-200);
+    font-weight: lighter;
+}
+
+.profile-list{
+    display: flex;
+    gap: 2rem;
+    margin: 1rem auto 2rem;
+}
+.profile-image-wrap{
+    position: relative;
+}
+.profile-image-shadow{
+    background: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-list figcaption{
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+    font-size: var(--paragraph-xl);
+    color: var(--gray-300);
+    font-weight: 200;
+}
+
+.profile-button-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-edit-button{
+    border: 1px solid var(--gray-600);
+    color: var(--gray-300);
+    font-size: var(--label-xl);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+}
