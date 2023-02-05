@@ -1,19 +1,27 @@
-//필요한 돔 요소 정의하기
+// export * from '../../client/lib/dom/index.js';
+// export * from '../../client/lib/error/index.js';
+// export * from '../../client/lib/math/index.js';
+// export * from '../../client/lib/utils/index.js';
+
+
+//필요한 돔 요소 정의
 const mainTxt = document.querySelector('.profile-title__main');
 const subTxt = document.querySelector('.profile-title__sub');
-const editBtn = document.querySelector('.profile-edit__button');
+const editBtn = document.querySelector(".profile-edit__button");
 
-//사용자가 버튼을 클릭했을때 실행되는 함수
-//클릭시 실행되는 함수는 보통 on을 붙임
+//사용자가 편집하기 버튼을 클릭했을때 실행되는 함수
 function onEdit() {
   console.log("test");
-  // editBtn.setAttribute('color', 'white')
-  //버튼 클릭시 버튼 스타일 바뀜(color, text바뀜), click
+  // 버튼 스타일 변경
+  editBtn.style.cssText="color:black; background-color: white;"
+  editBtn.textContent = "완료";
+  // 텍스트 변경
+  mainTxt.textContent = "프로필 편집"
+  subTxt.textContent = "편집할 프로필을 선택해주세요."
   //메인,서브 텍스트 변경됨(txt만 바뀜)) click
   //자물쇠가 연필이미지로 바뀜(폰트어썸) click
 }
 
-//이벤트 제거시는 리무브이벤트리스너
 //문서객체.addEventListener(이벤트 이름, 함수)
 //에딧버튼 클릭시 콜백함수onEdit 호출
 editBtn.addEventListener('click', ()=>{
