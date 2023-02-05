@@ -23,51 +23,53 @@
     <title>Profile</title>
   </head>
 
+ 
+  
   <body>
     <article class="profile-wrap">
       <div class="profile-title">
-        <h2>프로필 선택</h2>
-        <h3>시청할 프로필을 선택해주세요.</h3>
+        <h2 class="profile-title__main">프로필 선택</h2>
+        <h3 class="profile-title__sub">시청할 프로필을 선택해주세요.</h3>
       </div>
-      <ul class="profile-list">
-        <li>
+      <ul class="profile-img-list">
+        <li class="profile-img-list__item">
           <figure>
-            <div class="profile-image-wrap">
+            <div class="profile-img__wrap">
               <img src="../../client/assets/img/desktop/profile/profile_1.png" alt="첫번째 유저 프로필 이미지" />
-              <div class="profile-image-shadow">
+              <div class="profile-img__wrap--shadow">
                 <i class="fa-solid fa-lock fa-2x"></i>
               </div>
             </div>
             <figcaption>슬비님</figcaption>
           </figure>
         </li>
-        <li>
+        <li class="profile-img-list__item">
           <figure>
-            <div class="profile-image-wrap">
+            <div class="profile-img__wrap">
               <img src="../../client/assets/img/desktop/profile/profile_2.png" alt="두번째 유저 프로필 이미지" />
-              <div class="profile-image-shadow">
+              <div class="profile-img__wrap--shadow">
                 <i class="fa-solid fa-lock fa-2x"></i>
               </div>
             </div>
             <figcaption>야무</figcaption>
           </figure>
         </li>
-        <li>
+        <li class="profile-img-list__item">
           <figure>
-            <div class="profile-image-wrap">
+            <div class="profile-img__wrap">
               <img src="../../client/assets/img/desktop/profile/profile_3.png" alt="세번째 유저 프로필 이미지" />
-              <div class="profile-image-shadow">
+              <div class="profile-img__wrap--shadow">
                 <i class="fa-solid fa-lock fa-2x"></i>
               </div>
             </div>
             <figcaption>범쌤</figcaption>
           </figure>
         </li>
-        <li>
+        <li class="profile-img-list__item">
           <figure>
-            <div class="profile-image-wrap">
+            <div class="profile-img__wrap">
               <img src="../../client/assets/img/desktop/profile/profile_4.png" alt="네번째 유저 프로필 이미지" />
-              <div class="profile-image-shadow a11yHidden">
+              <div class="profile-img__wrap--shadow a11yHidden">
                 <i class="fa-solid fa-lock fa-2x"></i>
               </div>
             </div>
@@ -75,14 +77,12 @@
           </figure>
         </li>
       </ul>
-      <div class="profile-button-wrap">
-        <button class="profile-edit-button">
+      <div class="profile-edit">
+        <!-- 상태 변화 필요(?) -->
+        <button class="profile-edit__button">
           프로필 편집
         </button>
       </div>
     </article>
-    <footer>
-      <!-- 유선님 작업 들어갈 예정  -->
-    </footer>
   </body>
 </html>
