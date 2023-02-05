@@ -1,4 +1,4 @@
-@import url(./theme.css);
+@import url(../../../client/css/theme.css);
 
 /** 공통사항 **/
 
@@ -179,9 +179,13 @@ figcaption {
   gap: 0.8rem;
 }
 
-.taing-must__list li:hover {
-  transform: translateY(-12px);
+.taing-must__list li{
   transition: all 0.5s;
+}
+
+.taing-must__list li:hover {
+  transition: all 0.5s;
+  transform: translateY(-10px);
 }
 
 .taing-must__list figure {
@@ -200,7 +204,7 @@ figcaption {
 /** 실시간 인기 프로그램 css **/
 
 .taing-live-rank__container {
-  padding: 0 0 36px 50px;
+  padding: 0 0 70px 50px;
 }
 
 .taing-live-rank__title {
@@ -220,9 +224,13 @@ figcaption {
   gap: 0.8rem;
 }
 
-.taing-live-rank__list li:hover {
-  transform: translateY(-12px);
+.taing-live-rank__list li {
   transition: all 0.5s;
+}
+
+.taing-live-rank__list li:hover {
+  transition: all 0.5s;
+  transform: translateY(-10px);
 }
 
 .taing-live-rank__list figure {
@@ -232,7 +240,7 @@ figcaption {
 }
 
 .taing-live-rank figcaption {
-  padding-top: 8px;
+  padding-top: 15px;
   position: absolute;
   width: 100%;
   top: 90%;
@@ -278,8 +286,12 @@ figcaption {
   gap: 0.8rem;
 }
 
+.taing-only-tving__list li {
+  transition: all 0.5s;
+}
+
 .taing-only-tving__list li:hover {
-  transform: translateY(-12px);
+  transform: translateY(-10px);
   transition: all 0.5s;
 }
 
@@ -320,10 +332,6 @@ figcaption {
 .contents__inner {
   position: relative;
   padding: 0 4.4rem 2.25rem;
-}
-
-.swiper {
-  overflow: visible;
 }
 
 .swiper-slide:hover {

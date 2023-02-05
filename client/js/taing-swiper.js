@@ -22,13 +22,15 @@ export const swiper = new Swiper('.mySwiper', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
-  }
-  
+  },
+  keyboard: {
+    enabled: true
+  },
   // autoplay: {
   // delay: 2500,
   // disableOnInteraction: false,
   // }
-})
+});
 
 //^ 실시간 인기 프로그램 Swiper
 export const swiper2 = new Swiper('.mySwiper2', {
