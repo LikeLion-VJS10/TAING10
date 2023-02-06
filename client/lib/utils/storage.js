@@ -1,13 +1,9 @@
-
 import { isString } from './typeOf.js'
 
-
 const {
-  localStorage:storage,
-  JSON:{stringify:serialize, parse: deserialize}
+  localStorage: storage,
+  JSON: { stringify: serialize, parse: deserialize }
 } = globalThis
-
-
 
 const albums = [
   {
@@ -20,8 +16,8 @@ const albums = [
     cover: {
       size: 640,
       quality: 100,
-      src: 'https://cdnimg.melon.co.kr/cm2/album/images/110/73/494/11073494_20221007160706_500.jpg/melon/resize/640/quality/100/optimize',
-    },
+      src: 'https://cdnimg.melon.co.kr/cm2/album/images/110/73/494/11073494_20221007160706_500.jpg/melon/resize/640/quality/100/optimize'
+    }
   },
   {
     id: 'album_9ipw',
@@ -33,45 +29,42 @@ const albums = [
     cover: {
       size: 640,
       quality: 100,
-      src: 'https://cdnimg.melon.co.kr/cm2/album/images/110/72/305/11072305_20221006135934_500.jpg/melon/resize/640/quality/100/optimize',
-    },
-  },
-];
+      src: 'https://cdnimg.melon.co.kr/cm2/album/images/110/72/305/11072305_20221006135934_500.jpg/melon/resize/640/quality/100/optimize'
+    }
+  }
+]
 
 // JSON.stringify()
 // serialize()
 // deserialize()
 
-
-export function saveStorage(key,value){
-   return new Promise((resolve, reject) => {
-       if(isString(key)){
-        storage.setItem(key,serialize(value));
-        resolve();
-       }else{
-        reject({message:'key는 문자 타입 이어야 합니다.'});
-       }
-   })
-}
-
-export function loadStorage(key){
+export function saveStorage(key, value) {
   return new Promise((resolve, reject) => {
-    if(isString(key)){
-      resolve(deserialize(storage.getItem(key)))
-    }else{
-      reject({message:'key는 문자 타입 이어야 합니다.'});
+    if (isString(key)) {
+      storage.setItem(key, serialize(value))
+      resolve()
+    } else {
+      reject({ message: 'key는 문자 타입 이어야 합니다.' })
     }
   })
 }
 
-export function deleteStorage(key){
+export function loadStorage(key) {
   return new Promise((resolve, reject) => {
-    !key ? storage.clear() : storage.removeItem(key);
-    resolve();
+    if (isString(key)) {
+      resolve(deserialize(storage.getItem(key)))
+    } else {
+      reject({ message: 'key는 문자 타입 이어야 합니다.' })
+    }
   })
 }
 
-
+export function deleteStorage(key) {
+  return new Promise((resolve, reject) => {
+    !key ? storage.clear() : storage.removeItem(key)
+    resolve()
+  })
+}
 
 // saveStorage('name','tiger')
 
@@ -79,19 +72,8 @@ export function deleteStorage(key){
 
 // deleteStorage('name')
 
-
-
 // storage.setItem('name','tiger');
 // console.log( storage.getItem('name') );
 // storage.clear()
 
 // storage.removeItem('name')
-
-
-
-
-
-
-
-
-
