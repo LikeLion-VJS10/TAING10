@@ -25,12 +25,12 @@ export const swiper = new Swiper('.mySwiper', {
   },
   keyboard: {
     enabled: true
-  },
+  }
   // autoplay: {
   // delay: 2500,
   // disableOnInteraction: false,
   // }
-});
+})
 
 //^ 실시간 인기 프로그램 Swiper
 export const swiper2 = new Swiper('.mySwiper2', {
@@ -42,9 +42,8 @@ export const swiper2 = new Swiper('.mySwiper2', {
   },
   keyboard: {
     enabled: true
-  },
-});
-
+  }
+})
 
 //^ 오직 티빙에만 있어요 Swiper
 export const swiper3 = new Swiper('.mySwiper3', {
@@ -55,14 +54,13 @@ export const swiper3 = new Swiper('.mySwiper3', {
     prevEl: '.swiper-button-prev'
   },
   keyboard: {
-    enabled: true,
+    enabled: true
   }
   // autoplay: {
   // delay: 3500,
   // disableOnInteraction: false,
   // }
 })
-
 
 export const hero = new Swiper('.hero', {
   // cssMode: true,
@@ -83,8 +81,5 @@ export const hero = new Swiper('.hero', {
   autoplay: {
     delay: 2500,
     disableOnInteraction: true
-  },
-
-});
-
-
+  }
+})
