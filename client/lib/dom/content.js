@@ -5,9 +5,6 @@ import { insertBefore, insertLast } from "./insert.js";
 
 
 
-
-
-
 //^ 실시간 인기 프로그램 list 만들기
 export const createLiveRankProgram = ({
   // 기본값 + 구조분해할당 하기위해 이렇게 한다! 많이 사용되지 않는다.

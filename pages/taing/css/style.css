@@ -350,7 +350,7 @@ figcaption {
   bottom: 5.81rem;
 }
 
-.long-bar::after {
+/* .long-bar::after {
   content: url(/client/assets/svg/live/progress_bar.svg);
 }
 
@@ -360,7 +360,7 @@ figcaption {
 
 .short-bar::after {
   content: url(/client/assets/svg/taing-progress-bar/short-bar.svg);
-}
+} */
 
 .information {
   position: relative;
