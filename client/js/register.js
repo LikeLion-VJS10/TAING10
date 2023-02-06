@@ -1,6 +1,7 @@
 import { getNode, getNodes } from '../lib/dom/getNode.js'
 import { loadStorage, saveStorage } from '../lib/utils/storage.js'
 import { getInputValue } from '../lib/dom/getInputValue.js'
+import { addClass, removeClass } from '../lib/dom/css.js'
 
 const ID = getNode('#inputID')
 const PW = getNode('#inputPW')
@@ -114,8 +115,8 @@ Email.addEventListener('keyup', ValidEmail)
 // 가입하기 버튼
 function submitBtn() {
   //조건 일치
-  loginBtn.classList.add('is-active')
+  addClass('loginBtn', 'is-active')
   //조건 일치 x
-  loginBtn.classList.remove('is-active')
+  removeClass('loginBtn', 'is-active')
 }
 loginBtn.addEventListener('click', submitBtn)
