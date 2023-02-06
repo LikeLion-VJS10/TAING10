@@ -52,7 +52,7 @@ export const hero = new Swiper('.hero', {
   // cssMode: true,
   slidesPerView: 1,
   spaceBetween: 30,
-  loop: true,
+  // loop: true,
   keyboard: {
     enabled: true
   },
@@ -68,12 +68,13 @@ export const hero = new Swiper('.hero', {
     delay: 2500,
     disableOnInteraction: false
   },
-
+  
 });
 
 //^ 오직 티빙에만 있어요 Swiper
 export const swiper3 = new Swiper('.mySwiper3', {
   slidesPerView: 7,
+  // loop: true,
   slidesPerGroup: 7,
   navigation: {
     nextEl: '.swiper-button-next',
