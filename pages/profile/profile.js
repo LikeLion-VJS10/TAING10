@@ -20,7 +20,7 @@ function onEdit() {
     )
     activeProfile.classList.toggle('a11yHidden')
     // activeProfile.classList.toggle('profile-img__wrap--shadow')
-    return console.log("1")
+    return
   }
   else if(!!(editImg[0].classList.contains('fa-pencil'))){
     editBtn.style.cssText = "var(--gray-300); background-color:inherit;";
@@ -35,7 +35,7 @@ function onEdit() {
       )
       activeProfile.classList.toggle('a11yHidden')
       
-    return console.log("2")
+    return
   }
 }
 
