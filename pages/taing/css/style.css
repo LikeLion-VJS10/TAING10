@@ -54,7 +54,7 @@ figcaption {
   width: 100%;
   height: 80%;
   position: relative;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .pannel {
@@ -147,9 +147,13 @@ figcaption {
 }
 
 /* .hero--wrapper .swiper-button-next::after,
-.swiper-button-prev::after {
+.hero--wrapper .swiper-button-prev::after {
   color: var(--gray-400);
 } */
+
+.hero .swiper-button-lock{
+  display: block;
+}
 
 /* --------------- hero End --------------- */
 
@@ -334,7 +338,7 @@ figcaption {
   padding: 0 4.4rem 2.25rem;
 }
 
-.swiper-slide:hover {
+main .swiper-slide:hover {
   transform: translateY(-10px);
   transition: all 0.5s;
 }

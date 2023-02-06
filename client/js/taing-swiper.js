@@ -68,14 +68,7 @@ export const hero = new Swiper('.hero', {
     delay: 2500,
     disableOnInteraction: false
   },
-  hashNavigation: {
-    watchState: true
-  }
-  // autoplay: {
-  // delay: 3000,
-  // disableOnInteraction: false,
-  // reverseDirection: true,
-  // }
+
 });
 
 //^ 오직 티빙에만 있어요 Swiper
