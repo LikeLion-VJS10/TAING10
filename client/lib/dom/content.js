@@ -1,52 +1,35 @@
-import { insertBefore, insertLast } from "./insert.js";
-
-
-
-
-
+import { insertBefore, insertLast } from './insert.js'
 
 //^ 실시간 인기 프로그램 list 만들기
 export const createLiveRankProgram = ({
   // 기본값 + 구조분해할당 하기위해 이렇게 한다! 많이 사용되지 않는다.
-  id = "",
-  rank = "",
-  name = "",
-  description = "",
-  image = "",
+  id = '',
+  rank = '',
+  name = '',
+  description = '',
+  image = ''
 } = {}) => {
-
   return /* html */ `
-  <section class="taing-live-rank overflow__hidden">
-  <li class="swiper-slide">
-    <figure>
-      <a href="./">
-        <img src="../../client/assets/img/desktop/live/${image}" alt="${description}" />
-        <figcaption>
-          <span class="taing-live-rank-ordered">${rank}</span>
-          ${name}
-        </figcaption>
-      </a>
-    </figure>
-  </li>
-  `;
-};
+    <li class="swiper-slide">
+      <figure>
+        <a href="./">
+          <img src="../../client/assets/img/desktop/live/${image}" alt="${description}" />
+          <figcaption>
+            <span class="taing-live-rank-ordered">${rank}</span>
+            ${name}
+          </figcaption>
+        </a>
+      </figure>
+    </li>
+  `
+}
 
 export const renderLiveRankProgram = (target, data) => {
-  insertLast(target, createLiveRankProgram(data));
-};
-
-
-
-
-
-
-
+  insertLast(target, createLiveRankProgram(data))
+}
 
 //^ 스피너
-const createSpinner = (
-  size = 100,
-  loadingMessage = "목록을 불러옵니다"
-) => {
+const createSpinner = (size = 100, loadingMessage = '목록을 불러옵니다') => {
   return /* html */ `
   <figure class="loadingSpinner">
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:#fff;display:block;" width="184px" height="184px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
@@ -69,9 +52,9 @@ const createSpinner = (
   </svg>
     <figcaption>${loadingMessage}</figcaption>
   </figure>
-  `;
-};
+  `
+}
 
-export const renderSpinner = (target) => {
-  insertLast(target, createSpinner());
-};
+export const renderSpinner = target => {
+  insertLast(target, createSpinner())
+}

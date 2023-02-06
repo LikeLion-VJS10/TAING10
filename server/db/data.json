@@ -2,7 +2,7 @@
   "taingContent": [
     {
       "id": 1,
-      "rank":1,
+      "rank": 1,
       "name": "재벌집 막내아들",
       "description": "재벌집 막내아들",
       "image": "img_frame-14.png"
@@ -23,14 +23,14 @@
     },
     {
       "id": 4,
-      "rank":4,
+      "rank": 4,
       "name": "캐나다 체크인",
       "description": "캐나다 체크인",
       "image": "img_frame-17.png"
     },
     {
       "id": 5,
-      "rank":5,
+      "rank": 5,
       "name": "놀라운 토요일",
       "description": "놀라운 토요일",
       "image": "img_frame-18.png"
@@ -97,7 +97,22 @@
       "name": "환혼: 빛과 그림자",
       "description": "환혼: 빛과 그림자",
       "image": "img_frame-16.png"
+    },
+    {
+      "name": "jinseob",
+      "username": "Moriah.Stanton",
+      "email": "Rey.Padberg@karina.biz",
+      "address": {
+        "street": "Kattie Turnpike",
+        "suite": "Suite 198",
+        "city": "Lebsackbury",
+        "zipcode": "31428-2261",
+        "geo": {
+          "lat": "-38.2386",
+          "lng": "57.2232"
+        }
+      },
+      "id": 15
     }
-    ]
-
+  ]
 }

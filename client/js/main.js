@@ -1,14 +1,5 @@
 import { swiperSlide, swiper, swiper2, swiper3, hero } from './taing-swiper.js'
-import {
-  attr,
-  tiger,
-  delayP,
-  insertLast,
-  getNode as $,
-  renderLiveRankProgram,
-} from '../lib/index.js';
-
-
+import { attr, tiger, delayP, insertLast, getNode as $, renderLiveRankProgram } from '../lib/index.js'
 
 // const swiper = new Swiper(".mySwiper", {
 //     navigation: {
@@ -16,7 +7,6 @@ import {
 //       prevEl: ".swiper-button-prev",
 //     },
 //   });
-
 
 // async function getData() {
 //   let response = await fetch('http://localhost:3000/tivingFun%27')
@@ -33,40 +23,27 @@ import {
 //     )
 // }
 
-
-
-
 //^ ---------------------------------------------------------------------
-
 
 //! 실시간 인기 프로그램 만들기
 
-const liveRankProgram = $('.taing-live-rank__list overflow__hidden');
+const liveRankProgram = $('.taing-live-rank__list')
 
 async function rendingProgram() {
+  try {
+    let response = await tiger.get('http://localhost:3000/taingContent')
 
-  try{
-    await delayP(1000)
-
-    let response = await tiger.get( 'http://localhost:3000/taingContent' );
-    console.log(response);
-
-    let userData = response.data;
-
-    userData.forEach((data)=> {
-      renderLiveRankProgram(liveRankProgram,data)
-
+    let userData = response.data
+    console.log(liveRankProgram)
+    userData.forEach(data => {
+      renderLiveRankProgram(liveRankProgram, data)
+      console.log(userData)
     })
-
-  }catch(err){
-    alert('제공할 정보가 없자나')
+  } catch (err) {
+    alert('제공할 정보가 없습니다요')
   }
-
-  rendingProgram();
-
 }
-
-
+rendingProgram()
 
 // const userCardContainer = $('.user-card-inner');
 
@@ -80,15 +57,15 @@ async function rendingProgram() {
 //     $('.loadingSpinner').remove();
 
 //     let response = await tiger.get( 'http://localhost:3000/users' );
-  
+
 //     let userData = response.data;
 //     // userData.forEach(data=> renderUserCard(userCardContainer,data))
 //     userData.forEach((data)=> {
 //       renderUserCard(userCardContainer,data)
 //     })
-  
+
 //     changeColor('.user-card');
-    
+
 //     gsap.to(gsap.utils.toArray('.user-card'),{
 //       x:0,
 //       opacity:1,
@@ -104,20 +81,15 @@ async function rendingProgram() {
 
 // rendingUserList();
 
-
-
 // // 삭제 버튼을 클릭하면 콘솔창에 '삭제' 글자가 출력이 될 수 있도록 만들어 주세요.
-
-
 
 // function handler(e){
 //   let deleteButton = e.target.closest('button');
 //   let article = e.target.closest('article');
-  
-//   if(!deleteButton || !article) return; // 버튼이 아니면 실행 안함 
+
+//   if(!deleteButton || !article) return; // 버튼이 아니면 실행 안함
 //   // if(!article) return; // 누른 대상의 인접한 대상이 article이 아니면 실행 안함.
 
-   
 //   let id = attr(article,'data-index').slice(5);
 
 //   // await tiger.delete(`http://localhost:3000/users/${id}`)
@@ -125,14 +97,10 @@ async function rendingProgram() {
 //   // userCardContainer.innerHTML = '';
 //   // rendingUserList();
 
-
-
-
 //   tiger.delete(`http://localhost:3000/users/${id}`).then(()=>{
 //     userCardContainer.innerHTML = '';
 //     rendingUserList();
 //   })
 // }
-
 
 // userCardContainer.addEventListener('click',handler)
