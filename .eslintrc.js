@@ -31,7 +31,7 @@ module.exports = {
     'max-depth': [
       'error',
       {
-        max: 1
+        max: 2
       }
     ],
     // return 문 이전에는 반드시 빈 줄이 있어야 한다
