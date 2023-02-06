@@ -152,13 +152,33 @@ button {
   width: 100%;
   border: none;
   background: none;
-  padding: 0.625rem;
+  padding: 1rem;
   color: var(--gray-600);
   font-size: var(--paragraph-xl);
 }
 
 .input-wrapper > input:focus {
   outline: 1px solid white;
+}
+
+.show-hide {
+  position: absolute;
+  width: 2.25rem;
+  height: 2.25rem;
+  background: url(/client/assets/svg/login/input_pw.svg) no-repeat center;
+  right: 1.875rem;
+}
+
+.delete {
+  position: absolute;
+  width: 2.25rem;
+  height: 2.25rem;
+  background: url(/client/assets/svg/login/input_id.svg) no-repeat center;
+  right: 1.875rem;
+}
+
+.delete:nth-child(3) {
+  margin-right: 3.125rem;
 }
 
 .auto-login-wrapper {
