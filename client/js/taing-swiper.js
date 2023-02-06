@@ -19,6 +19,9 @@ export const swiper = new Swiper('.mySwiper', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
+  },
+  keyboard: {
+    enabled: true
   }
   // autoplay: {
   // delay: 2500,
@@ -39,6 +42,23 @@ export const swiper2 = new Swiper('.mySwiper2', {
   }
 })
 
+//^ 오직 티빙에만 있어요 Swiper
+export const swiper3 = new Swiper('.mySwiper3', {
+  slidesPerView: 7,
+  slidesPerGroup: 7,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+  keyboard: {
+    enabled: true
+  }
+  // autoplay: {
+  // delay: 3500,
+  // disableOnInteraction: false,
+  // }
+})
+
 export const hero = new Swiper('.hero', {
   // cssMode: true,
   slidesPerView: 1,
@@ -57,31 +77,6 @@ export const hero = new Swiper('.hero', {
   },
   autoplay: {
     delay: 2500,
-    disableOnInteraction: false
-  },
-  hashNavigation: {
-    watchState: true
+    disableOnInteraction: true
   }
-  // autoplay: {
-  // delay: 3000,
-  // disableOnInteraction: false,
-  // reverseDirection: true,
-  // }
-})
-
-//^ 오직 티빙에만 있어요 Swiper
-export const swiper3 = new Swiper('.mySwiper3', {
-  slidesPerView: 7,
-  slidesPerGroup: 7,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  },
-  keyboard: {
-    enabled: true
-  }
-  // autoplay: {
-  // delay: 3500,
-  // disableOnInteraction: false,
-  // }
 })

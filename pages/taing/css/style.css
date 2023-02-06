@@ -1,4 +1,4 @@
-@import url(./theme.css);
+@import url(../../../client/css/theme.css);
 
 /** 공통사항 **/
 
@@ -54,7 +54,7 @@ h2 {
   width: 100%;
   height: 80%;
   position: relative;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .pannel {
@@ -154,9 +154,13 @@ h2 {
 }
 
 /* .hero--wrapper .swiper-button-next::after,
-.swiper-button-prev::after {
+.hero--wrapper .swiper-button-prev::after {
   color: var(--gray-400);
 } */
+
+.hero .swiper-button-lock{
+  display: block;
+}
 
 /* --------------- hero End --------------- */
 
@@ -186,9 +190,13 @@ h2 {
   gap: 0.8rem;
 }
 
-.taing-must__list li:hover {
-  transform: translateY(-12px);
+.taing-must__list li{
   transition: all 0.5s;
+}
+
+.taing-must__list li:hover {
+  transition: all 0.5s;
+  transform: translateY(-10px);
 }
 
 .taing-must__list figure {
@@ -207,7 +215,7 @@ h2 {
 /** 실시간 인기 프로그램 css **/
 
 .taing-live-rank__container {
-  padding: 0 0 36px 50px;
+  padding: 0 0 70px 50px;
 }
 
 .taing-live-rank__title {
@@ -227,9 +235,13 @@ h2 {
   gap: 0.8rem;
 }
 
-.taing-live-rank__list li:hover {
-  transform: translateY(-12px);
+.taing-live-rank__list li {
   transition: all 0.5s;
+}
+
+.taing-live-rank__list li:hover {
+  transition: all 0.5s;
+  transform: translateY(-10px);
 }
 
 .taing-live-rank__list figure {
@@ -239,7 +251,7 @@ h2 {
 }
 
 .taing-live-rank figcaption {
-  padding-top: 8px;
+  padding-top: 15px;
   position: absolute;
   width: 100%;
   top: 90%;
@@ -285,8 +297,12 @@ h2 {
   gap: 0.8rem;
 }
 
+.taing-only-tving__list li {
+  transition: all 0.5s;
+}
+
 .taing-only-tving__list li:hover {
-  transform: translateY(-12px);
+  transform: translateY(-10px);
   transition: all 0.5s;
 }
 
@@ -335,7 +351,7 @@ h2 {
 
 .items li,
 .sports-img {
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .items li:hover,
