@@ -20,7 +20,7 @@ module.exports = {
     // 선언한 표현식은 반드시 사용해야 한다
     'no-unused-expressions': ['error'],
     // if 문에서 return을 하면 else 문에서 return을 할 수 없다
-    'no-else-return': ['error'],
+    // 'no-else-return': ['error'],
     // 불필요한 반복문은 사용할 수 없다
     'no-unreachable-loop': ['error'],
     // 도달하지 못하는 코드는 사용할 수 없다
@@ -28,12 +28,12 @@ module.exports = {
     // 선언하지 않은 코드를 사용할 수 없다
     'no-use-before-define': ['error'],
     // if ~ else 중첩은 허용하지 않는다
-    'max-depth': [
-      'error',
-      {
-        max: 2
-      }
-    ],
+    // 'max-depth': [
+    //   'error',
+    //   {
+    //     max: 1
+    //   }
+    // ],
     // return 문 이전에는 반드시 빈 줄이 있어야 한다
     'padding-line-between-statements': [
       'error',
