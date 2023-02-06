@@ -15,16 +15,52 @@ const rulePW = getNode('.rulePW')
 const ruleCheckPW = getNode('.ruleCheckPW')
 const ruleEmail = getNode('.ruleEmail')
 
-// 아이디 조건
-function ValidID() {
-  let value = getInputValue(ID)
+// 영어, 숫자 포함
+function isEngNum(value) {
   let count = 0
 
   for (let i = 0; i < value.length; i++) {
     if ((value.charCodeAt(i) >= 97 && value.charCodeAt(i) <= 122) || (value.charCodeAt(i) >= 48 && value.charCodeAt(i) <= 57)) count += 1
   }
 
-  if (value.length >= 6 && value.length <= 12 && count === value.length) {
+  if (value.length === count) {
+    return true
+  } else {
+    return false
+  }
+}
+
+// 영어, 숫자, 특수문자 포함
+function isSpecialStr(value) {
+  let count = 0
+
+  for (let i = 0; i < value.length; i++) {
+    if (
+      (value.charCodeAt(i) >= 97 && value.charCodeAt(i) <= 122) ||
+      (value.charCodeAt(i) >= 48 && value.charCodeAt(i) <= 57) ||
+      (value.charCodeAt(i) >= 35 && value.charCodeAt(i) <= 38) ||
+      value.charCodeAt(i) === 33 ||
+      value.charCodeAt(i) === 42 ||
+      value.charCodeAt(i) === 64 ||
+      value.charCodeAt(i) === 94 ||
+      value.charCodeAt(i) === 126
+    ) {
+      count += 1
+    }
+  }
+
+  if (value.length === count) {
+    return true
+  } else {
+    return false
+  }
+}
+
+// 아이디 조건
+function ValidID() {
+  let value = getInputValue(ID)
+
+  if (value.length >= 6 && value.length <= 12 && isEngNum(value)) {
     ruleID.textContent = '영문 또는 영문, 숫자 조합 6~12자리'
     ruleID.style.color = 'var(--gray-500)'
     ID.style.border = '1px solid white'
@@ -43,24 +79,8 @@ ID.addEventListener('keyup', ValidID)
 // 비밀번호 조건
 function ValidPW() {
   let value = getInputValue(PW)
-  let count = 0
 
-  for (let i = 0; i < value.length; i++) {
-    if (
-      (value.charCodeAt(i) >= 97 && value.charCodeAt(i) <= 122) ||
-      (value.charCodeAt(i) >= 48 && value.charCodeAt(i) <= 57) ||
-      (value.charCodeAt(i) >= 35 && value.charCodeAt(i) <= 38) ||
-      value.charCodeAt(i) === 33 ||
-      value.charCodeAt(i) === 42 ||
-      value.charCodeAt(i) === 64 ||
-      value.charCodeAt(i) === 94 ||
-      value.charCodeAt(i) === 126
-    ) {
-      count += 1
-    }
-  }
-
-  if (value.length >= 8 && value.length <= 15 && count === value.length) {
+  if (value.length >= 8 && value.length <= 15 && isSpecialStr(value)) {
     rulePW.textContent = '영문, 숫자, 특수문자(~!@#$%^&*) 조합 8~15자리'
     rulePW.style.color = 'var(--gray-500)'
     PW.style.border = '1px solid white'
