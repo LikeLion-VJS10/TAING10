@@ -2,7 +2,9 @@ import { getNode, getNodes } from '../lib/dom/getNode.js'
 import { loadStorage, saveStorage } from '../lib/utils/storage.js'
 import { getInputValue } from '../lib/dom/getInputValue.js'
 import { addClass, removeClass } from '../lib/dom/css.js'
+import { clearContents } from '../lib/dom/clearContents.js'
 
+const input = getNodes('.input-wrapper > input')
 const ID = getNode('#inputID')
 const PW = getNode('#inputPW')
 const checkPW = getNode('#checkPW')
@@ -14,6 +16,9 @@ const ruleID = getNode('.ruleID')
 const rulePW = getNode('.rulePW')
 const ruleCheckPW = getNode('.ruleCheckPW')
 const ruleEmail = getNode('.ruleEmail')
+
+const showHideBtn = getNode('.show-hide')
+const clearBtn = getNodes('.delete')
 
 // 영어, 숫자 포함
 function isEngNum(value) {
@@ -55,6 +60,13 @@ function isSpecialStr(value) {
     return false
   }
 }
+
+// 비밀번호 표시 유무
+function toggleHide() {}
+
+// input 초기화
+function reset(e) {}
+// clearBtn.addEventListener('click', reset)
 
 // 아이디 조건
 function ValidID() {
@@ -123,6 +135,7 @@ function ValidEmail() {
     Email.style.border = '1px solid white'
   } else if (value === '') {
     ruleEmail.textContent = '입력한 내용이 없습니다.'
+    ruleEmail.style.color = '#ff153c'
     Email.style.border = 'none'
   } else {
     ruleEmail.textContent = '올바른 이메일 형식이 아닙니다.'
