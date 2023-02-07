@@ -54,6 +54,7 @@ function selectAll() {
 }
 
 agreeAll.addEventListener('click', selectAll)
+
 above14.addEventListener('click', checkSelectAll)
 service.addEventListener('click', checkSelectAll)
 personalInfo.addEventListener('click', checkSelectAll)
