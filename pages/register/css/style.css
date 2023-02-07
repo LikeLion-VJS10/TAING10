@@ -1,6 +1,5 @@
 @import url(../../../client/css/theme.css);
 
-
 html {
   font-size: calc(6px + 0.5vw);
   font-family: pretendard;
@@ -22,6 +21,22 @@ a {
 a:hover,
 a:active {
   text-decoration: none;
+}
+
+button {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
+}
+.gray-500 {
+  color: var(--gray-500);
+}
+.gray-300 {
+  color: var(--gray-300);
 }
 
 /* -----------------유선님 작업 헤더 스타일----------------- */
@@ -98,80 +113,124 @@ a:active {
 
 /* -----------------유선님 작업 헤더 스타일 끝----------------- */
 
-
-.login-wrapper{
+.login-wrapper {
   width: calc(100% / 3);
-  /* height: 90%; */
+  height: 90%;
+  flex-direction: column;
   position: relative;
   margin: 8rem 0;
-  /* bottom: 0; */
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   /* background-color: var(--gray-100); */
 }
-.login-title{
+.login-title {
   font-size: var(--heading-xxl);
   font-weight: bold;
   width: 100%;
   text-align: center;
   margin: 5rem auto;
 }
-.input-wrapper, .login-btn{
+.input-wrapper,
+.login-btn {
+  height: 4rem;
   all: unset;
   display: flex;
   background: var(--brand-dark-bg-2);
-  margin: 10px auto;
-  padding: 10px;
+  margin: 1rem auto;
   align-items: center;
 }
-.see-pw{
+.see-pw {
   color: var(--gray-400);
 }
-.input-wrapper>input{
-  width: 100%;
-  border:none ;
-  background: none;
-  color: var(--gray-600);
-  font-size: 1.6rem;
-}
-.auto-login-wrapper{
-  width: 100%;
-  font-size: 1.3rem;
-  color: var(--gray-500);
-  position: relative;
+
+.input-wrapper {
+  box-sizing: border-box;
 }
 
-.auto-login-wrapper input[type="checkbox"] {
+.input-wrapper > input {
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 1rem;
+  color: var(--gray-600);
+  font-size: var(--paragraph-xl);
+}
+
+.input-wrapper > input:focus {
+  outline: 1px solid white;
+}
+
+.show-hide {
+  position: absolute;
+  width: 2.25rem;
+  height: 2.25rem;
+  background: url(/client/assets/svg/login/input_pw.svg) no-repeat center;
+  right: 1.875rem;
+}
+
+.delete {
+  position: absolute;
+  width: 2.25rem;
+  height: 2.25rem;
+  background: url(/client/assets/svg/login/input_id.svg) no-repeat center;
+  right: 1.875rem;
+}
+
+.delete:nth-child(3) {
+  margin-right: 3.125rem;
+}
+
+.auto-login-wrapper {
+  width: 100%;
+  font-size: var(--label-l);
+  color: var(--brand-dark-bg-2);
+  margin: 1.5rem auto;
+}
+
+.auto-login {
+  display: block;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.auto-login-wrapper input[type='checkbox'] {
   display: none;
 }
-.checked{
-  width: 1.5rem;
-  height: 1.5rem;
+.checked {
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   background-color: var(--gray-600);
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
+  transform: translateY(-50%);
   color: var(--gray-400);
   text-align: center;
-  line-height: 1.5rem;
+  line-height: 16px;
+  line-height: 16px;
 }
-.auto-login-wrapper input[type="checkbox"]:checked + .checked{
+.auto-login-wrapper input[type='checkbox']:checked + .checked {
   background-color: var(--brand-red-1);
   color: var(--white);
   text-align: center;
   position: absolute;
+  top: 50%;
   left: 0;
-  top:0;
+  transform: translateY(-50%);
 }
-.auto-login-text{
-  margin-left: 2rem;
-  height: 1.5rem;
-  font-size: var(--label-l);
-  display : flex;
-  align-items : center;
+.auto-login-text {
+  margin-left: 1.5rem;
+  /* font-weight: bold; */
+  font-size: var(----label-l);
+  display: flex;
+  align-items: center;
 }
-.find-wrapper{
+.find-wrapper {
   box-sizing: border-box;
   width: 100%;
   display: flex;
@@ -181,35 +240,112 @@ a:active {
   color: var(--gray-300);
 }
 
-.login-btn{
+.login-btn {
   box-sizing: border-box;
   width: 100%;
-  background-color: var(--brand-red-1);
+  height: 4rem;
   font-size: 1.3rem;
   border: none;
   text-align: center;
   display: block;
   border-radius: 3px;
+  background-color: var(--gray-700);
+  color: var(--gray-400);
+  margin: 5rem auto;
 }
-.register{
+
+.is-active {
+  background-color: var(--white);
+}
+
+.register {
   width: 100%;
   text-align: center;
 }
-.register a{
+.register a {
   display: flex;
   gap: 20px;
   justify-content: center;
 }
-.register p{
+.register p {
   font-size: var(--heading-m);
   display: inline-block;
   color: var(--gray-500);
 }
-.register-bold{
-  font-weight: bold;
-  color: var(--gray-300);
+
+.login-text {
+  font-size: var(--label-xl);
+  color: var(--gray-400);
+  margin: 2rem auto;
+  line-height: 150%;
 }
 
+.find-email {
+  font-weight: bold;
+  color: var(--white);
+  margin: 1rem auto;
+}
+
+.devider {
+  color: var(--gray-700);
+  position: relative;
+  width: 100%;
+  height: 5em;
+  /* background: red; */
+}
+.devider hr {
+  height: 1px;
+  background-color: var(--gray-800);
+  border: none;
+  position: relative;
+  top: 50%;
+}
+.devider span {
+  background-color: var(--black);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+}
+
+.verify-text {
+  font-size: var(--label-l);
+}
+.verify-btn {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.register-input-wrapper {
+  margin: 2rem auto;
+}
+
+.auto-login-wrapper > .auto-login:first-of-type {
+  margin: 1rem 0;
+}
+.agree-inner-wrap {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.agree-inner-wrap .checked {
+  background: none;
+  color: var(--gray-500);
+}
+
+.agree-inner-wrap input[type='checkbox']:checked + .checked {
+  background: none;
+  color: var(--brand-red-1);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
 
 /* -----------------유선님 작업 푸터 스타일----------------- */
 footer {

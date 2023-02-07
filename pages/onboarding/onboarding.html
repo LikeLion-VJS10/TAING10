@@ -8,93 +8,156 @@
     <script src="https://kit.fontawesome.com/04c1ea1f1c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/theme.css" />
+    <link rel="stylesheet" href="../../client/css/theme.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./js/main.js" type="module"></script>
-    <!-- GSAP 추가 -->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-
+    <script src="../../client/js/main.js" type="module"></script>
     <script src="../../client/js/onboarding-swiper.js" type="module"></script>
-    <title>Document</title>
+    <title>Onboarding</title>
   </head>
   <body>
-    <header class="appHeader">
-      <h1 class="logo">
-        <!-- aria-label 이미지를 사용해 시작적 표현을 할 경우 대체 텍스트 역할. alt랑 다른게 뭐지. 정확히 어케 동작하는지 멀겠음. 이건 탑재되어있는거임. -->
-        <a href="./onboarding.html" class="logo__link" aria-label="TAING">
-          <img src="../../client/assets/svg/header/logo.svg" />
-        </a>
-      </h1>
-      <nav class="appNavMenu">
-      <nav class="appNavMenu">
-        <!-- a11yHidden 정확한 용법이 머였더라...스크린리더에는 읽히고 화면상에서는 아예 감추는것? css에서 따로 줘야됨.직접만든 로컬함수-->
-        <h2 class="a11yHidden">메인 메뉴</h2>
-        <ul class="menu__list">
-          <li class="menu__item menu__item__liveBtn">
-            <!-- 프리티어 작동 안되니깐 불편...? -->
-            <a href="/" class="menu__link"><img src="../../client/assets/svg/header/live.svg" />실시간</a>
-            <a href="/" class="menu__link"><img src="../../client/assets/svg/header/live.svg" />실시간</a>
-          </li>
-          <li class="menu__item">
-            <a href="/" class="menu__link">TV프로그램</a>
-          </li>
-          <li class="menu__item">
-            <a href="/" class="menu__link">영화</a>
-          </li>
-          <li class="menu__item">
-            <a href="/" class="menu__link"><img src="../../client/assets/svg/header/praramount.svg" alt="파라마운트 픽쳐스" /></a>
-            <a href="/" class="menu__link"><img src="../../client/assets/svg/header/praramount.svg" alt="파라마운트 픽쳐스" /></a>
-          </li>
-        </ul>
-      </nav>
-      <!-- 이 아이템들 a 해야하는지 btn 해야하는지 헷갈리는데 일단 a로 함 -->
-      <div class="memberOnly">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a href="/" class="menu__link"><img src="../../client/assets/svg/header/search.svg" alt="검색 및 실시간 인기검색어" /></a>
-          </li>
-          <li class="menu__item">
-            <a ref="/" class="menu__link"><img src="../../client/assets/svg/header/profile.svg" alt="로그아웃 하기" /></a>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <div class="onboardingMain">
-      <section class="onboardingHero">
-        <div class="info">
-          <h2 class="info__mainText">
-            티빙 오리지널 콘텐츠,<br />
-            방송, 영화, 해외시리즈까지! 재미를 플레이해보세요.
-          </h2>
-          <p class="info__subText">간편하게 가입하고, 원하실 때 해지할 수 있어요.</p>
-          <a ref="/" class="info__login"
-            ><img src="../../client/assets/svg/landing/simbol.svg" />
-            <p>새로워진 티빙을 만나보세요!</p>
+    <header class="webHeader">
+      <div class="webHeader__logaNavContainer">
+        <h1 class="webHeader__logo">
+          <a href="./onboarding.html" class="webHeader__logo__link">
+            <img class="webHeader__logo__img" src="../../client/assets/svg/header/logo.svg" alt="taing logo" />
           </a>
-        </div>
-      </section>
-      <section class="onboardingOriginal">
-        <div class="info">
-          <h2 class="info__mainText">티빙에만 있는 재미</h2>
-          <p class="info__subText">오리지널 콘텐츠를 만나보세요!</p>
-          <p class="info__smallText">차별화된 웰메이드 오리지널 콘텐츠</p>
-        </div>
-        <div class="contents">
-          <ul class="contents__list">
-            <li class="contents__item">
-              <img src="../../client/assets/img/desktop/landing/러브캐처 1.png" alt="청춘남녀들이 열대의 섬을 배경으로 모여있다" />
+        </h1>
+        <nav class="webHeader__NavMenu">
+          <ul class="NavMenu__list">
+            <li class="NavMenu__list__item NavMenu__list__liveItem">
+              <img class="NavMenu__list__liveItem__img" src="../../client/assets/svg/header/live.svg" alt="live image" />
+              <a href="/" class="list__link list__liveItem"> 실시간</a>
             </li>
-            <li class="contents__item">
-              <img src="../../client/assets/img/desktop/landing/보물찾기 1.png" alt="수상하게 생긴 구조물을 중심으로 각양각색의 사람들이 모여있다. 긴장감이 맴도는 분위기." />
+            <li class="NavMenu__list__item">
+              <a href="/" class="list__link">TV프로그램</a>
             </li>
-            <li class="contents__item">
-              <img src="../../client/assets/img/desktop/landing/몸값 1.png" alt="콘크리트 잔해가 여기저기 떨어진 밀폐된 공간 안에 남루한 차림의 세 사람이 모여있다. 긴장감이 맴도는 분위기." />
+            <li class="NavMenu__list__item">
+              <a href="/" class="list__link">영화</a>
+            </li>
+            <li class="NavMenu__list__item">
+              <a href="/" class="list__link">
+                <img class="NavMenu__list__item__img" src="../../client/assets/svg/header/praramount.svg" alt="파라마운트 픽쳐스" />
+              </a>
             </li>
           </ul>
+        </nav>
+      </div>
+      <div class="member-container">
+        <button class="member-container__btn">
+          <img class="member-container__img" src="../../client/assets/svg/header/search.svg" alt="티비프로그램, 영화제목, 출연진 검색창 버튼" />
+        </button>
+        <button class="member-container__btn">
+          <img class="member-container__img" src="../../client/assets/svg/header/profile.svg" alt="나의 메뉴 버튼" />
+        </button>
+      </div>
+    </header>
+    <section class="onboardingHero">
+      <div class="info">
+        <h2 class="info__mainText">
+          티빙 오리지널 콘텐츠,<br />
+          방송, 영화, 해외시리즈까지! <br />
+          재미를 플레이해보세요.
+        </h2>
+        <div class="info__subText">간편하게 가입하고, 원하실 때 해지할 수 있어요.</div>
+        <div class="content--btn">
+          <img src="../../client/assets/svg/landing/simbol.svg" alt="티빙로고" />
+          <div>
+            <a class="content--link" href="/"> <span class="link--des">새로워진 티빙을 만나보세요!</span></a>
+          </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+    <section class="onboardingOriginal">
+      <div class="info">
+        <h2 class="info__mainText">티빙에만 있는 재미</h2>
+        <p class="info__subText">오리지널 콘텐츠를 만나보세요!</p>
+        <p class="info__smallText">차별화된 웰메이드 오리지널 콘텐츠</p>
+      </div>
+      <div class="contents">
+        <ul class="contents__list"></ul>
+      </div>
+    </section>
+
     <!-- 유선님 파트 -->
+    <section class="onboardingWantSee">
+      <div class="info">
+        <h2 class="info__mainText">내가 찾던 재미</h2>
+        <p class="info__subText">보고 싶은 콘텐츠를 발견하세요!</p>
+        <p class="info__smallText">최신, 인기 TV프로그램, 영화, 해외시리즈, 파라마운트+ 오리지널 및 독점</p>
+      </div>
+      <article class="onboardingWantSee--swiper">
+        <div class="swiper slow">
+          <ul class="swiper-wrapper slow-swiper">
+            <!-- <li class="swiper-slide"><img src="../../client/assets/img/desktop/landing/슈룹.png" alt="" /></li>
+            <li class="swiper-slide"><img src="../../client/assets/img/desktop/landing/슈룹.png" alt="" /></li>
+            <li class="swiper-slide"><img src="../../client/assets/img/desktop/landing/슈룹.png" alt="" /></li>
+            <li class="swiper-slide"><img src="../../client/assets/img/desktop/landing/슈룹.png" alt="" /></li>
+            <li class="swiper-slide"><img src="../../client/assets/img/desktop/landing/슈룹.png" alt="" /></li> -->
+          </ul>
+        </div>
+        <div class="swiper fast">
+          <ul class="swiper-wrapper fast-swiper">
+            <!-- <li class="swiper-slide"><img src="../../client/assets/img/desktop/landing/슈룹.png" alt="" /></li>
+            <li class="swiper-slide"><img src="../../client/assets/img/desktop/landing/슈룹.png" alt="" /></li>
+            <li class="swiper-slide"><img src="../../client/assets/img/desktop/landing/슈룹.png" alt="" /></li>
+            <li class="swiper-slide"><img src="../../client/assets/img/desktop/landing/슈룹.png" alt="" /></li>
+            <li class="swiper-slide"><img src="../../client/assets/img/desktop/landing/슈룹.png" alt="" /></li> -->
+          </ul>
+        </div>
+      </article>
+    </section>
+    <section class="onboardingStartNow">
+      <div class="onboardingStartNow--content">
+        <img class="content--img" src="https://www.tving.com/img/no-1-k-new-tving.svg" alt="" />
+        <p class="content--des">지금 시작해보세요</p>
+
+        <div class="content--btn">
+          <img src="../../client/assets/svg/landing/simbol.svg" alt="티빙로고" />
+          <div>
+            <a class="content--link" href="/"> <span class="link--des">새로워진 티빙을 만나보세요!</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="appFooter">
+        <ul class="appFooter--list">
+          <li class="list--desc">고객센터</li>
+          <li class="list--desc">이용약관</li>
+          <li class="list--desc">개인정보처리방침</li>
+          <li class="list--desc">청소년 보호정책</li>
+          <li class="list--desc">법적고지</li>
+          <li class="list--desc">이벤트</li>
+          <li class="list--desc">인재채용</li>
+        </ul>
+      </div>
+      <div class="footer-info">
+        <span>대표이사 : 양지을</span>
+        <span><a href="/">사업자정보확인</a></span>
+        <span>사업자등록번호 : 188-88-01893</span>
+        <span>통신판매신고번호 : 2020-서울마포-3641호</span><br />
+        <address>사업장 : 서울특별시 마포구 상암산로 34, DMC디지털큐브 15층(상암동)</address>
+        <span>호스팅사업자 : 씨제이올리브네트웍스(주)</span><br />
+        <span><a href="/">고객문의 바로가기</a></span>
+        <span><a href="/">대표메일 : tving@cj.net</a></span>
+        <span><a href="/">고객센터 : 1670-1525(평일/주말 09시~18시,공휴일 휴무)</a></span
+        ><br />
+
+        <span>ENM 시청자 상담실(편성 문의 및 시청자 의견) : 080-080-0780</span>
+        <span>Mnet 고객센터(방송편성문의) : 1855-1631</span>
+      </div>
+
+      <div class="iconList">
+        <ul>
+          <li class="icon-item"><a href="/"></a><img src="../../client/assets/svg/footer/facebook.svg" alt="" /></li>
+          <li class="icon-item"><a href="/"></a><img src="../../client/assets/svg/footer/instragram.svg" alt="" /></li>
+          <li class="icon-item"><a href="/"></a><img src="../../client/assets/svg/footer/twitter.svg" alt="" /></li>
+          <li class="icon-item"><a href="/"></a><img src="../../client/assets/svg/footer/youtube.svg" alt="" /></li>
+        </ul>
+      </div>
+      <small>Copyright © 주식회사 티빙 All right reserved.</small>
+    </footer>
   </body>
 </html>

@@ -2,121 +2,123 @@
 @import url(../../../client/css/a11yHidden.css);
 
 /* 기본 설정 구역 */
-body{
-    background-color: var(--black);
-    color: var(--white);
-    font-family: pretendard;
-    position: relative;
-    /* width: 100vw; */
-    height: 100vh;
+body {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: pretendard;
+  position: relative;
+  /* width: 100vw; */
+  height: 100vh;
 }
 
-button{
-    background: inherit;
-    border:none;
-    box-shadow:none;
-    border-radius:0;
-    padding:0;
-    overflow:visible;
-    cursor:pointer;
+button {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
 }
 
 /* 프로필편집 구역 */
-.profile-wrap{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
+.profile-wrap {
+  /* border: 1px solid lime; */
+  position: relative;
+  margin: 8rem 0;
+  /* top: 50%; */
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
 }
 
 /* 프로필편집 안내 텍스트 구역 */
-.profile-title{
-    /* width: 100%; */
-    text-align: center;
-    line-height: var(--heading-xxxl);
+.profile-title {
+  /* width: 100%; */
+  text-align: center;
+  line-height: var(--heading-xxxl);
 }
-.profile-title__main{
-    font-size: var(--heading-xxxl);
-    font-weight: bold;
+.profile-title__main {
+  font-size: var(--heading-xxxl);
+  font-weight: bold;
 }
-.profile-title__sub{
-    font-size: var(--label-xl);
-    color: var(--gray-200);
-    font-weight: lighter;
+.profile-title__sub {
+  font-size: var(--label-xl);
+  color: var(--gray-200);
+  font-weight: lighter;
 }
 
 /* 프로필편집 이미지 구역 */
-.profile-img-list{
-    display: flex;
-    gap: 2rem;
-    margin: 1rem auto 2rem;
+.profile-img-list {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem auto 2rem;
 }
 
 .profile-img__wrap {
-    position: relative;
-    transition: all 0.5s;
-    /* width: 15rem; */
+  position: relative;
+  transition: all 0.5s;
+  /* width: 15rem; */
 }
 
-.profile-img__wrap:hover{
-    transition: all 0.5s;
-    transform: translateY(-10px);
+.profile-img__wrap:hover {
+  transition: all 0.5s;
+  transform: translateY(-10px);
 }
 
-.profile-img__wrap--shadow{
-    background: rgba(0, 0, 0, .3);
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* width는 부모를 따라감.(shadow의 부모는 'profile-img__wrap' div */
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.profile-img__wrap--shadow {
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* width는 부모를 따라감.(shadow의 부모는 'profile-img__wrap' div */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-img{
-    /* position: relative; */
-    /* 아래처럼 주면 되긴 하는디... img가 작아짐 */
-    /* width는 부모를 따라감.(img의 부모는 'profile-img__wrap' div */
-    max-width: 100%;
+img {
+  /* position: relative; */
+  /* 아래처럼 주면 되긴 하는디... img가 작아짐 */
+  /* width는 부모를 따라감.(img의 부모는 'profile-img__wrap' div */
+  max-width: 100%;
 }
 
-.profile-img-list figcaption{
-    /* width: 100%; */
-    text-align: center;
-    margin: 1.5rem auto;
-    font-size: var(--paragraph-xl);
-    color: var(--gray-300);
-    font-weight: 200;
+.profile-img-list figcaption {
+  /* width: 100%; */
+  text-align: center;
+  margin: 1.5rem auto;
+  font-size: var(--paragraph-xl);
+  color: var(--gray-300);
+  font-weight: 200;
 }
-
 
 /* 프로필편집 버튼 구역 */
-.profile-edit{
-    /* width: 100%; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.profile-edit {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.profile-edit__button{
-    border: 1px solid var(--gray-600);
-    color: var(--gray-300);
-    font-size: var(--label-xl);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 2rem;
-    border-radius: 4px;
-    /* width 추가(텍스트가 줄어들어도 너비가 일정하도록 */
-    width: 13rem;
+.profile-edit__button {
+  border: 1px solid var(--gray-600);
+  color: var(--gray-300);
+  font-size: var(--label-xl);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  /* width 추가(텍스트가 줄어들어도 너비가 일정하도록 */
+  width: 13rem;
 }
 
-button:hover{
-    border: 1px solid var(--gray-200);
-    color: var(--white);
+button:hover {
+  border: 1px solid var(--gray-200);
+  color: var(--white);
 }

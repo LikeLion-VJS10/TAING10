@@ -1,4 +1,3 @@
-/* 컬러 변수가 제대로 동작하지 않는 문제 해결 (@import로 가져와줘야함) */
 @import url(../../../client/css/theme.css);
 @import url(./theme_suyeong.css);
 @import url(./a11yHidden.css);
@@ -19,80 +18,90 @@ body *::after {
   box-sizing: border-box;
 }
 
+html {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+body {
+  background: no-repeat url(../../../client/assets/img/desktop/landing/backgorund.png);
+  background-size: 100%;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 /* 132/16(평균 구하기: shift, alt, m) */
 
-/* 클래스 선택자인거 같은데 왜 들어가는건지 멀겠음 */
-/* [class] {
-  margin: 0;
-} */
-
-body {
-  background: no-repeat url(../../../client/assets/img/desktop/landing/backgorund.png);
-  background-size: 100vw;
-}
-/* 헤더 시작 */
-.appHeader {
-  position: relative;
-  display: flex;
-  /* flex-flow 속성은 flex-direction과 flex-wrap을 합쳐놓은 약식 속성 */
-  flex-flow: row nowrap;
-  /* 수직 방향에서 중앙정렬 */
-  align-items: center;
-  justify-content: space-between;
-  /* 높이는 고정 */
-  height: 100px;
-  /* 너비는 뷰포트에 따라 변화되게 */
-  width: 100vw;
-  padding: 29px;
-  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-}
-
-.appNavMenu .menu__list {
-  position: relative;
+/* 헤더 */
+.webHeader {
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
   justify-content: space-between;
-  right: 320px;
-  width: 506px;
-  /* background-color: yellow; */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
-
-.appHeader .logo {
-  position: relative;
-  right: -41px;
+.webHeader__NavMenu,
+.member-container button {
+  display: none;
 }
-
-/* **실시간 버튼 해결해야됨!** */
-.menu__item__liveBtn {
+.webHeader__logaNavContainer {
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  background-color: blue;
+}
+.webHeader__logo {
+  margin: 20px;
+}
+.webHeader__logo__img {
+  width: 8rem;
+}
+.webHeader__logo__link {
+  display: inline-block;
 }
 
-.memberOnly .menu__list {
-  position: relative;
+.NavMenu__list {
   display: flex;
   flex-flow: row nowrap;
+  margin-top: 20px;
   align-items: center;
-  justify-content: space-between;
-  /* background-color: blue; */
-  left: -41px;
-  width: 120px;
+  font-size: var(--label-l);
+  color: var(--white);
 }
 
-.appHeader .profile {
-  position: relative;
-  left: 70px;
+.NavMenu__list__item {
+  margin-right: 50px;
 }
-/* 헤더 끝 */
+.NavMenu__list__liveItem {
+  display: flex;
+  align-items: center;
+}
+.NavMenu__list__liveItem__img {
+  width: 25px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.NavMenu__list__item__img {
+  width: 70px;
+}
+
+.member-container {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 7px;
+  margin-right: 30px;
+}
+.member-container__btn {
+  background: none;
+  border: none;
+  width: 35px;
+  margin-right: 10px;
+}
+.member-container__img {
+  width: 100%;
+}
 
 /* 온보딩 메인페이지 시작 */
 .onboardingMain {
@@ -106,28 +115,21 @@ body {
 
 /* 온보딩 히어로섹션 시작 */
 .onboardingHero {
-  display: block;
-  width: 100vw;
   height: 980px;
-  /* background-color: yellow; */
-  position: relative;
 }
 
 .onboardingHero .info {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: space-between;
   width: 562px;
   height: 416px;
   position: absolute;
-  /* 자식요소의 좌측상단을 부모요소의 중앙에 */
-  top: 50%;
+  top: 160px;
   left: 50%;
-  /* 자식요소의 50%만큼 마이너스 축으로 이동시키기 */
   transform: translate(-50%, -50%);
-  /* background-color: pink; */
   text-align: center;
+  margin-top: 160px;
 }
 
 .info__login {
@@ -145,24 +147,21 @@ body {
   right: 47px;
 }
 /* 이거 고쳐야됨 */
-.info__login p {
+.info__login div {
   display: inline;
   text-align: center;
   vertical-align: text-bottom;
-  background-color: blue;
+  line-height: 220%;
+  margin-bottom: 60px;
 }
 /* 온보딩 히어로섹션 끝 */
 
 /* 온보딩 오리지널섹션 시작 */
 .onboardingOriginal {
-  /* display:block 안해도 되나? */
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  /* justify-content: space-between; */
-  width: 100vw;
   height: 919px;
-  /* background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0)); */
   position: relative;
 }
 
@@ -181,27 +180,22 @@ body {
   /* transform: translate(-50%, -50%); */
   /* background-color: pink; */
   text-align: center;
-  position: absolute;
   top: 180px;
 }
 .contents__list {
   display: flex;
   flex-flow: row, nowrap;
-  position: absolute;
   bottom: 0px;
   /* background-color: blue; */
 }
-
-/* 텍스트 사이즈 */
-.info__mainText {
-  font-size: var(--heading-xxxl);
-  font-weight: bold;
-  line-height: 150%;
+.onboardingWantSee .info {
+  margin-top: 160px;
 }
+/* 텍스트 사이즈 */
 
 .info__subText {
   font-size: var(--label-xl);
-  font-weight: semibold;
+  font-weight: bold;
   color: var(--gray-200);
 }
 
@@ -211,23 +205,129 @@ body {
   color: var(--gray-200);
 }
 
-/* 
-모바일 디바이스(Mobile Device 320px기준)
-@media (min-width: 320px) and (max-width: 767px) {
-  .appHeader {
-    background: blue;
-  }
+/* 내가 찾던 재미 */
+.onboardingWantSee {
+  text-align: center;
+}
+.info {
+  margin-bottom: 160px;
+}
+.info__mainText {
+  margin-bottom: 20px;
+  font-size: var(--heading-xxl);
+  font-weight: bold;
+  line-height: 150%;
+}
+.info__subText {
+  margin-bottom: 60px;
+}
+/* swiper 부분 */
+.swiper {
+  width: 1920px;
+  height: 100%;
+  margin-bottom: 8px;
+}
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+.swiper-slide {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-m);
+}
+.onboardingWantSee--swiper {
+  margin-top: 34px;
+}
+.onboardingStartNow {
+  margin-top: 289.5px;
+}
+.onboardingStartNow--content {
+  text-align: center;
+  align-items: center;
+}
+.content--link {
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+}
+.content--des {
+  font-size: var(--heading-xxxl);
+  font-weight: 700;
+  margin: 36px 0 36px 0;
+}
+.content--img {
+  width: 320px;
+  height: 80px;
 }
 
-태블릿 디바이스(Medium Size 768px기준)
-@media (min-width: 768px) and (max-width: 1919px) {
-  .appHeader {
-    background: tomato;
-  }
+.content--btn {
+  border-radius: var(--radius-m);
+  background-color: #ff153c;
+  width: 506px;
+  height: 80px;
+  margin-top: 30px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-데스크탑 디바이스(Desktop Size 1920px기준)
-@media (min-width: 1920px) {
-  .appHeader {
-    background-color: var(--black);
-  } */
+.content--btn img {
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+
+.link--des {
+  font-size: var(--label-xl);
+  font-weight: 600;
+}
+
+footer {
+  margin: 30px 68px 0 68px;
+  font-size: 1.5rem;
+  line-height: 150%;
+  color: var(--gray-500);
+  /* margin-bottom: 100px; */
+}
+.footer-info a {
+  text-decoration: underline;
+}
+.appFooter--list {
+  display: flex;
+  color: var(--gray-200);
+  margin-top: 100px;
+  margin-bottom: 24px;
+  gap: 1.5rem;
+}
+
+.iconList ul {
+  display: flex;
+  margin: 24px 0 24px 0;
+}
+
+.iconList img {
+  margin-right: 16px;
+  width: 30px;
+}
+.footer-info address {
+  display: inline;
+}

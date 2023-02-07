@@ -18,7 +18,7 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 
     <script src="../../client/js/onboarding-swiper.js" type="module"></script>
-    <title>로그인</title>
+    <title>아이디 찾기</title>
   </head>
   <body>
     <header class="webHeader">
@@ -59,44 +59,22 @@
     </header>
 
 
-
-
-
     <div class="login-wrapper">
       <form method="post" action="" id="login-form">
-        <h2 class="login-title" >TVING ID 로그인</h2>
+        <h2 class="login-title" >비밀번호 찾기</h2>
+        
+        <div class="login-inner">
+          <div class="login-text">
+            <p>아이디 확인 후 등록된 이메일 주소로 비밀번호 재설정을 위한 인증 메일이  발송됩니다. 이메일을 확인하여 12시간 이내에 비밀번호 재설정을 완료해주세요.</p>
+          </div>
+          <div class="input-wrapper">
+            <input type="text" name="userId" placeholder="아이디">
+          </div>
+          <input class="login-btn" type="submit" value="확인">
+        </div>
 
-        <div class="input-wrapper">
-          <input type="text" name="userId" placeholder="Email">
-        </div>
-          
-        <div class="input-wrapper">
-          <input type="password" name="userPassword" placeholder="Password">
-          <i class="see-pw fa-solid fa-eye-slash"></i>
-        </div>
-
-        <div class="auto-login-wrapper">
-          <label for="auto-login">
-              <input type="checkbox" id="auto-login">
-              <span class="checked"><i class="fa-solid fa-check fa-xs"></i></span>
-              <span class="auto-login-text" >자동 로그인</span>
-          </label>
-        </div>
-        <input class="login-btn" type="submit" value="로그인하기">
-        <ul class="find-wrapper">
-          <li><a href="#">아이디 찾기</a></li>
-          <li><a href="#">비밀번호 찾기</a></li>
-        </ul>
-        <div class="register">
-          <a href="#">
-            <p>아직 계정이 없으신가요?</p>
-            <p class="register-bold">회원가입하기</p>
-          </a>
-        </div>
-        </form>
+      </form>
     </div>
-
-
 
     <footer>
       
@@ -143,5 +121,5 @@
     </footer>
     
     
-</body>
+  </body>
 </html>

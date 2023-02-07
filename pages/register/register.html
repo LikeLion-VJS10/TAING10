@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/04c1ea1f1c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
+    <link rel="shortcut icon" href="../../client/assets/img/tving-favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="../../client/css/theme.css" /> -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../../client/css/rwd.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+    <script src="../../client/js/register.js" type="module"></script>
+    <!-- GSAP 추가 -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+    <script src="../../client/js/onboarding-swiper.js" type="module"></script>
+    <title>회원가입</title>
+  </head>
+  <body>
+    <header class="webHeader">
+      <div class="webHeader__logaNavContainer">
+        <h1 class="webHeader__logo">
+          <a href="./onboarding.html" class="webHeader__logo__link">
+            <img class="webHeader__logo__img" src="../../client/assets/svg/header/logo.svg" alt="taing logo" />
+          </a>
+        </h1>
+        <nav class="webHeader__NavMenu">
+          <ul class="NavMenu__list">
+            <li class="NavMenu__list__item NavMenu__list__liveItem">
+              <img class="NavMenu__list__liveItem__img" src="../../client/assets/svg/header/live.svg" alt="live image" />
+              <a href="/" class="list__link list__liveItem"> 실시간</a>
+            </li>
+            <li class="NavMenu__list__item">
+              <a href="/" class="list__link">TV프로그램</a>
+            </li>
+            <li class="NavMenu__list__item">
+              <a href="/" class="list__link">영화</a>
+            </li>
+            <li class="NavMenu__list__item">
+              <a href="/" class="list__link">
+                <img class="NavMenu__list__item__img" src="../../client/assets/svg/header/praramount.svg" alt="파라마운트 픽쳐스" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="member-container">
+        <button class="member-container__btn">
+          <img class="member-container__img" src="../../client/assets/svg/header/search.svg" alt="티비프로그램, 영화제목, 출연진 검색창 버튼" />
+        </button>
+        <button class="member-container__btn">
+          <img class="member-container__img" src="../../client/assets/svg/header/profile.svg" alt="나의 메뉴 버튼" />
+        </button>
+      </div>
+    </header>
+
+    <div class="login-wrapper">
+      <form method="post" action="" id="login-form">
+        <h2 class="login-title">티빙 회원가입</h2>
+
+        <div class="login-inner">
+          <div class="login-text">
+            <p>아이디와 이메일로 간편하게 티빙을 시작하세요!</p>
+          </div>
+
+          <div class="register-input-wrapper">
+            <div class="input-wrapper">
+              <input type="text" name="userId" id="inputID" placeholder="아이디" required />
+              <button type="button" class="delete"></button>
+            </div>
+            <span class="gray-500 ruleID">영문 또는 영문, 숫자 조합 6~12자리</span>
+          </div>
+
+          <div class="register-input-wrapper">
+            <div class="input-wrapper">
+              <input type="password" name="userId" id="inputPW" placeholder="비밀번호" required />
+              <button type="button" class="show-hide"></button>
+              <button type="button" class="delete"></button>
+            </div>
+            <span class="gray-500 rulePW">영문, 숫자, 특수문자(~!@#$%^&*) 조합 8~15자리</span>
+            <div class="input-wrapper">
+              <input type="password" name="userId" id="checkPW" placeholder="비밀번호 확인" required />
+            </div>
+            <span class="gray-500 ruleCheckPW"></span>
+          </div>
+
+          <div class="register-input-wrapper">
+            <div class="input-wrapper">
+              <input type="text" name="userId" id="inputEmail" placeholder="이메일" required />
+            </div>
+            <span class="gray-500 ruleEmail"></span>
+
+            <div class="auto-login-wrapper">
+              <label class="auto-login" for="agree-all">
+                <input type="checkbox" id="agree-all" />
+                <span class="checked"><i class="fa-solid fa-check fa-xs"></i></span>
+                <span class="auto-login-text gray-300">모두 동의합니다.</span>
+              </label>
+
+              <div class="agree-inner-wrap">
+                <label class="auto-login" for="above-14">
+                  <input type="checkbox" id="above-14" />
+                  <span class="checked"><i class="fa-solid fa-check fa-xs"></i></span>
+                  <span class="auto-login-text gray-300">만 14세 이상입니다.</span>
+                </label>
+
+                <label class="auto-login" for="service">
+                  <input type="checkbox" id="service" />
+                  <span class="checked"><i class="fa-solid fa-check fa-xs"></i></span>
+                  <span class="auto-login-text gray-300">[필수] 서비스 이용약관 동의</span>
+                </label>
+
+                <label class="auto-login" for="personal-info">
+                  <input type="checkbox" id="personal-info" />
+                  <span class="checked"><i class="fa-solid fa-check fa-xs"></i></span>
+                  <span class="auto-login-text gray-300">[필수] 개인정보 수집 및 서비스 활용 동의</span>
+                </label>
+
+                <label class="auto-login" for="info-providing">
+                  <input type="checkbox" id="info-providing" />
+                  <span class="checked"><i class="fa-solid fa-check fa-xs"></i></span>
+                  <span class="auto-login-text gray-300">[필수] 채널 홈페이지 개인정보 제 3자 제공동의</span>
+                </label>
+
+                <label class="auto-login" for="personal-info-providing">
+                  <input type="checkbox" id="personal-info-providing" />
+                  <span class="checked"><i class="fa-solid fa-check fa-xs"></i></span>
+                  <span class="auto-login-text gray-300">[선택] 개인정보 제 3자 제공동의</span>
+                </label>
+
+                <label class="auto-login" for="info-agreement">
+                  <input type="checkbox" id="info-agreement" />
+                  <span class="checked"><i class="fa-solid fa-check fa-xs"></i></span>
+                  <span class="auto-login-text gray-300">[선택] 개인정보 수집 및 서비스 활용 동의</span>
+                </label>
+
+                <div class="agree-inner-wrap">
+                  <label class="auto-login" for="sms-agreement">
+                    <input type="checkbox" id="sms-agreement" />
+                    <span class="checked"><i class="fa-solid fa-check fa-xs"></i></span>
+                    <span class="auto-login-text gray-300">[선택] 마케팅 정보 SMS 수신동의</span>
+                  </label>
+                  <label class="auto-login" for="email-agreement">
+                    <input type="checkbox" id="email-agreement" />
+                    <span class="checked"><i class="fa-solid fa-check fa-xs"></i></span>
+                    <span class="auto-login-text gray-300">[선택] 마케팅 정보 이메일 수신동의</span>
+                  </label>
+                </div>
+              </div>
+              <input class="login-btn" type="submit" value="가입하기" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      
+      <div class="footer-wrap">
+
+        <div class="appFooter">
+          <ul class="appFooter--list">
+            <li class="list--desc">고객센터</li>
+            <li class="list--desc">이용약관</li>
+            <li class="list--desc">개인정보처리방침</li>
+            <li class="list--desc">청소년 보호정책</li>
+            <li class="list--desc">법적고지</li>
+            <li class="list--desc">이벤트</li>
+            <li class="list--desc">인재채용</li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <span>대표이사 : 양지을</span>
+          <span><a href="/">사업자정보확인</a></span>
+          <span>사업자등록번호 : 188-88-01893</span>
+          <span>통신판매신고번호 : 2020-서울마포-3641호</span><br />
+          <address>사업장 : 서울특별시 마포구 상암산로 34, DMC디지털큐브 15층(상암동)</address>
+          <span>호스팅사업자 : 씨제이올리브네트웍스(주)</span><br />
+          <span><a href="/">고객문의 바로가기</a></span>
+          <span><a href="/">대표메일 : tving@cj.net</a></span>
+          <span><a href="/">고객센터 : 1670-1525(평일/주말 09시~18시,공휴일 휴무)</a></span>
+          <br />
+          <span>ENM 시청자 상담실(편성 문의 및 시청자 의견) : 080-080-0780</span>
+          <span>Mnet 고객센터(방송편성문의) : 1855-1631</span>
+        </div>
+        <div class="iconList">
+          <ul>
+            <li class="icon-item"><a href="/"></a><img src="../../client/assets/svg/footer/facebook.svg" alt="" /></li>
+            <li class="icon-item"><a href="/"></a><img src="../../client/assets/svg/footer/instragram.svg" alt="" /></li>
+            <li class="icon-item"><a href="/"></a><img src="../../client/assets/svg/footer/twitter.svg" alt="" /></li>
+            <li class="icon-item"><a href="/"></a><img src="../../client/assets/svg/footer/youtube.svg" alt="" /></li>
+          </ul>
+        </div>
+        
+        <small>Copyright © 주식회사 티빙 All right reserved.</small>
+
+      </div>
+
+    </footer>
+  </body>
+</html>
