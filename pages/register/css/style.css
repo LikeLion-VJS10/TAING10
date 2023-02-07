@@ -166,6 +166,7 @@ button {
   width: 2.25rem;
   height: 2.25rem;
   background: url(/client/assets/svg/login/input_pw.svg) no-repeat center;
+  background-size: cover;
   right: 1.875rem;
 }
 
@@ -174,6 +175,7 @@ button {
   width: 2.25rem;
   height: 2.25rem;
   background: url(/client/assets/svg/login/input_id.svg) no-repeat center;
+  background-size: cover;
   right: 1.875rem;
 }
 
