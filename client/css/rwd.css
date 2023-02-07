@@ -38,11 +38,19 @@
     margin-left: 2.5rem;
   }
 
-  .webHeader__NavMenu,
-  .member-container button {
+  /* -------------헤더------------- */
+  
+  .webHeader__NavMenu {
     display: none;
   }
-
+  
+  .member-container__btn{
+    width: 4rem;
+    margin: 0;
+  }
+  
+  /* -------------푸터------------- */
+  
   .footer-info {
     display: none;
   }
@@ -50,6 +58,8 @@
     flex-direction: column;
     gap: 1rem;
   }
+  
+  /* -------------스와이퍼 버튼------------- */
 
   .swiper-button-prev {
     color: white;
