@@ -1,7 +1,14 @@
 @import url(../../../client/css/theme.css);
-@import url(../../../client/css/a11yHidden.css);
+@import url(./theme_suyeong.css);
+@import url(./a11yHidden.css);
 
 /* 폰트사이즈, 컬러, 배경컬러 설정 */
+html {
+  font-size: 16px;
+  background-color: var(--black);
+  color: var(--white);
+}
+
 body,
 body::before,
 body::after,
@@ -25,6 +32,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+/* 132/16(평균 구하기: shift, alt, m) */
 
 /* 헤더 */
 .webHeader {
@@ -153,7 +161,6 @@ a {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-
   height: 919px;
   position: relative;
 }

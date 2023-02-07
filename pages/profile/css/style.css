@@ -1,0 +1,211 @@
+@import url(../../../client/css/theme.css);
+@import url(../../../client/css/a11yHidden.css);
+
+body{
+    background-color: var(--black);
+    color: var(--white);
+    font-family: pretendard;
+    position: relative;
+    /* width: 100vw; */
+    /* height: 100vh; */
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover,
+a:active {
+text-decoration: none;
+}
+
+button{
+    background: inherit;
+    border:none;
+    box-shadow:none;
+    border-radius:0;
+    padding:0;
+    overflow:visible;
+    cursor:pointer;
+}
+
+/* -----------------유선님 작업 헤더 스타일----------------- */
+
+/* 헤더 */
+.webHeader {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .webHeader__NavMenu,
+  .member-container button {
+    display: none;
+  }
+  .webHeader__logaNavContainer {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .webHeader__logo {
+    margin: 20px;
+  }
+  .webHeader__logo__img {
+    width: 8rem;
+  }
+  .webHeader__logo__link {
+    display: inline-block;
+  }
+  
+  .NavMenu__list {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 20px;
+    align-items: center;
+    font-size: var(--label-l);
+    color: var(--white);
+  }
+  
+  .NavMenu__list__item {
+    margin-right: 50px;
+  }
+  .NavMenu__list__liveItem {
+    display: flex;
+    align-items: center;
+  }
+  .NavMenu__list__liveItem__img {
+    width: 25px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  .NavMenu__list__item__img {
+    width: 70px;
+  }
+  
+  .member-container {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 7px;
+    margin-right: 30px;
+  }
+  .member-container__btn {
+    background: none;
+    border: none;
+    width: 35px;
+    margin-right: 10px;
+  }
+  .member-container__img {
+    width: 100%;
+  }
+  
+  /* -----------------유선님 작업 헤더 스타일 끝----------------- */
+
+.profile-wrap{
+    /* border: 1px solid lime; */
+    position: relative;
+    margin: 8rem 0;
+    /* top: 50%; */
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-title{
+    width: 100%;
+    text-align: center;
+    line-height: var(--heading-xxxl);
+}
+.profile-title__main{
+    font-size: var(--heading-xxxl);
+    font-weight: bold;
+}
+.profile-title__sub{
+    font-size: var(--label-xl);
+    color: var(--gray-200);
+    font-weight: lighter;
+}
+
+.profile-img-list{
+    display: flex;
+    gap: 2rem;
+    margin: 1rem auto 2rem;
+}
+.profile-img__wrap{
+    position: relative;
+}
+.profile-img__wrap--shadow{
+    background: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-img-list figcaption{
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+    font-size: var(--paragraph-xl);
+    color: var(--gray-300);
+    font-weight: 200;
+}
+
+.profile-edit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-edit__button{
+    border: 1px solid var(--gray-600);
+    color: var(--gray-300);
+    font-size: var(--label-xl);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    /* width 추가(텍스트가 줄어들어도 너비가 일정하도록 */
+    width: 13rem;
+}
+
+/* -----------------유선님 작업 푸터 스타일----------------- */
+footer {
+    margin: 30px 68px 0 68px;
+    font-size: var(--paragraph-l);
+    line-height: 150%;
+    color: var(--gray-500);
+    /* margin-bottom: 100px; */
+  }
+  .footer-info a {
+    text-decoration: underline;
+  }
+  .appFooter--list {
+    display: flex;
+    color: var(--gray-200);
+    margin-top: 100px;
+    margin-bottom: 24px;
+    gap: 36px;
+  }
+  
+  .iconList ul {
+    display: flex;
+    margin: 24px 0 24px 0;
+  }
+  
+  .iconList img {
+    margin-right: 16px;
+    width: 30px;
+  }
+  .footer-info address {
+    display: inline;
+  }
