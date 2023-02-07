@@ -115,21 +115,15 @@ a {
 
 /* 온보딩 히어로섹션 시작 */
 .onboardingHero {
-  height: 980px;
+  height: 950px;
 }
 
-.onboardingHero .info {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  width: 562px;
-  height: 416px;
-  position: absolute;
-  top: 160px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.infoInHero {
   text-align: center;
-  margin-top: 160px;
+  padding-top: 200px;
+}
+.infoInHero .info__subText {
+  margin-bottom: 60px;
 }
 
 .info__login {
@@ -158,35 +152,21 @@ a {
 
 /* 온보딩 오리지널섹션 시작 */
 .onboardingOriginal {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  height: 919px;
+  text-align: center;
   position: relative;
 }
 
-.onboardingOriginal .info {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: space-between;
-  width: 392px;
-  height: 176px;
-  /* background-color: blue; */
-  /* 자식요소의 좌측상단을 부모요소의 중앙에 */
-  /* top: 50%;
-  left: 50%; */
-  /* 자식요소의 50%만큼 마이너스 축으로 이동시키기 */
-  /* transform: translate(-50%, -50%); */
-  /* background-color: pink; */
-  text-align: center;
-  top: 180px;
+.info__mainText {
+  font-size: var(--heading-xxxl);
 }
 .contents__list {
   display: flex;
-  flex-flow: row, nowrap;
-  bottom: 0px;
-  /* background-color: blue; */
+  /* position: absolute; */
+  /* left: 50%; */
+}
+.contents__item img {
+  width: 904px;
+  height: 510px;
 }
 .onboardingWantSee .info {
   margin-top: 160px;
@@ -197,30 +177,28 @@ a {
   font-size: var(--label-xl);
   font-weight: bold;
   color: var(--gray-200);
+  margin-bottom: 8px;
 }
 
 .info__smallText {
   font-size: var(--paragraph-l);
   font-weight: regular;
   color: var(--gray-200);
+  margin-bottom: 51px;
 }
 
 /* 내가 찾던 재미 */
 .onboardingWantSee {
   text-align: center;
 }
-.info {
-  margin-bottom: 160px;
-}
+
 .info__mainText {
   margin-bottom: 20px;
-  font-size: var(--heading-xxl);
+  font-size: var(--heading-xxxl);
   font-weight: bold;
   line-height: 150%;
 }
-.info__subText {
-  margin-bottom: 60px;
-}
+
 /* swiper 부분 */
 .swiper {
   width: 1920px;
@@ -282,12 +260,14 @@ a {
   background-color: #ff153c;
   width: 506px;
   height: 80px;
-  margin-top: 30px;
-  margin: auto;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
+}
+.tablet {
+  display: none;
 }
 
 .content--btn img {
