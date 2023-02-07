@@ -102,7 +102,6 @@ a:active {
 .login-wrapper{
   width: calc(100% / 3);
   /* height: 90%; */
-  flex-direction: column;
   position: relative;
   margin: 8rem 0;
   /* bottom: 0; */
