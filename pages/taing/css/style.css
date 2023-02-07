@@ -26,7 +26,7 @@ h2 {
   padding: 0 0 12px;
 }
 
-figcaption {
+/* figcaption {
   color: var(--gray-100);
   font-size: 1.3rem;
   margin-top: 0.5rem;
@@ -47,7 +47,6 @@ figcaption {
 }
 
 /** ---------------------------- **/
-
 
 /* -----------------유선님 작업 헤더 스타일----------------- */
 
@@ -138,12 +137,14 @@ figcaption {
   width: 100%;
   height: 30%;
 }
+
 .controler {
   position: absolute;
   top: 0;
   display: flex;
   width: 100%;
 }
+
 .contents {
   box-sizing: border-box;
   position: absolute;
@@ -154,20 +155,23 @@ figcaption {
   /* z-index: 9; */
   padding: 0 4rem;
 }
-.contents--left--description{
+
+.contents--left--description {
   font-size: 1.5rem;
 }
-.content--control{
+
+.content--control {
   display: flex;
   position: relative;
   margin: 10px auto;
   gap: 10px;
 }
-.content--control .swiper-pagination{
+
+.content--control .swiper-pagination {
   position: relative;
 }
 
-.content--control .swiper-pagination-bullets.swiper-pagination-horizontal{
+.content--control .swiper-pagination-bullets.swiper-pagination-horizontal {
   width: auto;
   bottom: 0;
 }
@@ -175,7 +179,8 @@ figcaption {
 .swiper-pagination-bullet {
   background-color: var(--white);
 }
-.swiper-stop-button button{
+
+.swiper-stop-button button {
   background: none;
   border: none;
   color: inherit;
@@ -191,6 +196,7 @@ figcaption {
   color: var(--white);
   border-radius: 10px;
 }
+
 .detail--button > a {
   display: block;
 }
@@ -226,15 +232,15 @@ figcaption {
   color: var(--gray-400);
 } */
 
-.hero .swiper-button-lock{
+.hero .swiper-button-lock {
   display: block;
 }
 
-.hero>.swiper-slide>a{
+.hero > .swiper-slide > a {
   position: relative;
 }
 
-.gradient{
+.gradient {
   position: absolute;
   bottom: 0;
   display: block;
@@ -271,7 +277,7 @@ figcaption {
   gap: 0.8rem;
 }
 
-.taing-must__list li{
+.taing-must__list li {
   transition: all 0.5s;
 }
 
@@ -422,92 +428,118 @@ figcaption {
 }
 
 .contents__inner {
-  position: relative;
-  padding: 0 4.4rem 2.25rem;
+  padding: 0 70px 36px;
 }
 
-main .swiper-slide:hover {
+.items li {
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+
+.items li,
+.sports-img {
+  transition: 0.5s;
+}
+
+.items li:hover,
+.sports-img:hover {
   transform: translateY(-10px);
-  transition: all 0.5s;
 }
 
-.Quick-badge::before {
+.badge-name {
   position: absolute;
-  content: url(/client/assets/svg/live/vod.svg);
-  margin: 0.31rem 0 0 0.31rem;
+  top: 0;
+  width: 6rem;
+  height: 1.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0 0 5px;
+  border-radius: 4px;
+  background-color: var(--brand-red-3);
+  font-size: 1rem;
 }
 
-.Live-progress-bar::after {
+.Live-info {
+  position: relative;
+}
+
+.Live-progress-bar {
   position: absolute;
-  bottom: 5.81rem;
+  width: 10.625rem;
+  height: 0.25rem;
+  bottom: 0;
+  transform: translateY(-50%);
+  background: url(/client/assets/svg/live/progress_bar.svg) no-repeat;
 }
 
-/* .long-bar::after {
-  content: url(/client/assets/svg/live/progress_bar.svg);
+.Live-info .middle-bar {
+  width: 5.625rem;
 }
 
-.middle-bar::after {
-  content: url(/client/assets/svg/taing-progress-bar/middle-bar.svg);
+.Live-info .short-bar {
+  width: 3.125rem;
 }
 
-.short-bar::after {
-  content: url(/client/assets/svg/taing-progress-bar/short-bar.svg);
-} */
+.items figcaption {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
+.slide-info {
+  overflow: hidden;
+}
 
 .information {
   position: relative;
   display: flex;
   flex-flow: row nowrap;
-  gap: 10px;
+  gap: 1.25rem;
 }
 
-.slide-title {
-  font-size: calc(12px + 0.5vw);
-  margin-top: 0.5rem;
+.rank {
+  font-size: 4.375rem;
+  font-weight: 700;
+  font-style: italic;
+  transform: translateY(-0.937rem);
+}
+
+.name {
   color: var(--gray-200);
 }
 
 .round,
-.sub-title {
-  font-size: calc(10px + 0.5vw);
+.sub-name {
+  font-size: 1rem;
   color: var(--gray-300);
 }
 
+.name,
+.sub-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .viewer {
-  font-size: calc(10px + 0.5vw);
+  font-size: 1rem;
   color: var(--gray-500);
 }
 
-/* .swiper-button-next,
-.swiper-button-prev {
-  position: absolute;
-  width: 3.75rem;
-  height: 3.75rem;
-  border-radius: 50px;
-  opacity: 0.5;
-  color: var(--gray-400);
-  background-color: var(--black);
-} */
-
-/* .swiper-button-next::after {
-  position: absolute;
-  right: 16px;
+.swiper-button-lock {
+  display: flex;
 }
 
-.swiper-button-prev::after {
+.contents__inner .swiper-button-next,
+.contents__inner .swiper-button-prev {
   position: absolute;
-  left: 16px;
+  top: 0;
+  width: 3.125rem;
+  height: 100%;
+  cursor: pointer;
+  pointer-events: all;
 }
-
-.swiper-button-next {
-  top: 140px;
-  right: 0;
-}
-.swiper-button-prev {
-  top: 140px;
-  left: 0;
-} */
-
 
 /* -----------------유선님 작업 푸터 스타일----------------- */
 footer {
