@@ -162,6 +162,7 @@ figcaption {
 
 .content--control {
   display: flex;
+  align-items: center;
   position: relative;
   margin: 10px auto;
   gap: 10px;
@@ -547,12 +548,22 @@ figcaption {
 
 /* -----------------유선님 작업 푸터 스타일----------------- */
 footer {
-  margin: 30px 68px 0 68px;
+  /* margin: 30px 68px 0 68px; */
   font-size: var(--paragraph-l);
   line-height: 150%;
   color: var(--gray-500);
   /* margin-bottom: 100px; */
+  margin-bottom: 5rem;
+  /* width: 100%; */
 }
+.footer-wrap{
+  width: 90%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 2rem;
+  border-top: 1px solid var(--brand-dark-bg-2);
+}
+
 .footer-info a {
   text-decoration: underline;
 }

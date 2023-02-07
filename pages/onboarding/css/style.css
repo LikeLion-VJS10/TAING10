@@ -42,7 +42,7 @@ a {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 100;
 }
 .webHeader__NavMenu,
 .member-container button {
@@ -303,7 +303,7 @@ a {
 
 footer {
   margin: 30px 68px 0 68px;
-  font-size: var(--paragraph-l);
+  font-size: 1.5rem;
   line-height: 150%;
   color: var(--gray-500);
   /* margin-bottom: 100px; */
@@ -316,7 +316,7 @@ footer {
   color: var(--gray-200);
   margin-top: 100px;
   margin-bottom: 24px;
-  gap: 36px;
+  gap: 1.5rem;
 }
 
 .iconList ul {

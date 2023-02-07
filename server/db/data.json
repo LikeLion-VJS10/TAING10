@@ -98,5 +98,57 @@
       "description": "환혼: 빛과 그림자",
       "image": "img_frame-16.png"
     }
+  ],
+  "tivingFun": [
+    {
+      "id": "0",
+      "name": "러브캐처 1",
+      "description": "청춘남녀들이 열대의 섬을 배경으로 모여있다.",
+      "image": "../../client/assets/img/desktop/landing/러브캐처 1.png"
+    },
+    {
+      "id": "1",
+      "name": "렛미인",
+      "description": "수상하게 생긴 구조물을 중심으로 각양각색의 사람들이 모여있다. 긴장감이 맴도는 분위기이다.",
+      "image": "../../client/assets/img/desktop/landing/렛미인.png"
+    },
+    {
+      "id": "2",
+      "name": "몸값",
+      "description": "콘크리트 잔해가 여기저기 떨어진 밀폐된 공간 안에 남루한 차림의 세 사람이 모여있다. 긴장감이 맴도는 분위기이다.",
+      "image": "../../client/assets/img/desktop/landing/몸값 1.png"
+    }
+  ],
+  "wantFun": [
+    {
+      "id": "0",
+      "name": "보물찾기",
+      "description": "",
+      "image": "../../client/assets/img/desktop/landing/보물찾기 1.png"
+    },
+    {
+      "id": "1",
+      "name": "슈룹",
+      "description": "",
+      "image": "../../client/assets/img/desktop/landing/슈룹.png"
+    },
+    {
+      "id": "2",
+      "name": "연예인매니저",
+      "description": "",
+      "image": "../../client/assets/img/desktop/landing/연예인매니저.png"
+    },
+    {
+      "id": "3",
+      "name": "유퀴즈",
+      "description": "",
+      "image": "../../client/assets/img/desktop/landing/유퀴즈.png"
+    },
+    {
+      "id": "4",
+      "name": "푸트크로니클",
+      "description": "",
+      "image": "../../client/assets/img/desktop/landing/푸드크로니클.png"
+    }
   ]
 }
