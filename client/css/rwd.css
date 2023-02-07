@@ -15,4 +15,8 @@
     width: 90%;
     /* padding: 1rem; */
   }
+
+  .footer-info {
+    display: none;
+  }
 }

@@ -1,4 +1,4 @@
-// import { getNode, getNodes } from '../../../client/lib/index.js'
+import { getNode, getNodes } from '../../../client/lib/index.js'
 
 // function selectAll(selectAll) {
 //   const checkboxes = getNodes('input[type="checkbox"]')
@@ -16,7 +16,9 @@
 //   })
 // }
 
-const agreeAll = document.querySelector('#agree-all')
+// console.log(getNodes('#agree-all'));
+
+const agreeAll = getNode('#agree-all')
 const above14 = document.querySelector('#above-14')
 const service = document.querySelector('#service')
 const personalInfo = document.querySelector('#personal-info')

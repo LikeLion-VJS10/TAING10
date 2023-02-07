@@ -66,7 +66,7 @@ export const hero = new Swiper('.hero', {
   // cssMode: true,
   slidesPerView: 1,
   spaceBetween: 30,
-  loop: true,
+  // loop: true,
   keyboard: {
     enabled: true
   },
@@ -80,6 +80,6 @@ export const hero = new Swiper('.hero', {
   },
   autoplay: {
     delay: 2500,
-    disableOnInteraction: true
+    disableOnInteraction: false
   }
 })
