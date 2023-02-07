@@ -26,7 +26,7 @@ h2 {
   padding: 0 0 12px;
 }
 
-/* figcaption {
+figcaption {
   color: var(--gray-100);
   font-size: 1.3rem;
   margin-top: 0.5rem;
@@ -255,7 +255,7 @@ h2 {
 
 /** 티빙에서 꼭 봐야하는 콘텐츠 영역 css **/
 .taing-must__container {
-  padding: 0 0 32px 50px;
+  padding: 0 0 32px 70px;
 }
 
 .taing-must__title {
@@ -301,8 +301,12 @@ h2 {
 
 /** 실시간 인기 프로그램 css **/
 
+.taing-live-rank {
+  margin-bottom: 36px;
+}
+
 .taing-live-rank__container {
-  padding: 0 0 70px 50px;
+  padding: 0 0 0 70px;
 }
 
 .taing-live-rank__title {
@@ -365,7 +369,7 @@ h2 {
 
 /** 오직 티빙에만 있어요 css **/
 .taing-only-tving__container {
-  padding: 0 0 36px 50px;
+  padding: 0 0 36px 70px;
 }
 
 .taing-only-tving__title {
