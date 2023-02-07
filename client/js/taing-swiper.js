@@ -14,7 +14,7 @@ export const swiperSlide = new Swiper('.contents__inner', {
       slidesPerGroup: 4
     },
     1024: {
-      slidesPerView: 5,
+      slidesPerView: 6,
       slidesPerGroup: 6
     }
   }
@@ -60,8 +60,8 @@ export const swiper2 = new Swiper('.mySwiper2', {
   },
   breakpoints: {
     768: {
-      slidesPerView: 5,
-      slidesPerGroup: 5
+      slidesPerView: 4,
+      slidesPerGroup: 4
     },
     1024: {
       slidesPerView: 8,
@@ -83,8 +83,8 @@ export const swiper3 = new Swiper('.mySwiper3', {
   },
   breakpoints: {
     768: {
-      slidesPerView: 4,
-      slidesPerGroup: 4
+      slidesPerView: 3,
+      slidesPerGroup: 3
     },
     1024: {
       slidesPerView: 7,
