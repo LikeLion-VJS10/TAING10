@@ -23,28 +23,6 @@ import { attr, tiger, delayP, insertLast, getNode as $, renderLiveRankProgram } 
 //     )
 // }
 
-//^ ---------------------------------------------------------------------
-
-//! 실시간 인기 프로그램 만들기
-
-const liveRankProgram = $('.taing-live-rank__list')
-
-async function rendingProgram() {
-  try {
-    let response = await tiger.get('http://localhost:3000/taingContent')
-
-    let userData = response.data
-    console.log(liveRankProgram)
-    userData.forEach(data => {
-      renderLiveRankProgram(liveRankProgram, data)
-      console.log(userData)
-    })
-  } catch (err) {
-    alert('제공할 정보가 없습니다요')
-  }
-}
-rendingProgram()
-
 // const userCardContainer = $('.user-card-inner');
 
 // async function rendingUserList() {
