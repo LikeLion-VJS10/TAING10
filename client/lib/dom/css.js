@@ -37,11 +37,9 @@ export function toggleClass(node, className) {
   node.classList.toggle(className)
 }
 
-
-
-function getCss(node,prop){
-  if(typeof node === 'string'){
-    node = getNode(node);
+function getCss(node, prop) {
+  if (typeof node === 'string') {
+    node = getNode(node)
   }
 
   if (!(prop in document.body.style)) {
