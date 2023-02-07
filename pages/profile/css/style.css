@@ -1,6 +1,7 @@
 @import url(../../../client/css/theme.css);
 @import url(../../../client/css/a11yHidden.css);
 
+/* 기본 설정 구역 */
 body{
     background-color: var(--black);
     color: var(--white);
@@ -116,8 +117,9 @@ button{
     flex-direction: column;
 }
 
+/* 프로필편집 안내 텍스트 구역 */
 .profile-title{
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
     line-height: var(--heading-xxxl);
 }
@@ -131,40 +133,62 @@ button{
     font-weight: lighter;
 }
 
+/* 프로필편집 이미지 구역 */
 .profile-img-list{
     display: flex;
     gap: 2rem;
     margin: 1rem auto 2rem;
 }
-.profile-img__wrap{
+
+.profile-img__wrap {
     position: relative;
+    transition: all 0.5s;
+    /* width: 15rem; */
 }
+
+.profile-img__wrap:hover{
+    transition: all 0.5s;
+    transform: translateY(-10px);
+}
+
 .profile-img__wrap--shadow{
     background: rgba(0, 0, 0, .3);
     position: absolute;
     top: 0;
     left: 0;
+    /* width는 부모를 따라감.(shadow의 부모는 'profile-img__wrap' div */
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+img{
+    /* position: relative; */
+    /* 아래처럼 주면 되긴 하는디... img가 작아짐 */
+    /* width는 부모를 따라감.(img의 부모는 'profile-img__wrap' div */
+    max-width: 100%;
+}
+
 .profile-img-list figcaption{
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
-    margin: 10px auto;
+    margin: 1.5rem auto;
     font-size: var(--paragraph-xl);
     color: var(--gray-300);
     font-weight: 200;
 }
 
+
+/* 프로필편집 버튼 구역 */
 .profile-edit{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .profile-edit__button{
     border: 1px solid var(--gray-600);
     color: var(--gray-300);
@@ -178,34 +202,39 @@ button{
     width: 13rem;
 }
 
+button:hover{
+  border: 1px solid var(--gray-200);
+  color: var(--white);
+}
+
 /* -----------------유선님 작업 푸터 스타일----------------- */
 footer {
-    margin: 30px 68px 0 68px;
-    font-size: var(--paragraph-l);
-    line-height: 150%;
-    color: var(--gray-500);
-    /* margin-bottom: 100px; */
-  }
-  .footer-info a {
-    text-decoration: underline;
-  }
-  .appFooter--list {
-    display: flex;
-    color: var(--gray-200);
-    margin-top: 100px;
-    margin-bottom: 24px;
-    gap: 36px;
-  }
-  
-  .iconList ul {
-    display: flex;
-    margin: 24px 0 24px 0;
-  }
-  
-  .iconList img {
-    margin-right: 16px;
-    width: 30px;
-  }
-  .footer-info address {
-    display: inline;
-  }
+  margin: 30px 68px 0 68px;
+  font-size: var(--paragraph-l);
+  line-height: 150%;
+  color: var(--gray-500);
+  /* margin-bottom: 100px; */
+}
+.footer-info a {
+  text-decoration: underline;
+}
+.appFooter--list {
+  display: flex;
+  color: var(--gray-200);
+  margin-top: 100px;
+  margin-bottom: 24px;
+  gap: 36px;
+}
+
+.iconList ul {
+  display: flex;
+  margin: 24px 0 24px 0;
+}
+
+.iconList img {
+  margin-right: 16px;
+  width: 30px;
+}
+.footer-info address {
+  display: inline;
+}

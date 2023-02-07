@@ -1,31 +1,44 @@
-// export * from '../../client/lib/dom/index.js';
-// export * from '../../client/lib/error/index.js';
-// export * from '../../client/lib/math/index.js';
-// export * from '../../client/lib/utils/index.js';
-
-
-//필요한 돔 요소 정의
 const mainTxt = document.querySelector('.profile-title__main');
 const subTxt = document.querySelector('.profile-title__sub');
-const editBtn = document.querySelector(".profile-edit__button");
+const editBtn = document.querySelector('.profile-edit__button');
+const editImg = Array.from(document.querySelectorAll('.profile-img-list i'));
+const activeProfile = document.querySelector('.active');
+console.log(activeProfile)
 
-//사용자가 편집하기 버튼을 클릭했을때 실행되는 함수
+
 function onEdit() {
-  console.log("test");
-  // 버튼 스타일 변경
-  editBtn.style.cssText="color:black; background-color: white;"
+  if(!!(editImg[0].classList.contains('fa-lock'))){
+  editBtn.style.cssText = "color:black; background-color:white; font-weight: 700";
   editBtn.textContent = "완료";
-  // 텍스트 변경
-  mainTxt.textContent = "프로필 편집"
-  subTxt.textContent = "편집할 프로필을 선택해주세요."
-  //메인,서브 텍스트 변경됨(txt만 바뀜)) click
-  //자물쇠가 연필이미지로 바뀜(폰트어썸) click
+  mainTxt.textContent = "프로필 편집";
+  subTxt.textContent = "편집할 프로필을 선택해주세요.";
+  editImg.forEach(
+    function(currentElement, index){
+      currentElement.classList.toggle('fa-lock');
+      currentElement.classList.toggle('fa-pencil');
+      }
+    )
+    activeProfile.classList.toggle('a11yHidden')
+    // activeProfile.classList.toggle('profile-img__wrap--shadow')
+    return
+  }
+  else if(!!(editImg[0].classList.contains('fa-pencil'))){
+    editBtn.style.cssText = "var(--gray-300); background-color:inherit;";
+    editBtn.textContent = "프로필 편집";
+    mainTxt.textContent = "프로필 선택";
+    subTxt.textContent = "시청할 프로필을 선택해주세요.";
+    editImg.forEach(
+      function(currentElement, index){
+        currentElement.classList.toggle('fa-lock');
+        currentElement.classList.toggle('fa-pencil');
+        }
+      )
+      activeProfile.classList.toggle('a11yHidden')
+      
+    return
+  }
 }
 
-//문서객체.addEventListener(이벤트 이름, 함수)
-//에딧버튼 클릭시 콜백함수onEdit 호출
 editBtn.addEventListener('click', ()=>{
   onEdit();
 });
-    //챌1-버튼에 마우스 호버시 버튼 포커스 효과 mouseover
-    //챌2-프로필 이미지에 마우스 호버시 위로 살짝 올라가는 애니메이션 mouseover
