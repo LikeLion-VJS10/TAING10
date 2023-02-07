@@ -104,9 +104,11 @@ button {
 
 /* -----------------유선님 작업 헤더 스타일 끝----------------- */
 
+/* ----------------------------------- 프로필 구역 시작---------------------------------- */
 .profile-wrap {
   /* border: 1px solid lime; */
   position: relative;
+  padding: 2rem;
   margin: 8rem 0;
   /* top: 50%; */
   left: 50%;
@@ -114,11 +116,17 @@ button {
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.profile-wrap * {
+  /* border: 1px solid red; */
 }
 
 /* 프로필편집 안내 텍스트 구역 */
 .profile-title {
-  /* width: 100%; */
+  width: 100%;
   text-align: center;
   line-height: var(--heading-xxxl);
 }
@@ -135,6 +143,7 @@ button {
 /* 프로필편집 이미지 구역 */
 .profile-img-list {
   display: flex;
+  /* flex-wrap: wrap; */
   gap: 2rem;
   margin: 1rem auto 2rem;
 }
@@ -155,7 +164,6 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  /* width는 부모를 따라감.(shadow의 부모는 'profile-img__wrap' div */
   width: 100%;
   height: 100%;
   display: flex;
@@ -164,14 +172,11 @@ button {
 }
 
 img {
-  /* position: relative; */
-  /* 아래처럼 주면 되긴 하는디... img가 작아짐 */
-  /* width는 부모를 따라감.(img의 부모는 'profile-img__wrap' div */
   max-width: 100%;
 }
 
 .profile-img-list figcaption {
-  /* width: 100%; */
+  width: 100%;
   text-align: center;
   margin: 1.5rem auto;
   font-size: var(--paragraph-xl);
@@ -181,7 +186,7 @@ img {
 
 /* 프로필편집 버튼 구역 */
 .profile-edit {
-  /* width: 100%; */
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -196,7 +201,6 @@ img {
   align-items: center;
   padding: 1rem 2rem;
   border-radius: 4px;
-  /* width 추가(텍스트가 줄어들어도 너비가 일정하도록 */
   width: 13rem;
 }
 
@@ -204,6 +208,7 @@ button:hover {
   border: 1px solid var(--gray-200);
   color: var(--white);
 }
+/* -------------------------------- 프로필 구역 끝 -------------------------------- */
 
 /* -----------------유선님 작업 푸터 스타일----------------- */
 footer {
