@@ -14,8 +14,8 @@ export const swiperSlide = new Swiper('.contents__inner', {
       slidesPerGroup: 4
     },
     1024: {
-      slidesPerView: 6,
-      slidesPerGroup: 6
+      slidesPerView: 5,
+      slidesPerGroup: 5
     }
   }
 })
