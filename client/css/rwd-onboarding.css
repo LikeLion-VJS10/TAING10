@@ -1,0 +1,68 @@
+/* -----------------반응형 미디어 쿼리----------------- */
+
+@media (max-width: 768px) {
+  .onboardingHero {
+    height: 500px;
+  }
+  .infoInHero {
+    text-align: center;
+    padding-top: 100px;
+  }
+  .info__mainText {
+    font-size: var(--heading-l);
+  }
+  .info__subText {
+    font-size: var(--paragraph-s);
+    margin-bottom: 0px;
+  }
+  .content--btn {
+    width: 283px;
+    height: 48px;
+    margin-top: 40px;
+  }
+  .link--des {
+    font-size: var(--label-m);
+  }
+  .content--btn img {
+    position: absolute;
+    top: 0;
+    left: 8px;
+    width: 40px;
+  }
+  .info__mainText {
+    font-size: var(--heading-xl);
+  }
+  .info__subText {
+    font-size: var(--label-m);
+    margin-bottom: 4px;
+  }
+  .info__smallText {
+    font-size: var(--label-s);
+    margin-bottom: 32px;
+  }
+  .content--img {
+    width: 135px;
+    height: 52px;
+  }
+  .content--des {
+    font-size: var(--heading-xl);
+  }
+  .contents__item img {
+    width: 277px;
+    height: 400px;
+  }
+  .footer-info {
+    display: none;
+  }
+  .appFooter--list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .desk {
+    display: none;
+  }
+  .swiper-slide img {
+    width: 181px;
+    height: 102px;
+  }
+}
