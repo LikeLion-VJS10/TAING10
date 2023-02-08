@@ -70,14 +70,14 @@
 
 </details>
 
-## 주간회의
+## 주간회고
 
 <details>
 <summary> 주간 스프린트 회고</summary>
 
 - [**Week 1**](https://github.com/LikeLion-VJS10/TAING10/wiki/%ED%9A%8C%EA%B3%A0---Week-1)  
 - [**Week 2**](https://github.com/LikeLion-VJS10/TAING10/wiki/%ED%9A%8C%EA%B3%A0---Week-2)  
-- [**템플릿 **](https://github.com/LikeLion-VJS10/TAING10/wiki/Weekly-Sprint-template)  
+- [**템플릿 양식**](https://github.com/LikeLion-VJS10/TAING10/wiki/Weekly-Sprint-template)  
 
 
 </details>
@@ -88,16 +88,17 @@
 ## 겪은 이슈
 
 ### 1) 스와이퍼 커스텀
-- 크기 이슈
-- 버튼 사용성 이슈(루프시 사용안됨, 
+- [크기 이슈]
+- [버튼 사용 이슈]
 
 ### 2) 깃 활용
-- 머지 충돌 해결
-- 깃 이해와 프로세스
+- [머지 충돌 해결]
+- [깃 이해와 프로세스]
 
 ### 3) 머지 충돌
 
 ### 4) 네이밍 컨벤션 
-- 머지시 어러웠음. 엄청 비효율적인걸 느낌!
+- [머지시 어러웠음. 엄청 비효율적인걸 느낌!]
 
 ### 5) svg 크기조절 이슈 - 제우님
+- [ ]
