@@ -21,7 +21,13 @@
 - 
 
 ## 기간
-2023.01.29(일) ~ 2023.02.28(수), 10일간
+**2023.01.29(일) ~ 2023.02.28(수), 10일간**
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;월&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;화&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;수&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;목&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;금&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;토&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+||||||[1/27 <br> 첫모임 <br> &nbsp;](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-1%EC%9B%94-27%EC%9D%BC)|1/28 <br>&nbsp; <br> &nbsp; |
+|[**1/29** <br> 첫scr <br> sprt1계획](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-1%EC%9B%94-29%EC%9D%BC)|[**1/30** <br> &nbsp; <br> &nbsp;  ](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-1%EC%9B%94-30%EC%9D%BC)|[**1/31** <br> &nbsp; <br> &nbsp; ](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-1%EC%9B%94-31%EC%9D%BC)|[**2/1** <br> &nbsp; <br> &nbsp; ](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-2%EC%9B%94-1%EC%9D%BC)|[**2/2** <br> 회고1 <br> sprt2계획 ](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-2%EC%9B%94-2%EC%9D%BC)|[**2/3** <br> 중간점검 <br> &nbsp;](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-2%EC%9B%94-3%EC%9D%BC)|[**2/4** <br> &nbsp; <br> &nbsp;](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-2%EC%9B%94-4%EC%9D%BC) 
+|[**2/5** <br> 최종 <br> &nbsp; ](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-2%EC%9B%94-5%EC%9D%BC)|[**2/6** <br> 보완 <br> &nbsp; ](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-2%EC%9B%94-6%EC%9D%BC)|[**2/7** <br> 보완 <br> &nbsp;](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-2%EC%9B%94-7%EC%9D%BC)|[**2/8** <br> 회고2 <br> 발표준비](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-2%EC%9B%94-8%EC%9D%BC)|[**2/9** <br> 발표 <br> &nbsp; ](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-2%EC%9B%94-9%EC%9D%BC)|||
+<br>
 
 ## 작업관리(노션, 이슈, 프로젝트)
 - 스샷으로 보여주기
