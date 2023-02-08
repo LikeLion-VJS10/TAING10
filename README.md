@@ -59,13 +59,31 @@
 
 ## 주간회의
 
+<details>
+<summary> 주간 스프린트 회의</summary>
+
+- [**템플릿**](https://github.com/LikeLion-VJS10/TAING10/wiki/Sprint-Plan) 
+- [**Week 1**](https://github.com/LikeLion-VJS10/TAING10/wiki/%ED%9A%8C%EC%9D%98---Week-1)  
+- [**Week 2**](https://github.com/LikeLion-VJS10/TAING10/wiki/%ED%9A%8C%EC%9D%98---Week-2)  
+
+</details>
+
 ## 주간회의
-- 위키에 넣은거 연결하기
+
+<details>
+<summary> 주간 스프린트 회고</summary>
+
+- [**템플릿**](https://github.com/LikeLion-VJS10/TAING10/wiki/Weekly-Sprint-template)  
+- [**Week 1**](https://github.com/LikeLion-VJS10/TAING10/wiki/%ED%9A%8C%EA%B3%A0---Week-1)  
+- [**Week 2**](https://github.com/LikeLion-VJS10/TAING10/wiki/%ED%9A%8C%EA%B3%A0---Week-2)  
+
+</details>
 
 ## 완성본 스샷 및 짤
 - 완성본 스샷
 
 ## 겪은 이슈
+
 ### 1) 스와이퍼 커스텀
 - 크기 이슈
 
