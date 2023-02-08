@@ -69,7 +69,7 @@
 ## 5. 주간회의
 
 <details>
-<summary> 주간 스프린트 회의</summary>
+<summary>&nbsp주간 스프린트 회의</summary>
 
 - [**Week 1**](https://github.com/LikeLion-VJS10/TAING10/wiki/%ED%9A%8C%EC%9D%98---Week-1)  
 - [**Week 2**](https://github.com/LikeLion-VJS10/TAING10/wiki/%ED%9A%8C%EC%9D%98---Week-2)  
@@ -81,7 +81,7 @@
 ## 6. 주간회고
 
 <details>
-<summary> 주간 스프린트 회고</summary>
+<summary>&nbsp주간 스프린트 회고</summary>
 
 - [**Week 1**](https://github.com/LikeLion-VJS10/TAING10/wiki/%ED%9A%8C%EA%B3%A0---Week-1)  
 - [**Week 2**](https://github.com/LikeLion-VJS10/TAING10/wiki/%ED%9A%8C%EA%B3%A0---Week-2)  
