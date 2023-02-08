@@ -1,10 +1,10 @@
 # 🏄 TAING10
 
-## 개요
+## 1. 개요
 
 
 
-## 팀원
+## 2. 팀원
 
 - 강수영
 - 김진섭
@@ -12,11 +12,11 @@
 - 안승지
 - 장재우
 
-## 프로젝트 목표
+## 3. 프로젝트 목표
 
 
  
-## 프로젝트 기간
+## 4. 프로젝트 기간
 **2023.01.29(일) ~ 2023.02.28(수), 10일간**
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;월&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;화&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;수&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;목&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;금&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;토&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -25,23 +25,23 @@
 |[**2/5** <br> 최종 <br> &nbsp; ](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-2%EC%9B%94-5%EC%9D%BC)|[**2/6** <br> 보완 <br> &nbsp; ](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-2%EC%9B%94-6%EC%9D%BC)|[**2/7** <br> 보완 <br> &nbsp;](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-2%EC%9B%94-7%EC%9D%BC)|[**2/8** <br> 회고2 <br> 발표준비](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-2%EC%9B%94-8%EC%9D%BC)|[**2/9** <br> 발표 <br> &nbsp; ](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-2%EC%9B%94-9%EC%9D%BC)|||
 <br>
 
-## 작업관리(노션, 이슈, 프로젝트)
+# 작업관리
 
-### 노션을 활용한 일정 관리
+## 1. 노션을 활용한 일정 관리
 
 <img width="662" alt="스크린샷 2023-02-08 오후 2 57 52" src="https://user-images.githubusercontent.com/18073169/217447543-a8d6e35b-64f0-4f3e-9863-c999e3f8d69f.png">
 
-### 이슈를 활용한 버그 및 미비사항 관리
+## 2. 이슈를 활용한 버그 및 미비사항 관리
 
 <img width="1394" alt="스크린샷 2023-02-08 오후 2 55 40" src="https://user-images.githubusercontent.com/18073169/217448419-e8a2c771-8c16-4a34-ad70-11bf62865f7a.png">
 
 
-### wiki 활용
+## 3. wiki 활용
 
 <img width="1384" alt="스크린샷 2023-02-08 오후 2 56 54" src="https://user-images.githubusercontent.com/18073169/217447787-5f84df59-cc99-4a9d-9908-638a155aaa93.png">
 
 
-## 데일리스크럼
+## 4. 데일리스크럼
 <details>
 <summary>&nbsp데일리 스크럼</summary>
 
@@ -66,7 +66,7 @@
 </details>
 
 
-## 주간회의
+## 5. 주간회의
 
 <details>
 <summary> 주간 스프린트 회의</summary>
@@ -78,7 +78,7 @@
 
 </details>
 
-## 주간회고
+## 6. 주간회고
 
 <details>
 <summary> 주간 스프린트 회고</summary>
@@ -90,16 +90,18 @@
 
 </details>
 
-## 데스크탑 페이지
+# 결과
+
+## 1. 데스크탑 페이지
 <img width="1412" alt="스크린샷 2023-02-08 오후 3 10 04" src="https://user-images.githubusercontent.com/18073169/217449084-25435097-db45-4c01-aa18-c12886201013.png">
 
 <img width="1419" alt="스크린샷 2023-02-08 오후 2 47 19" src="https://user-images.githubusercontent.com/18073169/217449108-af7032bd-adec-4c43-97f0-cfefdd6e1aa2.png">
 
 
-## 반응형 페이지
+## 2. 반응형 페이지
 
 
-## 겪은 이슈
+## 3. 겪은 이슈
 
 ### 1) 깃&깃허브 환경 활용
 - [이슈페이지 관리](https://github.com/LikeLion-VJS10/TAING10/issues)
