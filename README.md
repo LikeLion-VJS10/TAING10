@@ -3,13 +3,14 @@
 ## 역할분담
 
 ### 공통담당
--
+- 컨벤션 설정
+- git&github
 
-### 강수영
-- 아이패드 울트라 유저 조장
+### 강수영(조장👍)
+- 
 
 ### 김진섭
-- 행동대장
+- 
 
 ### 심유선
 - 매콤한 지적
@@ -32,20 +33,19 @@
 
 ## 작업관리(노션, 이슈, 프로젝트)
 
-<**노션**을 활용한 일정 관리>
+### 노션을 활용한 일정 관리
+
 <img width="662" alt="스크린샷 2023-02-08 오후 2 57 52" src="https://user-images.githubusercontent.com/18073169/217447543-a8d6e35b-64f0-4f3e-9863-c999e3f8d69f.png">
 
-<**이슈**를 활용한 버그 및 미비사항 관리>
-<img width="1413" alt="스크린샷 2023-02-08 오후 2 56 27" src="https://user-images.githubusercontent.com/18073169/217447703-b2925586-3a3f-40cf-9333-daf886e0776b.png">
+### 이슈를 활용한 버그 및 미비사항 관리
 
-<**wiki** 활용>
+<img width="1394" alt="스크린샷 2023-02-08 오후 2 55 40" src="https://user-images.githubusercontent.com/18073169/217448419-e8a2c771-8c16-4a34-ad70-11bf62865f7a.png">
+
+
+### wiki 활용
+
 <img width="1384" alt="스크린샷 2023-02-08 오후 2 56 54" src="https://user-images.githubusercontent.com/18073169/217447787-5f84df59-cc99-4a9d-9908-638a155aaa93.png">
 
-
-
-<img width="1413" alt="스크린샷 2023-02-08 오후 2 56 27" src="https://user-images.githubusercontent.com/18073169/217447703-b2925586-3a3f-40cf-9333-daf886e0776b.png">
-
-<img width="1413" alt="스크린샷 2023-02-08 오후 2 56 27" src="https://user-images.githubusercontent.com/18073169/217447703-b2925586-3a3f-40cf-9333-daf886e0776b.png">
 
 ## 데일리스크럼
 <details>
@@ -97,6 +97,10 @@
 </details>
 
 ## 데스크탑 페이지
+<img width="1412" alt="스크린샷 2023-02-08 오후 3 10 04" src="https://user-images.githubusercontent.com/18073169/217449084-25435097-db45-4c01-aa18-c12886201013.png">
+
+<img width="1419" alt="스크린샷 2023-02-08 오후 2 47 19" src="https://user-images.githubusercontent.com/18073169/217449108-af7032bd-adec-4c43-97f0-cfefdd6e1aa2.png">
+
 
 ## 반응형 페이지
 
