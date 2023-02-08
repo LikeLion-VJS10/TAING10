@@ -104,23 +104,23 @@
 ## 3. 주요 이슈
 
 ### 1) 코딩 & 네이밍 컨벤션(난이도 ★★)
-&nbsp;&nbsp;&nbsp; **문제)** BEM을 적용하기로 했으나, 정확한 기준이 없어 지속적인 class 충돌이 발생함
+&nbsp;&nbsp;&nbsp;&nbsp; **문제)** BEM을 적용하기로 했으나, 정확한 기준이 없어 지속적인 class 충돌이 발생함
 
-&nbsp;&nbsp;&nbsp; **해결)** 근본적인 문제 해결을 하지 않았지만, 다음 프로젝트에서 기초 설정에서 중요하게 다뤄야하겠다고 생각함
+&nbsp;&nbsp;&nbsp;&nbsp; **해결)** 근본적인 문제 해결을 하지 않았지만, 다음 프로젝트에서 기초 설정에서 중요하게 다뤄야하겠다고 생각함
 
 <br>
 
 ### 2) git&github(난이도 ★★★★)
-&nbsp;&nbsp;&nbsp; **문제)** git & github의 익숙하지 않아, 파일 내용을 여러차례 삭제되어 재작성함
+&nbsp;&nbsp;&nbsp;&nbsp; **문제)** git & github의 익숙하지 않아, 파일 내용을 여러차례 삭제되어 재작성함
 
-&nbsp;&nbsp;&nbsp; **해결)** github 테스트 repository를 활용하여 연습
+&nbsp;&nbsp;&nbsp;&nbsp; **해결)** github 테스트 repository를 활용하여 연습
 
 <br>
 
 ### 3) 스와이퍼 커스텀(난이도 ★★★★★)
-&nbsp;&nbsp;&nbsp; **문제)** CSS를 크기, 속도, 효과 등 수정하려 했지만, 되지 않았던 문제점
+&nbsp;&nbsp;&nbsp;&nbsp; **문제)** CSS를 크기, 속도, 효과 등 수정하려 했지만, 되지 않았던 문제점
 
-&nbsp;&nbsp;&nbsp; **해결)** 정확한 라이브러리 옵션을 통해 해결하였다(swiper api 참고)
+&nbsp;&nbsp;&nbsp;&nbsp; **해결)** 정확한 라이브러리 옵션을 통해 해결하였다(swiper api 참고)
 
 <br>
 
