@@ -34,6 +34,28 @@
 - 스샷으로 보여주기
 
 ## 데일리스크럼
+<details>
+<summary>&nbsp데일리 스크럼</summary>
+
+- [**템플릿**](https://github.com/LikeLion-VJS10/TAING10/wiki/daily-scrum-template)  
+- [**2023년 1월 27일(금)**](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-1%EC%9B%94-27%EC%9D%BC)  
+- [**2023년 1월 28일(토)**](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-1%EC%9B%94-28%EC%9D%BC)  
+- [**2023년 1월 29일(일)**](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-1%EC%9B%94-29%EC%9D%BC)  
+- [**2023년 1월 30일(월)**](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-1%EC%9B%94-30%EC%9D%BC)  
+- [**2023년 1월 31일(화)**](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-1%EC%9B%94-31%EC%9D%BC)
+- [**2023년 2월 1일(수)**](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-2%EC%9B%94-1%EC%9D%BC)
+- [**2023년 2월 2일(목)**](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-2%EC%9B%94-2%EC%9D%BC)
+- [**2023년 2월 3일(금)**](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-2%EC%9B%94-3%EC%9D%BC)
+- [**2023년 2월 4일(토)**](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-2%EC%9B%94-4%EC%9D%BC)
+- [**2023년 2월 5일(일)**](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-2%EC%9B%94-5%EC%9D%BC)
+- [**2023년 2월 6일(월)**](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-2%EC%9B%94-6%EC%9D%BC)
+- [**2023년 2월 7일(화)**](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-2%EC%9B%94-7%EC%9D%BC)
+- [**2023년 2월 8일(수)**](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-2%EC%9B%94-8%EC%9D%BC)
+- [**2023년 2월 9일(목)**](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-2%EC%9B%94-9%EC%9D%BC)
+
+
+</details>
+
 
 ## 주간회의
 
