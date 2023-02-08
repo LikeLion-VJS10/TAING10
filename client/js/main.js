@@ -97,7 +97,17 @@ function settingSwipers() {
     loop: true,
     allowTouchMove: false, //드래그 슬라이드 막음
     loopAdditionalSlides: 1,
-    loopFillGroupWithBlank: true
+    loopFillGroupWithBlank: true,
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+        slidesPerGroup: 3
+      },
+      1024: {
+        slidesPerView: 5,
+        slidesPerGroup: 5
+      }
+    }
   })
 
   let swiper2 = new Swiper('.fast', {
@@ -111,7 +121,18 @@ function settingSwipers() {
     loop: true,
     allowTouchMove: false, //드래그 슬라이드 막음
     loopAdditionalSlides: 1,
-    loopFillGroupWithBlank: true
+    loopFillGroupWithBlank: true,
+
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+        slidesPerGroup: 3
+      },
+      1024: {
+        slidesPerView: 5,
+        slidesPerGroup: 5
+      }
+    }
   })
 }
 

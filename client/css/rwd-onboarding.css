@@ -61,8 +61,7 @@
   .desk {
     display: none;
   }
-  .swiper-slide img {
-    width: 181px;
-    height: 102px;
+  .tablet {
+    display: block;
   }
 }
