@@ -1,6 +1,5 @@
 import { getNode, getNodes, loadStorage, saveStorage, getInputValue, addClass, removeClass, clearContents, attr } from '../../../client/lib/index.js'
 
-const input = getNodes('.input-wrapper > input')
 const ID = getNode('#inputID')
 const PW = getNode('#inputPW')
 const checkPW = getNode('#checkPW')
@@ -71,11 +70,13 @@ showHideBtn.addEventListener('click', showHide)
 // input 초기화
 function resetID() {
   ID.value = ''
+  ID.style.border = 'none'
 }
 IDclearBtn.addEventListener('click', resetID)
 
 function resetPW() {
   PW.value = ''
+  PW.style.border = 'none'
 }
 PWclearBtn.addEventListener('click', resetPW)
 
