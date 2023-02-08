@@ -1,28 +1,22 @@
 # 🏄 TAING10
 
-## 역할분담
+## 개요
 
-### 공통담당
-- 컨벤션 설정
-- git&github
 
-### 강수영(조장👍)
-- 
 
-### 김진섭
-- 
+## 팀원
 
-### 심유선
-- 매콤한 지적
+- 강수영
+- 김진섭
+- 심유선
+- 안승지
+- 장재우
 
-### 안승지
-- 묵묵한 KFC 할아버지
+## 프로젝트 목표
 
-### 장재우
-- 조용하지만 강력함
+
  
-
-## 기간
+## 프로젝트 기간
 **2023.01.29(일) ~ 2023.02.28(수), 10일간**
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;월&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;화&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;수&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;목&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;금&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;토&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
