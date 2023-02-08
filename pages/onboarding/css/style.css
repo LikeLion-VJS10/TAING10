@@ -161,8 +161,6 @@ a {
 }
 .contents__list {
   display: flex;
-  /* position: absolute; */
-  /* left: 50%; */
 }
 .contents__item img {
   width: 904px;
