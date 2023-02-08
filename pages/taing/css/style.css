@@ -141,6 +141,9 @@ figcaption {
   display: flex;
   width: 100%;
 }
+.controler .swiper-button-next {
+  pointer-events: all;
+}
 
 .contents {
   box-sizing: border-box;
