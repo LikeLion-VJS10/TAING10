@@ -173,6 +173,7 @@ a:active {
 
 .auto-login-wrapper {
   width: 100%;
+  margin: 0.625rem 0;
   font-size: 1.3rem;
   color: var(--gray-500);
   position: relative;
