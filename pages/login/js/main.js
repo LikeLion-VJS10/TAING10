@@ -6,7 +6,7 @@ const clear = getNode('.deleteID')
 
 loginBtn.addEventListener('click', () => {
   if (loginBtn.getAttribute('onclick') === null) {
-    loginBtn.setAttribute('onclick', "location.href='http://127.0.0.1:5501/pages/taing/taing.html'")
+    loginBtn.setAttribute('onclick', "location.href='../taing/taing.html'")
   }
 })
 
