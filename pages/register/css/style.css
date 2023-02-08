@@ -170,7 +170,7 @@ button {
   right: 1.875rem;
 }
 
-.delete {
+.clear {
   position: absolute;
   width: 2.25rem;
   height: 2.25rem;
@@ -179,7 +179,7 @@ button {
   right: 1.875rem;
 }
 
-.delete:nth-child(3) {
+.clear:nth-child(3) {
   margin-right: 3.125rem;
 }
 
@@ -359,7 +359,7 @@ footer {
   margin-bottom: 5rem;
   /* width: 100%; */
 }
-.footer-wrap{
+.footer-wrap {
   width: 90%;
   margin: 0 auto;
   box-sizing: border-box;

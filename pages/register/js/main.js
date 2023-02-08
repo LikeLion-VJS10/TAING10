@@ -14,7 +14,8 @@ const ruleCheckPW = getNode('.ruleCheckPW')
 const ruleEmail = getNode('.ruleEmail')
 
 const showHideBtn = getNode('.show-hide')
-const clearBtn = getNodes('.delete')
+const IDclearBtn = getNode('.deleteID')
+const PWclearBtn = getNode('.deletePW')
 
 // 영어, 숫자 포함
 function isEngNum(value) {
@@ -68,8 +69,15 @@ function showHide() {
 showHideBtn.addEventListener('click', showHide)
 
 // input 초기화
-function reset(e) {}
-// clearBtn.addEventListener('click', reset)
+function resetID() {
+  ID.value = ''
+}
+IDclearBtn.addEventListener('click', resetID)
+
+function resetPW() {
+  PW.value = ''
+}
+PWclearBtn.addEventListener('click', resetPW)
 
 // 아이디 조건
 function ValidID() {
