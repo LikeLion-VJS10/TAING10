@@ -31,7 +31,21 @@
 <br>
 
 ## 작업관리(노션, 이슈, 프로젝트)
-- 스샷으로 보여주기
+
+<**노션**을 활용한 일정 관리>
+<img width="662" alt="스크린샷 2023-02-08 오후 2 57 52" src="https://user-images.githubusercontent.com/18073169/217447543-a8d6e35b-64f0-4f3e-9863-c999e3f8d69f.png">
+
+<**이슈**를 활용한 버그 및 미비사항 관리>
+<img width="1413" alt="스크린샷 2023-02-08 오후 2 56 27" src="https://user-images.githubusercontent.com/18073169/217447703-b2925586-3a3f-40cf-9333-daf886e0776b.png">
+
+<**wiki** 활용>
+<img width="1384" alt="스크린샷 2023-02-08 오후 2 56 54" src="https://user-images.githubusercontent.com/18073169/217447787-5f84df59-cc99-4a9d-9908-638a155aaa93.png">
+
+
+
+<img width="1413" alt="스크린샷 2023-02-08 오후 2 56 27" src="https://user-images.githubusercontent.com/18073169/217447703-b2925586-3a3f-40cf-9333-daf886e0776b.png">
+
+<img width="1413" alt="스크린샷 2023-02-08 오후 2 56 27" src="https://user-images.githubusercontent.com/18073169/217447703-b2925586-3a3f-40cf-9333-daf886e0776b.png">
 
 ## 데일리스크럼
 <details>
