@@ -443,6 +443,12 @@ figcaption {
   transition: 0.5s;
 }
 
+@media (max-width: 768px) {
+  .sports {
+    padding-right: 0px;
+  }
+}
+
 .items li:hover,
 .sports-img:hover {
   transform: translateY(-10px);
@@ -553,7 +559,7 @@ footer {
   margin-bottom: 5rem;
   /* width: 100%; */
 }
-.footer-wrap{
+.footer-wrap {
   width: 90%;
   margin: 0 auto;
   box-sizing: border-box;
