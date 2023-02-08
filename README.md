@@ -37,7 +37,6 @@
 <details>
 <summary>&nbsp데일리 스크럼</summary>
 
-- [**템플릿**](https://github.com/LikeLion-VJS10/TAING10/wiki/daily-scrum-template)  
 - [**2023년 1월 27일(금)**](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-1%EC%9B%94-27%EC%9D%BC)  
 - [**2023년 1월 28일(토)**](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-1%EC%9B%94-28%EC%9D%BC)  
 - [**2023년 1월 29일(일)**](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-1%EC%9B%94-29%EC%9D%BC)  
@@ -52,6 +51,8 @@
 - [**2023년 2월 7일(화)**](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-2%EC%9B%94-7%EC%9D%BC)
 - [**2023년 2월 8일(수)**](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-2%EC%9B%94-8%EC%9D%BC)
 - [**2023년 2월 9일(목)**](https://github.com/LikeLion-VJS10/TAING10/wiki/2023%EB%85%84-2%EC%9B%94-9%EC%9D%BC)
+- [**템플릿 양식**](https://github.com/LikeLion-VJS10/TAING10/wiki/daily-scrum-template)  
+
 
 
 </details>
@@ -62,9 +63,10 @@
 <details>
 <summary> 주간 스프린트 회의</summary>
 
-- [**템플릿**](https://github.com/LikeLion-VJS10/TAING10/wiki/Sprint-Plan) 
 - [**Week 1**](https://github.com/LikeLion-VJS10/TAING10/wiki/%ED%9A%8C%EC%9D%98---Week-1)  
 - [**Week 2**](https://github.com/LikeLion-VJS10/TAING10/wiki/%ED%9A%8C%EC%9D%98---Week-2)  
+- [**템플릿 양식**](https://github.com/LikeLion-VJS10/TAING10/wiki/Sprint-Plan) 
+
 
 </details>
 
@@ -73,9 +75,10 @@
 <details>
 <summary> 주간 스프린트 회고</summary>
 
-- [**템플릿**](https://github.com/LikeLion-VJS10/TAING10/wiki/Weekly-Sprint-template)  
 - [**Week 1**](https://github.com/LikeLion-VJS10/TAING10/wiki/%ED%9A%8C%EA%B3%A0---Week-1)  
 - [**Week 2**](https://github.com/LikeLion-VJS10/TAING10/wiki/%ED%9A%8C%EA%B3%A0---Week-2)  
+- [**템플릿 **](https://github.com/LikeLion-VJS10/TAING10/wiki/Weekly-Sprint-template)  
+
 
 </details>
 
