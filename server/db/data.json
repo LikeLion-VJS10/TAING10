@@ -4,102 +4,102 @@
       "id": 1,
       "rank": 1,
       "name": "재벌집 막내아들",
-      "description": "재벌집 막내아들",
+      "description": "재벌집 막내아들로 환생한 송중기의 좌충우돌 이야기",
       "image": "img_frame-14.png"
     },
     {
       "id": 2,
       "rank": 2,
       "name": "술꾼도시여자들2",
-      "description": "술꾼도시여자들2",
+      "description": "술을 사랑하는 세여자의 좌충우돌 일상 이야기",
       "image": "img_frame-15.png"
     },
     {
       "id": 3,
       "rank": 3,
       "name": "환혼: 빛과 그림자",
-      "description": "환혼: 빛과 그림자",
+      "description": "과거와 미래를 넘나드는 좌충우돌 이야기",
       "image": "img_frame-16.png"
     },
     {
       "id": 4,
       "rank": 4,
       "name": "캐나다 체크인",
-      "description": "캐나다 체크인",
+      "description": "이효리의 좌충우돌 이야기",
       "image": "img_frame-17.png"
     },
     {
       "id": 5,
       "rank": 5,
       "name": "놀라운 토요일",
-      "description": "놀라운 토요일",
+      "description": "다양한 엔터테이너들의 좌충우돌 이야기",
       "image": "img_frame-18.png"
     },
     {
       "id": 6,
       "rank": 6,
       "name": "SHOW ME THE MONEY 11",
-      "description": "SHOW ME THE MONEY 11",
+      "description": "래퍼 지망생들의 좌충우돌 이야기",
       "image": "img_frame-19.png"
     },
     {
       "id": 7,
       "rank": 7,
       "name": "러브캐쳐 인 발리",
-      "description": "러브캐쳐 인 발리",
+      "description": "매력적인 청춘남녀 10명이 열대의 섬을 배경으로 모여있다.",
       "image": "img_frame-20.png"
     },
     {
       "id": 8,
       "rank": 8,
       "name": "알쓸신잡",
-      "description": "알쓸신잡",
+      "description": "유시민과 그 3명의 좌충우돌 이야기",
       "image": "img_frame-21.png"
     },
     {
       "id": 9,
       "rank": 9,
       "name": "재벌집 막내아들",
-      "description": "재벌집 막내아들",
+      "description": "재벌집 막내아들로 환생한 송중기의 좌충우돌 이야기",
       "image": "img_frame-14.png"
     },
     {
       "id": 10,
       "rank": 10,
       "name": "술꾼도시여자들2",
-      "description": "술꾼도시여자들2",
+      "description": "술을 사랑하는 세여자의 좌충우돌 일상 이야기",
       "image": "img_frame-15.png"
     },
     {
       "id": 11,
       "rank": 11,
       "name": "캐나다 체크인",
-      "description": "캐나다 체크인",
+      "description": "이효리의 좌충우돌 이야기",
       "image": "img_frame-17.png"
     },
     {
       "id": 12,
       "rank": 12,
       "name": "놀라운 토요일",
-      "description": "놀라운 토요일",
+      "description": "만능 엔터테이너들의 퀴즈를 향한 좌충우돌 이야기",
       "image": "img_frame-18.png"
     },
     {
       "id": 13,
       "rank": 13,
       "name": "SHOW ME THE MONEY 11",
-      "description": "SHOW ME THE MONEY 11",
+      "description": "래퍼 지망생들의 좌충우돌 이야기",
       "image": "img_frame-19.png"
     },
     {
       "id": 14,
       "rank": 14,
       "name": "환혼: 빛과 그림자",
-      "description": "환혼: 빛과 그림자",
+      "description": "과거와 미래를 넘나드는 좌충우돌 이야기",
       "image": "img_frame-16.png"
     }
   ],
-  "tivingFundDesk": [
+  "tivingFunDesk": [
     {
       "id": "0",
       "name": "러브캐처 1",
