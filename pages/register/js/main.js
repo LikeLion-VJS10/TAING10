@@ -142,7 +142,7 @@ checkPW.addEventListener('keyup', ValidCheckPW)
 function ValidEmail() {
   let value = getInputValue(Email)
 
-  if (value.includes('@') === true && value.includes('.') === true) {
+  if (value.includes('@') && value.includes('.')) {
     ruleEmail.textContent = ''
     Email.style.border = '1px solid white'
   } else if (value === '') {

@@ -173,6 +173,7 @@ a:active {
 
 .auto-login-wrapper {
   width: 100%;
+  margin: 0.625rem 0;
   font-size: 1.3rem;
   color: var(--gray-500);
   position: relative;
@@ -221,13 +222,17 @@ a:active {
 .login-btn {
   box-sizing: border-box;
   width: 100%;
-  background-color: var(--brand-red-1);
   font-size: 1.3rem;
   border: none;
   text-align: center;
   display: block;
   border-radius: 3px;
 }
+
+.is-active {
+  background-color: var(--brand-red-1);
+}
+
 .register {
   width: 100%;
   text-align: center;
